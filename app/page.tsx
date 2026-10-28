@@ -11,6 +11,10 @@ import styles from './page.module.css'
 
 type Filter = 'All' | 'Online' | 'Offline' | 'This Week' | 'Free Entry'
 const filters: Filter[] = ['All', 'Online', 'Offline', 'This Week', 'Free Entry']
+type LocationFilter = 'Anywhere' | 'Online' | 'India' | 'Rajasthan' | 'Jaipur'
+const locationFilters: LocationFilter[] = ['Anywhere', 'Online', 'India', 'Rajasthan', 'Jaipur']
+const indiaLocations = ['Jaipur', 'Delhi', 'Mumbai', 'Bengaluru', 'Bangalore', 'Hyderabad', 'Pune', 'Chennai', 'Kolkata', 'Ludhiana', 'Noida', 'Gurgaon', 'Gurugram', 'Lucknow', 'Indore', 'Ahmedabad']
+const rajasthanLocations = ['Rajasthan', 'Jaipur', 'Jodhpur', 'Udaipur', 'Kota', 'Ajmer', 'Bikaner']
 
 export default function Page() {
   const [query, setQuery] = useState('')
@@ -18,6 +22,7 @@ export default function Page() {
   const [isLoading, setIsLoading] = useState(true)
   const [loadError, setLoadError] = useState<string | null>(null)
   const [activeFilter, setActiveFilter] = useState<Filter>('All')
+  const [locationFilter, setLocationFilter] = useState<LocationFilter>('Anywhere')
   const [selectedStacks, setSelectedStacks] = useState<string[]>([])
   const [menuOpen, setMenuOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
@@ -45,6 +50,7 @@ export default function Page() {
 
   const stackOptions = useMemo(() => Array.from(new Set(hackathons.flatMap((hackathon) => hackathon.techStack))).sort(), [hackathons])
   const sourceCount = useMemo(() => new Set(hackathons.map((hackathon) => hackathon.source)).size, [hackathons])
+  const sourceNames = useMemo(() => Array.from(new Set(hackathons.map((hackathon) => hackathon.source))), [hackathons])
 
   useEffect(() => {
     function handleShortcut(event: KeyboardEvent) {
@@ -68,7 +74,8 @@ export default function Page() {
     weekLimit.setHours(23, 59, 59, 999)
 
     return hackathons.filter((hackathon) => {
-      const searchable = [hackathon.title, hackathon.organizer, hackathon.source, hackathon.location, ...hackathon.techStack].filter(Boolean).join(' ').toLowerCase()
+      const locationText = [hackathon.location, hackathon.city, hackathon.state].filter(Boolean).join(' ').toLowerCase()
+      const searchable = [hackathon.title, hackathon.organizer, hackathon.source, locationText, ...hackathon.techStack].filter(Boolean).join(' ').toLowerCase()
       const matchesQuery = !normalizedQuery || searchable.includes(normalizedQuery)
       const matchesFilter = activeFilter === 'All'
         || (activeFilter === 'Online' && hackathon.mode === 'Online')
@@ -76,13 +83,19 @@ export default function Page() {
         || (activeFilter === 'This Week' && hackathon.startDate !== null && new Date(`${hackathon.startDate}T00:00:00`) <= weekLimit && new Date(`${hackathon.startDate}T00:00:00`) >= today)
         || (activeFilter === 'Free Entry' && hackathon.isFree === true)
       const matchesStacks = selectedStacks.length === 0 || selectedStacks.some((stack) => hackathon.techStack.some((item) => item.toLowerCase() === stack.toLowerCase()))
-      return matchesQuery && matchesFilter && matchesStacks
+      const matchesLocation = locationFilter === 'Anywhere'
+        || (locationFilter === 'Online' && hackathon.mode === 'Online')
+        || (locationFilter === 'India' && (locationText.includes('india') || indiaLocations.some((location) => locationText.includes(location.toLowerCase()))))
+        || (locationFilter === 'Rajasthan' && rajasthanLocations.some((location) => locationText.includes(location.toLowerCase())))
+        || (locationFilter === 'Jaipur' && locationText.includes('jaipur'))
+      return matchesQuery && matchesFilter && matchesStacks && matchesLocation
     })
-  }, [activeFilter, query, selectedStacks])
+  }, [activeFilter, locationFilter, query, selectedStacks])
 
   function clearFilters() {
     setQuery('')
     setActiveFilter('All')
+    setLocationFilter('Anywhere')
     setSelectedStacks([])
   }
 
@@ -131,7 +144,7 @@ export default function Page() {
               <TechStackDropdown options={stackOptions} selected={selectedStacks} onChange={setSelectedStacks} />
             </div>
             <div className={styles.sourceLine} id="sources">
-              <span>SCANNING</span><span>DEVFOLIO</span><i /> <span>UNSTOP</span><i /> <span>DEVPOST</span><i /> <span>MLH</span>
+              <span>SCANNING</span>{sourceNames.map((source, index) => <span key={source}>{index > 0 && <i />} {source.toUpperCase()}</span>)}
             </div>
           </div>
           <div id="agent-log" className={styles.heroTerminal}><AgentTerminal hackathons={hackathons} /></div>
@@ -155,6 +168,15 @@ export default function Page() {
               ))}
             </div>
             <div className={styles.resultCount} aria-live="polite"><span>{String(filteredHackathons.length).padStart(2, '0')}</span> RESULTS</div>
+          </div>
+          <div className={styles.filterRow}>
+            <div className={styles.filterChips} role="group" aria-label="Filter by location">
+              {locationFilters.map((filter) => (
+                <button className={`${styles.filterChip} ${locationFilter === filter ? styles.filterChipActive : ''}`} key={filter} type="button" aria-pressed={locationFilter === filter} onClick={() => setLocationFilter(filter)}>
+                  {filter}
+                </button>
+              ))}
+            </div>
           </div>
 
           {isLoading && <div className={styles.emptyState}>Loading hackathons…</div>}
