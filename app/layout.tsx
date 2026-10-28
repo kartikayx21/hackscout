@@ -33,7 +33,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geist.variable} ${instrumentSerif.variable} ${jetBrainsMono.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${geist.variable} ${instrumentSerif.variable} ${jetBrainsMono.variable}`}>
       <body>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

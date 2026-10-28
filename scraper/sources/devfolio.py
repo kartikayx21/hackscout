@@ -107,6 +107,14 @@ def _team_size(raw: dict[str, Any]) -> str | None:
     return None
 
 
+def _organizer(raw: dict[str, Any]) -> str | None:
+    for key in ("hosted_by", "organizer", "organizer_name", "org_name", "team_name"):
+        value = raw.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    return None
+
+
 def normalize(raw: dict[str, Any]) -> Hackathon:
     """Convert one Devfolio search result into the shared schema."""
     setting = raw.get("hackathon_setting")
@@ -127,7 +135,7 @@ def normalize(raw: dict[str, Any]) -> Hackathon:
     return Hackathon(
         id=str(raw["uuid"]),
         title=raw.get("name") if isinstance(raw.get("name"), str) else "",
-        organizer=raw.get("hosted_by") if isinstance(raw.get("hosted_by"), str) else None,
+        organizer=_organizer(raw),
         source="Devfolio",
         url=url if isinstance(url, str) else None,
         mode=mode,
@@ -145,4 +153,3 @@ def normalize(raw: dict[str, Any]) -> Hackathon:
         perks=[],
         isFree=None,
     )
-

@@ -44,6 +44,7 @@ export default function Page() {
   }, [])
 
   const stackOptions = useMemo(() => Array.from(new Set(hackathons.flatMap((hackathon) => hackathon.techStack))).sort(), [hackathons])
+  const sourceCount = useMemo(() => new Set(hackathons.map((hackathon) => hackathon.source)).size, [hackathons])
 
   useEffect(() => {
     function handleShortcut(event: KeyboardEvent) {
@@ -133,7 +134,7 @@ export default function Page() {
               <span>SCANNING</span><span>DEVFOLIO</span><i /> <span>UNSTOP</span><i /> <span>DEVPOST</span><i /> <span>MLH</span>
             </div>
           </div>
-          <div id="agent-log" className={styles.heroTerminal}><AgentTerminal /></div>
+          <div id="agent-log" className={styles.heroTerminal}><AgentTerminal hackathons={hackathons} /></div>
         </section>
 
         <section className={styles.exploreSection} id="explore" aria-label="Explore hackathons">
@@ -142,7 +143,7 @@ export default function Page() {
               <span className={styles.sectionKicker}>THE SCOUT BOARD <span>—</span> 01</span>
               <h2>Worth building for.</h2>
             </div>
-            <p className={styles.indexedNote}><span className={styles.tinyLiveDot} />{hackathons.length} EVENTS INDEXED ACROSS 4 SOURCES{hackathons[0]?.scrapedAt ? ` · LAST UPDATED ${new Date(hackathons[0].scrapedAt).toLocaleString()}` : ''}</p>
+            <p className={styles.indexedNote}><span className={styles.tinyLiveDot} />{hackathons.length} EVENTS INDEXED ACROSS {sourceCount} SOURCES{hackathons[0]?.scrapedAt ? ` · LAST UPDATED ${new Date(hackathons[0].scrapedAt).toLocaleString()}` : ''}</p>
           </div>
 
           <div className={styles.filterRow}>

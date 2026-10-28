@@ -45,6 +45,12 @@ function getTagClass(tag: string) {
   return styles.tagDefault
 }
 
+function formatPrize(hackathon: Hackathon) {
+  if (hackathon.prizeAmountINR !== null) return hackathon.prizeText ?? 'TBA'
+  if (!hackathon.prizeText) return 'TBA'
+  return hackathon.prizeText.length > 25 ? `${hackathon.prizeText.slice(0, 22)}...` : hackathon.prizeText
+}
+
 export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; index?: number }) {
   const prefersReducedMotion = useReducedMotion()
   const daysRemaining = getDaysUntil(hackathon.registrationDeadline)
@@ -81,7 +87,7 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
       <div className={styles.metaList}>
         <div className={styles.metaRow}><CalendarDays aria-hidden="true" /><span>{formatDateRange(hackathon.startDate, hackathon.endDate)}</span></div>
         <div className={styles.metaRow}><MapPin aria-hidden="true" /><span>{hackathon.location ?? 'TBA'}</span></div>
-        <div className={styles.metaRow}><Trophy aria-hidden="true" /><span>Prize pool <strong>{hackathon.prizeText ?? 'TBA'}</strong></span></div>
+        <div className={styles.metaRow}><Trophy aria-hidden="true" /><span>Prize pool <strong>{formatPrize(hackathon)}</strong></span></div>
         <div className={styles.metaRow}><Users aria-hidden="true" /><span>Team size <strong>{hackathon.teamSize ?? 'TBA'}</strong></span></div>
       </div>
 

@@ -2,20 +2,28 @@
 
 import { useEffect, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
+import type { Hackathon } from '@/data/hackathons'
 import styles from '@/app/page.module.css'
 
-const logLines = [
-  { text: '> launching browser session...', state: 'normal' },
-  { text: '> devfolio.co .......... 34 events', state: 'normal' },
-  { text: '> unstop.com ........... 41 events', state: 'normal' },
-  { text: '> devpost.com .......... 28 events', state: 'normal' },
-  { text: '> parsing tech stacks via gemini-flash', state: 'normal' },
-  { text: '> 128 events indexed · dashboard synced', state: 'success' },
-]
+type LogLine = { text: string; state: 'normal' | 'success' }
 
-export function AgentTerminal() {
+export function AgentTerminal({ hackathons }: { hackathons: Hackathon[] }) {
   const [visibleLines, setVisibleLines] = useState(1)
   const prefersReducedMotion = useReducedMotion()
+  const sourceCounts = hackathons.reduce<Record<string, number>>((counts, hackathon) => {
+    counts[hackathon.source] = (counts[hackathon.source] ?? 0) + 1
+    return counts
+  }, {})
+  const logLines: LogLine[] = [
+    { text: '> launching browser session...', state: 'normal' },
+    ...Object.entries(sourceCounts).map(([source, count]) => ({
+      text: `> ${source.toLowerCase()} .......... ${count} events`,
+      state: 'normal' as const,
+    })),
+    { text: `> ${hackathons.length} events indexed · dashboard synced`, state: 'success' },
+  ]
+  const scrapedAt = hackathons.find((hackathon) => hackathon.scrapedAt)?.scrapedAt
+  const lastSweep = scrapedAt ? new Date(scrapedAt).toLocaleString() : 'TBA'
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -26,7 +34,7 @@ export function AgentTerminal() {
       setVisibleLines((current) => current >= logLines.length ? 0 : current + 1)
     }, 880)
     return () => window.clearInterval(timer)
-  }, [prefersReducedMotion])
+  }, [logLines.length, prefersReducedMotion])
 
   return (
     <aside className={styles.terminalPanel} aria-label="Agent activity log">
@@ -52,7 +60,7 @@ export function AgentTerminal() {
         <span className={styles.terminalCaret} aria-hidden="true" />
       </div>
       <div className={styles.terminalFooter}>
-        <span>LAST SWEEP</span><span>04 MIN AGO</span>
+        <span>LAST SWEEP</span><span>{lastSweep}</span>
       </div>
     </aside>
   )
