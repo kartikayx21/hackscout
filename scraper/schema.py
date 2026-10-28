@@ -22,6 +22,7 @@ class Hackathon(BaseModel):
     location: str | None = None
     city: str | None = None
     state: str | None = None
+    country: str | None = None
     startDate: date | None = None
     endDate: date | None = None
     registrationDeadline: date | None = None
