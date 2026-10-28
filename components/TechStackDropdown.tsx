@@ -5,9 +5,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { Check, ChevronDown, Layers3 } from 'lucide-react'
 import styles from '@/app/page.module.css'
 
-const stackOptions = ['Next.js', 'React', 'Python', 'AI/ML', 'Blockchain', 'Flutter', 'Node', 'Web3']
-
-export function TechStackDropdown({ selected, onChange }: { selected: string[]; onChange: (next: string[]) => void }) {
+export function TechStackDropdown({ options, selected, onChange }: { options: string[]; selected: string[]; onChange: (next: string[]) => void }) {
   const [open, setOpen] = useState(false)
   const prefersReducedMotion = useReducedMotion()
   const containerRef = useRef<HTMLDivElement>(null)
@@ -58,7 +56,7 @@ export function TechStackDropdown({ selected, onChange }: { selected: string[]; 
             transition={prefersReducedMotion ? { duration: 0.01 } : { duration: 0.14 }}
           >
             <div className={styles.popoverCaption}>SELECT TECH STACK</div>
-            {stackOptions.map((option) => {
+            {options.map((option) => {
               const checked = selected.includes(option)
               return (
                 <button

@@ -5,19 +5,28 @@ import { ArrowUpRight, CalendarDays, MapPin, Trophy, Users } from 'lucide-react'
 import type { Hackathon } from '@/data/hackathons'
 import styles from '@/app/page.module.css'
 
-function formatDateRange(start: string, end: string) {
+function formatDate(value: string | null) {
+  if (!value) return 'TBA'
   const formatter = new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric' })
-  return `${formatter.format(new Date(`${start}T12:00:00`))} — ${formatter.format(new Date(`${end}T12:00:00`))}`
+  const parsed = new Date(`${value}T12:00:00`)
+  return Number.isNaN(parsed.getTime()) ? 'TBA' : formatter.format(parsed)
 }
 
-function getDaysUntil(deadline: string) {
+function formatDateRange(start: string | null, end: string | null) {
+  if (!start || !end) return 'TBA'
+  return `${formatDate(start)} — ${formatDate(end)}`
+}
+
+function getDaysUntil(deadline: string | null) {
+  if (!deadline) return null
   const today = new Date()
   today.setHours(0, 0, 0, 0)
   const target = new Date(`${deadline}T00:00:00`)
   return Math.max(0, Math.ceil((target.getTime() - today.getTime()) / 86_400_000))
 }
 
-function getElapsedPercent(deadline: string, startDate: string) {
+function getElapsedPercent(deadline: string | null, startDate: string | null) {
+  if (!deadline || !startDate) return 0
   const start = new Date(`${startDate}T00:00:00`).getTime()
   const end = new Date(`${deadline}T00:00:00`).getTime()
   const now = Date.now()
@@ -39,8 +48,9 @@ function getTagClass(tag: string) {
 export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; index?: number }) {
   const prefersReducedMotion = useReducedMotion()
   const daysRemaining = getDaysUntil(hackathon.registrationDeadline)
-  const visibleStack = hackathon.stack.slice(0, 4)
-  const remainingStack = hackathon.stack.length - visibleStack.length
+  const visibleStack = hackathon.techStack.slice(0, 4)
+  const remainingStack = hackathon.techStack.length - visibleStack.length
+  const progressPercent = getElapsedPercent(hackathon.registrationDeadline, hackathon.startDate)
 
   return (
     <motion.article
@@ -61,18 +71,18 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
         <span className={styles.sourceLabel}>{hackathon.source}</span>
         <span className={`${styles.modeBadge} ${hackathon.mode === 'Online' ? styles.modeOnline : hackathon.mode === 'Hybrid' ? styles.modeHybrid : ''}`}>
           <span className={styles.modeDot} />
-          {hackathon.mode}
+          {hackathon.mode ?? 'TBA'}
         </span>
       </div>
 
       <h2 className={styles.cardTitle}>{hackathon.title}</h2>
-      <p className={styles.organizer}>{hackathon.organizer}</p>
+      <p className={styles.organizer}>{hackathon.organizer ?? 'Organizer TBA'}</p>
 
       <div className={styles.metaList}>
         <div className={styles.metaRow}><CalendarDays aria-hidden="true" /><span>{formatDateRange(hackathon.startDate, hackathon.endDate)}</span></div>
-        <div className={styles.metaRow}><MapPin aria-hidden="true" /><span>{hackathon.location}</span></div>
-        <div className={styles.metaRow}><Trophy aria-hidden="true" /><span>Prize pool <strong>{hackathon.prizePool}</strong></span></div>
-        <div className={styles.metaRow}><Users aria-hidden="true" /><span>Team size <strong>{hackathon.teamSize}</strong></span></div>
+        <div className={styles.metaRow}><MapPin aria-hidden="true" /><span>{hackathon.location ?? 'TBA'}</span></div>
+        <div className={styles.metaRow}><Trophy aria-hidden="true" /><span>Prize pool <strong>{hackathon.prizeText ?? 'TBA'}</strong></span></div>
+        <div className={styles.metaRow}><Users aria-hidden="true" /><span>Team size <strong>{hackathon.teamSize ?? 'TBA'}</strong></span></div>
       </div>
 
       <div className={styles.cardDivider} />
@@ -84,13 +94,13 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
       <div className={styles.cardFooter}>
         <div className={styles.deadlineGroup}>
           <span className={styles.deadlineText}>
-            {daysRemaining === 0 ? 'REGISTRATION CLOSED' : `REGISTRATION CLOSES IN ${daysRemaining} ${daysRemaining === 1 ? 'DAY' : 'DAYS'}`}
+            {daysRemaining === null ? 'REGISTRATION DEADLINE TBA' : daysRemaining === 0 ? 'REGISTRATION CLOSED' : `REGISTRATION CLOSES IN ${daysRemaining} ${daysRemaining === 1 ? 'DAY' : 'DAYS'}`}
           </span>
-          <div className={styles.progressTrack} aria-label={`${getElapsedPercent(hackathon.registrationDeadline, hackathon.startDate)}% of registration window elapsed`}>
-            <span style={{ width: `${getElapsedPercent(hackathon.registrationDeadline, hackathon.startDate)}%` }} />
+          <div className={styles.progressTrack} aria-label={`${progressPercent}% of registration window elapsed`}>
+            <span style={{ width: `${progressPercent}%` }} />
           </div>
         </div>
-        <a className={styles.detailsButton} href={hackathon.url} target="_blank" rel="noreferrer" aria-label={`View details for ${hackathon.title}`}>
+        <a className={styles.detailsButton} href={hackathon.url ?? '#'} target="_blank" rel="noreferrer" aria-label={`View details for ${hackathon.title}`} aria-disabled={!hackathon.url}>
           <span>View Details</span><ArrowUpRight aria-hidden="true" />
         </a>
       </div>

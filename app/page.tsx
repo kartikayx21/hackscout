@@ -6,7 +6,7 @@ import { ArrowDownRight, ArrowUpRight, Menu, Search, SlidersHorizontal, X } from
 import { AgentTerminal } from '@/components/AgentTerminal'
 import { HackathonCard } from '@/components/HackathonCard'
 import { TechStackDropdown } from '@/components/TechStackDropdown'
-import { hackathons } from '@/data/hackathons'
+import type { Hackathon } from '@/data/hackathons'
 import styles from './page.module.css'
 
 type Filter = 'All' | 'Online' | 'Offline' | 'This Week' | 'Free Entry'
@@ -14,11 +14,36 @@ const filters: Filter[] = ['All', 'Online', 'Offline', 'This Week', 'Free Entry'
 
 export default function Page() {
   const [query, setQuery] = useState('')
+  const [hackathons, setHackathons] = useState<Hackathon[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [loadError, setLoadError] = useState<string | null>(null)
   const [activeFilter, setActiveFilter] = useState<Filter>('All')
   const [selectedStacks, setSelectedStacks] = useState<string[]>([])
   const [menuOpen, setMenuOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
   const prefersReducedMotion = useReducedMotion()
+
+  useEffect(() => {
+    const controller = new AbortController()
+    fetch('/hackathons.json', { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`Request failed with status ${response.status}`)
+        return response.json() as Promise<Hackathon[]>
+      })
+      .then((data) => {
+        if (!Array.isArray(data)) throw new Error('Hackathon data has an invalid format')
+        setHackathons(data)
+        setLoadError(null)
+      })
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === 'AbortError') return
+        setLoadError('Unable to load hackathons right now.')
+      })
+      .finally(() => setIsLoading(false))
+    return () => controller.abort()
+  }, [])
+
+  const stackOptions = useMemo(() => Array.from(new Set(hackathons.flatMap((hackathon) => hackathon.techStack))).sort(), [hackathons])
 
   useEffect(() => {
     function handleShortcut(event: KeyboardEvent) {
@@ -42,14 +67,14 @@ export default function Page() {
     weekLimit.setHours(23, 59, 59, 999)
 
     return hackathons.filter((hackathon) => {
-      const searchable = [hackathon.title, hackathon.organizer, hackathon.source, hackathon.location, ...hackathon.stack].join(' ').toLowerCase()
+      const searchable = [hackathon.title, hackathon.organizer, hackathon.source, hackathon.location, ...hackathon.techStack].filter(Boolean).join(' ').toLowerCase()
       const matchesQuery = !normalizedQuery || searchable.includes(normalizedQuery)
       const matchesFilter = activeFilter === 'All'
         || (activeFilter === 'Online' && hackathon.mode === 'Online')
         || (activeFilter === 'Offline' && hackathon.mode === 'Offline')
-        || (activeFilter === 'This Week' && new Date(`${hackathon.startDate}T00:00:00`) <= weekLimit && new Date(`${hackathon.startDate}T00:00:00`) >= today)
-        || (activeFilter === 'Free Entry' && hackathon.isFree)
-      const matchesStacks = selectedStacks.length === 0 || selectedStacks.some((stack) => hackathon.stack.some((item) => item.toLowerCase() === stack.toLowerCase()))
+        || (activeFilter === 'This Week' && hackathon.startDate !== null && new Date(`${hackathon.startDate}T00:00:00`) <= weekLimit && new Date(`${hackathon.startDate}T00:00:00`) >= today)
+        || (activeFilter === 'Free Entry' && hackathon.isFree === true)
+      const matchesStacks = selectedStacks.length === 0 || selectedStacks.some((stack) => hackathon.techStack.some((item) => item.toLowerCase() === stack.toLowerCase()))
       return matchesQuery && matchesFilter && matchesStacks
     })
   }, [activeFilter, query, selectedStacks])
@@ -102,7 +127,7 @@ export default function Page() {
                 {query && <button className={styles.clearSearch} type="button" onClick={() => setQuery('')} aria-label="Clear search"><X aria-hidden="true" /></button>}
                 <kbd>/</kbd>
               </div>
-              <TechStackDropdown selected={selectedStacks} onChange={setSelectedStacks} />
+              <TechStackDropdown options={stackOptions} selected={selectedStacks} onChange={setSelectedStacks} />
             </div>
             <div className={styles.sourceLine} id="sources">
               <span>SCANNING</span><span>DEVFOLIO</span><i /> <span>UNSTOP</span><i /> <span>DEVPOST</span><i /> <span>MLH</span>
@@ -117,7 +142,7 @@ export default function Page() {
               <span className={styles.sectionKicker}>THE SCOUT BOARD <span>—</span> 01</span>
               <h2>Worth building for.</h2>
             </div>
-            <p className={styles.indexedNote}><span className={styles.tinyLiveDot} />128 EVENTS INDEXED ACROSS 4 SOURCES</p>
+            <p className={styles.indexedNote}><span className={styles.tinyLiveDot} />{hackathons.length} EVENTS INDEXED ACROSS 4 SOURCES{hackathons[0]?.scrapedAt ? ` · LAST UPDATED ${new Date(hackathons[0].scrapedAt).toLocaleString()}` : ''}</p>
           </div>
 
           <div className={styles.filterRow}>
@@ -131,7 +156,9 @@ export default function Page() {
             <div className={styles.resultCount} aria-live="polite"><span>{String(filteredHackathons.length).padStart(2, '0')}</span> RESULTS</div>
           </div>
 
-          <motion.div className={styles.eventGrid} layout transition={prefersReducedMotion ? { duration: 0.01 } : { type: 'spring', stiffness: 300, damping: 28 }}>
+          {isLoading && <div className={styles.emptyState}>Loading hackathons…</div>}
+          {loadError && <div className={styles.emptyState}>{loadError}</div>}
+          {!isLoading && !loadError && <motion.div className={styles.eventGrid} layout transition={prefersReducedMotion ? { duration: 0.01 } : { type: 'spring', stiffness: 300, damping: 28 }}>
             <AnimatePresence mode="popLayout">
               {filteredHackathons.map((hackathon, index) => (
                 <motion.div className={styles.cardSlot} key={hackathon.id} layout transition={prefersReducedMotion ? { duration: 0.01 } : { type: 'spring', stiffness: 300, damping: 28 }}>
@@ -139,9 +166,9 @@ export default function Page() {
                 </motion.div>
               ))}
             </AnimatePresence>
-          </motion.div>
+          </motion.div>}
 
-          {filteredHackathons.length === 0 && (
+          {!isLoading && !loadError && filteredHackathons.length === 0 && (
             <div className={styles.emptyState}>
               <div className={styles.emptyGlyph}><Search aria-hidden="true" /></div>
               <span className={styles.emptyKicker}>NO MATCHES FOUND</span>
