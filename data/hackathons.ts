@@ -10,6 +10,7 @@ export interface Hackathon {
   location: string | null
   city: string | null
   state: string | null
+  country: string | null
   startDate: string | null
   endDate: string | null
   registrationDeadline: string | null

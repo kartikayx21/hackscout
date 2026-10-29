@@ -9,12 +9,17 @@ import { TechStackDropdown } from '@/components/TechStackDropdown'
 import type { Hackathon } from '@/data/hackathons'
 import styles from './page.module.css'
 
-type Filter = 'All' | 'Online' | 'Offline' | 'This Week' | 'Free Entry'
+type Filter = 'All' | 'Online' | 'Offline' | 'This Week' | 'Free Entry' | 'Internship / Jobs'
 const filters: Filter[] = ['All', 'Online', 'Offline', 'This Week', 'Free Entry']
 type LocationFilter = 'Anywhere' | 'Online' | 'India' | 'Rajasthan' | 'Jaipur'
 const locationFilters: LocationFilter[] = ['Anywhere', 'Online', 'India', 'Rajasthan', 'Jaipur']
 const indiaLocations = ['Jaipur', 'Delhi', 'Mumbai', 'Bengaluru', 'Bangalore', 'Hyderabad', 'Pune', 'Chennai', 'Kolkata', 'Ludhiana', 'Noida', 'Gurgaon', 'Gurugram', 'Lucknow', 'Indore', 'Ahmedabad']
 const rajasthanLocations = ['Rajasthan', 'Jaipur', 'Jodhpur', 'Udaipur', 'Kota', 'Ajmer', 'Bikaner']
+type PrizeFilter = 'Any' | '10k+' | '50k+' | '1L+'
+const prizeFilters: PrizeFilter[] = ['Any', '10k+', '50k+', '1L+']
+const prizeMinimums: Record<Exclude<PrizeFilter, 'Any'>, number> = { '10k+': 10_000, '50k+': 50_000, '1L+': 100_000 }
+type SortOption = 'Soonest deadline' | 'Highest prize' | 'Newest'
+const sortOptions: SortOption[] = ['Soonest deadline', 'Highest prize', 'Newest']
 
 export default function Page() {
   const [query, setQuery] = useState('')
@@ -23,6 +28,8 @@ export default function Page() {
   const [loadError, setLoadError] = useState<string | null>(null)
   const [activeFilter, setActiveFilter] = useState<Filter>('All')
   const [locationFilter, setLocationFilter] = useState<LocationFilter>('Anywhere')
+  const [prizeFilter, setPrizeFilter] = useState<PrizeFilter>('Any')
+  const [sortOption, setSortOption] = useState<SortOption>('Soonest deadline')
   const [selectedStacks, setSelectedStacks] = useState<string[]>([])
   const [menuOpen, setMenuOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
@@ -74,7 +81,8 @@ export default function Page() {
     weekLimit.setHours(23, 59, 59, 999)
 
     return hackathons.filter((hackathon) => {
-      const locationText = [hackathon.location, hackathon.city, hackathon.state].filter(Boolean).join(' ').toLowerCase()
+      const locationText = [hackathon.location, hackathon.city, hackathon.state, hackathon.country].filter(Boolean).join(' ').toLowerCase()
+      const country = hackathon.country?.trim().toLowerCase()
       const searchable = [hackathon.title, hackathon.organizer, hackathon.source, locationText, ...hackathon.techStack].filter(Boolean).join(' ').toLowerCase()
       const matchesQuery = !normalizedQuery || searchable.includes(normalizedQuery)
       const matchesFilter = activeFilter === 'All'
@@ -82,20 +90,31 @@ export default function Page() {
         || (activeFilter === 'Offline' && hackathon.mode === 'Offline')
         || (activeFilter === 'This Week' && hackathon.startDate !== null && new Date(`${hackathon.startDate}T00:00:00`) <= weekLimit && new Date(`${hackathon.startDate}T00:00:00`) >= today)
         || (activeFilter === 'Free Entry' && hackathon.isFree === true)
+        || (activeFilter === 'Internship / Jobs' && hackathon.hasInternship === true)
       const matchesStacks = selectedStacks.length === 0 || selectedStacks.some((stack) => hackathon.techStack.some((item) => item.toLowerCase() === stack.toLowerCase()))
       const matchesLocation = locationFilter === 'Anywhere'
         || (locationFilter === 'Online' && hackathon.mode === 'Online')
-        || (locationFilter === 'India' && (locationText.includes('india') || indiaLocations.some((location) => locationText.includes(location.toLowerCase()))))
+        || (locationFilter === 'India' && (country === 'india' || locationText.includes('india') || indiaLocations.some((location) => locationText.includes(location.toLowerCase()))))
         || (locationFilter === 'Rajasthan' && rajasthanLocations.some((location) => locationText.includes(location.toLowerCase())))
-        || (locationFilter === 'Jaipur' && locationText.includes('jaipur'))
-      return matchesQuery && matchesFilter && matchesStacks && matchesLocation
+        || (locationFilter === 'Jaipur' && [hackathon.city, hackathon.state, hackathon.location].filter(Boolean).join(' ').toLowerCase().includes('jaipur'))
+      const minimumPrize = prizeFilter === 'Any' ? null : prizeMinimums[prizeFilter]
+      const matchesPrize = minimumPrize === null || (hackathon.prizeAmountINR !== null && hackathon.prizeAmountINR >= minimumPrize)
+      return matchesQuery && matchesFilter && matchesStacks && matchesLocation && matchesPrize
     })
-  }, [activeFilter, locationFilter, query, selectedStacks])
+      .sort((a, b) => {
+        if (sortOption === 'Highest prize') return (b.prizeAmountINR ?? -1) - (a.prizeAmountINR ?? -1)
+        if (sortOption === 'Newest') return (b.scrapedAt ?? '').localeCompare(a.scrapedAt ?? '')
+        const dateValue = (record: Hackathon) => record.registrationDeadline ?? record.startDate ?? '9999-12-31'
+        return dateValue(a).localeCompare(dateValue(b))
+      })
+  }, [activeFilter, locationFilter, prizeFilter, query, selectedStacks, sortOption])
 
   function clearFilters() {
     setQuery('')
     setActiveFilter('All')
     setLocationFilter('Anywhere')
+    setPrizeFilter('Any')
+    setSortOption('Soonest deadline')
     setSelectedStacks([])
   }
 
@@ -166,6 +185,9 @@ export default function Page() {
                   {filter === 'This Week' && <SlidersHorizontal aria-hidden="true" />}{filter}
                 </button>
               ))}
+              <button className={`${styles.filterChip} ${activeFilter === 'Internship / Jobs' ? styles.filterChipActive : ''}`} type="button" aria-pressed={activeFilter === 'Internship / Jobs'} onClick={() => setActiveFilter('Internship / Jobs')}>
+                Internship / Jobs
+              </button>
             </div>
             <div className={styles.resultCount} aria-live="polite"><span>{String(filteredHackathons.length).padStart(2, '0')}</span> RESULTS</div>
           </div>
@@ -174,6 +196,22 @@ export default function Page() {
               {locationFilters.map((filter) => (
                 <button className={`${styles.filterChip} ${locationFilter === filter ? styles.filterChipActive : ''}`} key={filter} type="button" aria-pressed={locationFilter === filter} onClick={() => setLocationFilter(filter)}>
                   {filter}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className={styles.filterRow}>
+            <div className={styles.filterChips} role="group" aria-label="Filter by minimum prize">
+              {prizeFilters.map((filter) => (
+                <button className={`${styles.filterChip} ${prizeFilter === filter ? styles.filterChipActive : ''}`} key={filter} type="button" aria-pressed={prizeFilter === filter} onClick={() => setPrizeFilter(filter)}>
+                  {filter}
+                </button>
+              ))}
+            </div>
+            <div className={styles.filterChips} role="group" aria-label="Sort hackathons">
+              {sortOptions.map((option) => (
+                <button className={`${styles.filterChip} ${sortOption === option ? styles.filterChipActive : ''}`} key={option} type="button" aria-pressed={sortOption === option} onClick={() => setSortOption(option)}>
+                  {option}
                 </button>
               ))}
             </div>
