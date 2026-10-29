@@ -76,11 +76,14 @@ export default function Page() {
     const normalizedQuery = query.trim().toLowerCase()
     const today = new Date()
     today.setHours(0, 0, 0, 0)
+    const todayKey = today.toISOString().slice(0, 10)
     const weekLimit = new Date(today)
     weekLimit.setDate(weekLimit.getDate() + 7)
     weekLimit.setHours(23, 59, 59, 999)
 
     return hackathons.filter((hackathon) => {
+      const eventEnd = hackathon.endDate ?? hackathon.startDate
+      if (eventEnd !== null && eventEnd < todayKey) return false
       const locationText = [hackathon.location, hackathon.city, hackathon.state, hackathon.country].filter(Boolean).join(' ').toLowerCase()
       const country = hackathon.country?.trim().toLowerCase()
       const searchable = [hackathon.title, hackathon.organizer, hackathon.source, locationText, ...hackathon.techStack].filter(Boolean).join(' ').toLowerCase()
@@ -104,8 +107,15 @@ export default function Page() {
       .sort((a, b) => {
         if (sortOption === 'Highest prize') return (b.prizeAmountINR ?? -1) - (a.prizeAmountINR ?? -1)
         if (sortOption === 'Newest') return (b.scrapedAt ?? '').localeCompare(a.scrapedAt ?? '')
-        const dateValue = (record: Hackathon) => record.registrationDeadline ?? record.startDate ?? '9999-12-31'
-        return dateValue(a).localeCompare(dateValue(b))
+        const deadlineRank = (record: Hackathon) => {
+          if (!record.registrationDeadline) return 1
+          return record.registrationDeadline >= todayKey ? 0 : 2
+        }
+        const rankDifference = deadlineRank(a) - deadlineRank(b)
+        if (rankDifference !== 0) return rankDifference
+        if (deadlineRank(a) === 0) return a.registrationDeadline!.localeCompare(b.registrationDeadline!)
+        if (deadlineRank(a) === 2) return a.registrationDeadline!.localeCompare(b.registrationDeadline!)
+        return (a.startDate ?? '9999-12-31').localeCompare(b.startDate ?? '9999-12-31')
       })
   }, [activeFilter, locationFilter, prizeFilter, query, selectedStacks, sortOption])
 

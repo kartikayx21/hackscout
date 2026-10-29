@@ -82,7 +82,7 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
       </div>
 
       <h2 className={styles.cardTitle}>{hackathon.title}</h2>
-      <p className={styles.organizer}>{hackathon.organizer ?? 'Organizer TBA'}</p>
+      {hackathon.organizer && <p className={styles.organizer}>{hackathon.organizer}</p>}
 
       <div className={styles.metaList}>
         <div className={styles.metaRow}><CalendarDays aria-hidden="true" /><span>{formatDateRange(hackathon.startDate, hackathon.endDate)}</span></div>

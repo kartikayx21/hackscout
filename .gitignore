@@ -17,7 +17,5 @@ node_modules
 .venv/
 .env
 __pycache__/
-
+tsconfig.tsbuildinfo
 scraper/.enrich_cache.json
-
-__pycache__/
