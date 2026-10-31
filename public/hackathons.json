@@ -12,72 +12,22 @@
     "country": "India",
     "startDate": "2026-11-14",
     "endDate": "2026-11-15",
-    "registrationDeadline": "2026-10-30",
+    "registrationDeadline": "2026-11-03",
     "prizeText": "Winner; 1nd Runner Up; 2nd Runner Up; Best Freshers team - 🏆 Best Freshers Team - Awarded to the best-performing team made up of first-year students, recognizing their creativity, technical skills, and overall performance.; Best Girls Team - 👩‍💻 Best Girls Team - Awarded to the best-performing all-girls team, recognizing their innovation, teamwork, technical skills, and overall performance.; CodeCrafters VIP — 1st Place (2-Year Membership) - 2-Year CodeCrafters VIP Membership (~$720 value per member) for the 1st Place Champion team. Full access to advanced systems programming challenges — rebuild Redis, Git, SQLite, Kafka & Docker from scratch.; CodeCrafters VIP — 2nd Place (1-Year Membership) - 1-Year CodeCrafters VIP Membership (~$360 value per member) for the 2nd Place runner-up team. Year-long unrestricted access to all CodeCrafters tracks & challenges in Rust, Go, Python, C++, TypeScript & more.; CodeCrafters VIP — 3rd Place (6-Month Membership) - 6-Month CodeCrafters VIP Membership (~$180 value per member) for the 3rd Place team. Full access to rebuild production systems with instant test runner feedback on git push.; Track / Bounty Prize (Voice AI Track) - 3-Month ElevenLabs Scale Tier license ($897 value / 1.8M credits per month) awarded to the best project built using ElevenLabs Voice AI APIs or Conversational Agents.; 1st Place Squad Grant (Pro Tier) - 3-Month ElevenLabs Pro Tier license ($297 value / 600K credits per month) awarded to all members of the 1st Place Grand Champion team.; Universal Participant Perk (Creator Tier) - -Month free access with 131,000 character credits provided universally to all registered and verified hackathon participants.",
     "prizeAmountINR": 203682.0,
     "teamSize": "2-4",
     "techStack": [
       "Voice AI",
-      "Redis",
-      "Git",
-      "SQLite",
-      "Kafka",
-      "Docker"
+      "Rust",
+      "Go",
+      "Python",
+      "C++",
+      "TypeScript"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
-  },
-  {
-    "id": "d957bc2099f945e99edfae0c2972bed9",
-    "title": "DevNexus 2.0",
-    "organizer": null,
-    "source": "Devfolio",
-    "url": "https://devnexushackathon.in/",
-    "mode": "Offline",
-    "location": "Government College of Engineering and Leather Technology, Eastern Metropolitan Bypass, LB Block, Sector 3, Bidhannagar, Kolkata, West Bengal, India",
-    "city": "Kolkata",
-    "state": "West Bengal",
-    "country": "India",
-    "startDate": "2026-11-27",
-    "endDate": "2026-11-28",
-    "registrationDeadline": "2026-10-30",
-    "prizeText": null,
-    "prizeAmountINR": null,
-    "teamSize": "2-4",
-    "techStack": [],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
-  },
-  {
-    "id": "528f2495b98b4f38ae41139390594a3a",
-    "title": "TUM Blockchain & AI Hackathon",
-    "organizer": null,
-    "source": "Devfolio",
-    "url": "https://hackathon.tum-blockchain.com",
-    "mode": "Offline",
-    "location": "House of Communication, Friedenstraße, Munich, Germany",
-    "city": "München",
-    "state": "Bayern",
-    "country": "Germany",
-    "startDate": "2026-10-30",
-    "endDate": "2026-10-31",
-    "registrationDeadline": "2026-10-30",
-    "prizeText": "First Place; Second Place; Third Place; First Place; Second Place; Third Place; First Place: Full Audit Credits - This prize will include $10,000 in value of smart contract auditing credits at Adevar Labs.; Second Place: Pre-Audit Core - This prize will include $4,000 in value of smart contract pre-audit credits at Adevar Labs (can be converted into full audit credits).; Third Place: Pre-Audit Express - This prize will include $2,000 in value of smart contract pre-audit credits at Adevar Labs (can be converted into full audit credits).; First Place; Second Place; Third Place",
-    "prizeAmountINR": 1328000.0,
-    "teamSize": "1-5",
-    "techStack": [
-      "Blockchain",
-      "AI",
-      "Smart Contracts"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "0dab52b6085941a6b366b2425310d8b8",
@@ -100,7 +50,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "50e23a48e3964f43878279a3bf81339d",
@@ -125,7 +75,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "40f5203a0b9842038b51dd3f73236690",
@@ -150,7 +100,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "8b69c2039a8d4b4085c3869b9b25d9c9",
@@ -173,7 +123,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "c84b90d65eff4ae083366fc1cc549e81",
@@ -196,7 +146,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "c163f2c5e7bb4c7bb7acbdb3c572bfa3",
@@ -219,7 +169,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "1c56ad13b8b0467ca2c3772566a0fdd2",
@@ -239,15 +189,14 @@
     "prizeAmountINR": null,
     "teamSize": "2-4",
     "techStack": [
-      "AI",
-      "ML",
+      "AI/ML",
       "Blockchain",
       "Web3"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f3cad-c205-7296-c5bf-e54eef647e43",
@@ -258,7 +207,7 @@
     "mode": "Offline",
     "location": "New delhi, New delhi",
     "city": "New Delhi",
-    "state": null,
+    "state": "Delhi",
     "country": "India",
     "startDate": "2026-10-31",
     "endDate": "2026-11-01",
@@ -270,7 +219,33 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
+  },
+  {
+    "id": "31815",
+    "title": "Neural Storm",
+    "organizer": "JNTUH",
+    "source": "Devpost",
+    "url": "https://neuralstorm.devpost.com/",
+    "mode": "Online",
+    "location": "Online",
+    "city": null,
+    "state": null,
+    "country": null,
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-04",
+    "registrationDeadline": null,
+    "prizeText": "₹ 20,000",
+    "prizeAmountINR": null,
+    "teamSize": null,
+    "techStack": [
+      "Machine Learning",
+      "AI"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": null,
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "31580",
@@ -298,7 +273,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "31489",
@@ -320,12 +295,13 @@
     "techStack": [
       "Databases",
       "Health",
-      "Machine Learning/AI"
+      "Machine Learning",
+      "AI"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "30516",
@@ -337,7 +313,7 @@
     "location": "Kupittaa Campus, Turku",
     "city": "Turku",
     "state": null,
-    "country": "Finland",
+    "country": null,
     "startDate": "2026-11-06",
     "endDate": "2026-11-08",
     "registrationDeadline": null,
@@ -345,13 +321,14 @@
     "prizeAmountINR": 4500000.0,
     "teamSize": null,
     "techStack": [
-      "Machine Learning/AI",
+      "Machine Learning",
+      "AI",
       "Enterprise"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0ec52-db7c-0b5a-048b-65e2ac93ab5f",
@@ -376,7 +353,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0eeb9-5924-af9e-cdc9-e95db9dced9e",
@@ -395,13 +372,11 @@
     "prizeText": null,
     "prizeAmountINR": null,
     "teamSize": null,
-    "techStack": [
-      "AI"
-    ],
+    "techStack": [],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a06247-8bb4-b4aa-ad42-b521be80b16a",
@@ -424,7 +399,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0a682-b6ce-34cc-4fb5-70e9a47a3a6c",
@@ -447,7 +422,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f48c3-b33d-bdda-d714-5afadd68324e",
@@ -470,7 +445,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019fc80d-c744-370d-6102-88c12930a4c4",
@@ -489,13 +464,11 @@
     "prizeText": null,
     "prizeAmountINR": null,
     "teamSize": null,
-    "techStack": [
-      "Biology"
-    ],
+    "techStack": [],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eff28-42a4-3774-ce99-86bf84e3e9d6",
@@ -518,7 +491,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f1457-ed4b-5f05-061e-3c03a008f817",
@@ -541,7 +514,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a06251-6fac-f42e-01dc-9109348a0fdc",
@@ -567,7 +540,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0abeb-120a-8e06-59f6-53c311f93702",
@@ -587,13 +560,12 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [
-      "Data Science",
       "Software"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0b0e3-10a9-a228-13e8-7597860d8d93",
@@ -616,7 +588,30 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
+  },
+  {
+    "id": "01a0c582-2a1b-bf11-ed3a-b6c236d89bf5",
+    "title": "HACK.COMS",
+    "organizer": null,
+    "source": "MLH",
+    "url": "https://www.mlh.com/events/hack-coms-0e/prizes",
+    "mode": "Offline",
+    "location": "Rochester, New York",
+    "city": "Rochester",
+    "state": "New York",
+    "country": "United States",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-08",
+    "registrationDeadline": null,
+    "prizeText": null,
+    "prizeAmountINR": null,
+    "teamSize": null,
+    "techStack": [],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": null,
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0f9ce-2aec-1d0e-a9c8-f5b4213b0d1b",
@@ -627,7 +622,7 @@
     "mode": "Offline",
     "location": "Edinburgh, Edinburgh",
     "city": "Edinburgh",
-    "state": "Scotland",
+    "state": null,
     "country": "United Kingdom",
     "startDate": "2026-11-07",
     "endDate": "2026-11-08",
@@ -641,7 +636,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019ff2b7-4055-c0b3-78bf-d33c3219c43b",
@@ -661,10 +656,10 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a08c64-1006-f464-272f-e1aa0aa28100",
@@ -684,10 +679,10 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a03900-e3b1-9c45-b1e1-8bb40989cb8e",
@@ -709,10 +704,10 @@
     "techStack": [
       "Data Science"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a14113-89f7-abe2-97a0-411e5222d1e9",
@@ -735,10 +730,10 @@
       "Software",
       "Hardware"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0abde-7c6a-f0b2-52d9-1ab37661feee",
@@ -760,10 +755,10 @@
     "techStack": [
       "Software"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "31060",
@@ -783,13 +778,14 @@
     "prizeAmountINR": 39840.0,
     "teamSize": null,
     "techStack": [
-      "Machine Learning/AI",
+      "Machine Learning",
+      "AI",
       "Web"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "31495",
@@ -814,34 +810,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
-  },
-  {
-    "id": "31187",
-    "title": "STEMergent Hacks 2026",
-    "organizer": "STEMergent",
-    "source": "Devpost",
-    "url": "https://stemergent-hacks.devpost.com/",
-    "mode": "Online",
-    "location": "Online",
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": "2026-10-31",
-    "endDate": "2026-11-15",
-    "registrationDeadline": null,
-    "prizeText": "$0",
-    "prizeAmountINR": 0.0,
-    "teamSize": null,
-    "techStack": [
-      "Low/No Code",
-      "Machine Learning",
-      "AI"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0162f-b065-b062-8eb4-6a532b05ba7f",
@@ -861,10 +830,10 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a063b5-6f38-3b26-77aa-c9afde29ba75",
@@ -884,10 +853,10 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f19d0-5bc4-ae3a-8026-18ec241c0053",
@@ -907,10 +876,10 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0a1c6-4096-4e39-b0e6-fbb02f1dfd8a",
@@ -933,10 +902,10 @@
       "Software",
       "Hardware"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0f9d2-8235-468a-117b-e6e10b159f31",
@@ -959,10 +928,10 @@
       "Software",
       "Space"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eb82c-019a-7cdf-8405-6ade2fbe2684",
@@ -985,7 +954,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0aabc-89e5-455e-e716-fb22af55ff20",
@@ -1010,7 +979,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0f9e6-f4a7-a488-8ff2-a1b83adebc0c",
@@ -1033,7 +1002,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0f9e8-4c6a-3385-792a-2f6d7b6fc67a",
@@ -1059,7 +1028,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019e50f7-21ed-7be0-d9d3-25041a140a99",
@@ -1082,7 +1051,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0d389-5cc6-4658-5390-a28cf6a7e25c",
@@ -1105,7 +1074,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a104c6-9b18-a67b-4a70-585e177ae7c2",
@@ -1131,7 +1100,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0de7f-c886-fc35-dd21-0502312014f2",
@@ -1157,7 +1126,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0f38e-1449-10c7-26aa-22f959036fa7",
@@ -1182,7 +1151,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0f9e8-b03e-c774-05a6-1fa2df981ef1",
@@ -1205,7 +1174,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a1169b-c4ad-5d41-61cf-deccaa37655c",
@@ -1228,7 +1197,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a0f9ea-d3be-e792-03f7-10f0e3db8e66",
@@ -1253,7 +1222,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "31808",
@@ -1274,39 +1243,37 @@
     "teamSize": null,
     "techStack": [
       "Machine Learning",
-      "AI",
-      "Hybrid AI"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
-  },
-  {
-    "id": "31667",
-    "title": "Kiroween 2026",
-    "organizer": "Kiro",
-    "source": "Devpost",
-    "url": "https://kiroween.devpost.com/",
-    "mode": "Online",
-    "location": "Online",
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": "2026-10-30",
-    "endDate": "2026-12-04",
-    "registrationDeadline": null,
-    "prizeText": "$100,000",
-    "prizeAmountINR": 8300000.0,
-    "teamSize": null,
-    "techStack": [
-      "Machine Learning",
       "AI"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
+  },
+  {
+    "id": "01a16a32-e904-56ac-4c0e-37892fa37521",
+    "title": "Hack Cats",
+    "organizer": null,
+    "source": "MLH",
+    "url": "https://www.mlh.com/events/hack-cats-cd/prizes",
+    "mode": "Offline",
+    "location": "Manhattan, Kansas",
+    "city": "Manhattan",
+    "state": "Kansas",
+    "country": "United States",
+    "startDate": "2026-12-04",
+    "endDate": "2026-12-06",
+    "registrationDeadline": null,
+    "prizeText": null,
+    "prizeAmountINR": null,
+    "teamSize": null,
+    "techStack": [
+      "Software"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": null,
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "31480",
@@ -1327,13 +1294,14 @@
     "teamSize": null,
     "techStack": [
       "Low/No Code",
-      "Machine Learning/AI",
+      "Machine Learning",
+      "AI",
       "Productivity"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "30819",
@@ -1359,7 +1327,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019ec393-69be-a63b-04c3-db014796cd27",
@@ -1382,7 +1350,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019ebdcf-0a9f-874f-6be7-bd6b1ec311be",
@@ -1405,7 +1373,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019efa0f-7a9a-554b-48cf-dfd63de84b85",
@@ -1428,7 +1396,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "01a1315e-f6a6-dd0f-237b-3ecdf0027f3c",
@@ -1451,7 +1419,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019ed5df-8f65-6d9c-3d59-c1ec15fbeff8",
@@ -1474,7 +1442,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019ecc50-6b27-6cd8-0cde-0558d5e50d2a",
@@ -1497,7 +1465,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eb85f-06b5-26a0-ef38-176d6b74e7c4",
@@ -1520,7 +1488,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f1382-a3ef-5f30-cc4d-aabba0e4506b",
@@ -1543,7 +1511,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "30340",
@@ -1569,7 +1537,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019edbf9-e7f0-1cd3-430f-b2bc90237141",
@@ -1592,7 +1560,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eb809-1a18-1a42-c6c7-1d3799557513",
@@ -1615,7 +1583,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019ebd67-5e7c-b42c-ece3-49a06a65ca28",
@@ -1638,7 +1606,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019ef015-e857-dec1-35f6-3fbf25024952",
@@ -1661,7 +1629,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f3cb6-fb24-d72c-49b9-6fe0460e3ef8",
@@ -1684,7 +1652,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "30463",
@@ -1695,8 +1663,8 @@
     "mode": "Online",
     "location": "Santa Clara Convention Center + Online",
     "city": "Santa Clara",
-    "state": "California",
-    "country": "United States",
+    "state": null,
+    "country": null,
     "startDate": "2027-01-25",
     "endDate": "2027-02-11",
     "registrationDeadline": null,
@@ -1712,7 +1680,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f13d3-6016-7eec-bab4-ff0bcd528cdf",
@@ -1735,7 +1703,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f1451-0d1c-7a27-c23f-dbab9b36850f",
@@ -1758,7 +1726,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eb815-31d3-1e58-fe59-b67e9e333cb9",
@@ -1781,7 +1749,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eba09-373d-877c-e08b-ece93e7ca5c6",
@@ -1801,13 +1769,12 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [
-      "Data Science",
-      "Analytics"
+      "Data Science"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eff23-60c3-4340-836c-521f052441ab",
@@ -1830,7 +1797,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eb908-d9f4-5801-4db2-3c401956c2e8",
@@ -1853,7 +1820,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f488c-985f-4e53-2898-fdc9c4849a6f",
@@ -1876,7 +1843,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eb864-ef2c-37f2-b4e3-75f9b5c5f3ba",
@@ -1899,7 +1866,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f3835-be5c-3f24-0569-adfbfc99fc04",
@@ -1922,7 +1889,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eb8ce-674f-0ec8-bfd2-8b4fb1f550c5",
@@ -1945,7 +1912,33 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
+  },
+  {
+    "id": "28629",
+    "title": "Tech to Treasure Hackathon",
+    "organizer": "bin to better",
+    "source": "Devpost",
+    "url": "https://techtotreasure.devpost.com/",
+    "mode": "Offline",
+    "location": "Tully Community Branch Library",
+    "city": "San Jose",
+    "state": "CA",
+    "country": "United States",
+    "startDate": "2027-03-03",
+    "endDate": "2027-03-10",
+    "registrationDeadline": null,
+    "prizeText": "$450",
+    "prizeAmountINR": 37350.0,
+    "teamSize": null,
+    "techStack": [
+      "Education",
+      "Social Good"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": null,
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019ef10c-9b62-a9d2-47ee-d07adeac232e",
@@ -1968,7 +1961,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019ec91f-af09-dc16-8513-251ea4d0dbea",
@@ -1991,7 +1984,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f1387-2c0b-08be-5f26-3677108a5445",
@@ -2014,7 +2007,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019f05ae-0ce1-0a7a-a677-8325eefc77d9",
@@ -2037,7 +2030,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "019eb878-8618-a351-650c-2bd8b724e423",
@@ -2060,7 +2053,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "29135",
@@ -2081,13 +2074,14 @@
     "teamSize": null,
     "techStack": [
       "Low/No Code",
-      "Machine Learning/AI",
+      "Machine Learning",
+      "AI",
       "Web"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "30455",
@@ -2112,7 +2106,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "31811",
@@ -2133,12 +2127,13 @@
     "teamSize": null,
     "techStack": [
       "Machine Learning",
-      "AI"
+      "AI",
+      "Social Good"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "30731",
@@ -2150,7 +2145,7 @@
     "location": "Toronto",
     "city": "Toronto",
     "state": null,
-    "country": null,
+    "country": "Canada",
     "startDate": null,
     "endDate": null,
     "registrationDeadline": null,
@@ -2158,13 +2153,14 @@
     "prizeAmountINR": 1775702.0,
     "teamSize": null,
     "techStack": [
-      "Machine Learning/AI",
+      "Machine Learning",
+      "AI",
       "Web"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "27097",
@@ -2190,7 +2186,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   },
   {
     "id": "30425",
@@ -2202,7 +2198,7 @@
     "location": "Bayview Yards",
     "city": "Ottawa",
     "state": null,
-    "country": "Canada",
+    "country": null,
     "startDate": null,
     "endDate": null,
     "registrationDeadline": null,
@@ -2215,6 +2211,6 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-10-30T07:24:32.658306Z"
+    "scrapedAt": "2026-10-31T07:12:29.208369Z"
   }
 ]
