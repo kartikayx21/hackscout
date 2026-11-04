@@ -12,6 +12,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 from types import ModuleType
+from urllib.parse import urlparse
 
 from scraper.schema import Hackathon
 from scraper.enrich import EnrichmentReport, enrich_records
@@ -36,6 +37,21 @@ def _source_modules() -> list[ModuleType]:
 def _dedupe_key(hackathon: Hackathon) -> tuple[str, str | None]:
     title = re.sub(r"\s+", " ", hackathon.title).strip().casefold()
     return title, hackathon.startDate.isoformat() if hackathon.startDate else None
+
+
+def _validated_url(value: str | None) -> str | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    candidate = value.strip()
+    parsed = urlparse(candidate)
+    if parsed.scheme in {"http", "https"} and parsed.netloc:
+        return candidate
+    if not parsed.scheme and "." in candidate and " " not in candidate:
+        candidate = f"https://{candidate}"
+        parsed = urlparse(candidate)
+        if parsed.netloc:
+            return candidate
+    return None
 
 
 def run(limit: int | None = None) -> tuple[list[Hackathon], EnrichmentReport]:
@@ -80,6 +96,19 @@ def run(limit: int | None = None) -> tuple[list[Hackathon], EnrichmentReport]:
         enrichment.records,
         key=lambda record: (record.registrationDeadline is None, record.registrationDeadline or record.endDate or record.startDate or datetime.max.date()),
     )
+    repaired_urls = 0
+    invalid_urls = 0
+    validated_records: list[Hackathon] = []
+    for record in normalized:
+        validated_url = _validated_url(record.url)
+        if validated_url is None:
+            invalid_urls += 1
+        elif validated_url != record.url:
+            repaired_urls += 1
+        validated_records.append(record.model_copy(update={"url": validated_url}))
+    normalized = validated_records
+    print(f"URLs repaired: {repaired_urls}")
+    print(f"URLs still invalid: {invalid_urls}")
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(
         json.dumps([record.model_dump(mode="json") for record in normalized], indent=2, ensure_ascii=False) + "\n",

@@ -57,6 +57,7 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
   const visibleStack = hackathon.techStack.slice(0, 4)
   const remainingStack = hackathon.techStack.length - visibleStack.length
   const progressPercent = getElapsedPercent(hackathon.registrationDeadline, hackathon.startDate)
+  const hasValidUrl = /^https?:\/\//.test(hackathon.url ?? '')
 
   return (
     <motion.article
@@ -106,9 +107,15 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
             <span style={{ width: `${progressPercent}%` }} />
           </div>
         </div>
-        <a className={styles.detailsButton} href={hackathon.url ?? '#'} target="_blank" rel="noreferrer" aria-label={`View details for ${hackathon.title}`} aria-disabled={!hackathon.url}>
-          <span>View Details</span><ArrowUpRight aria-hidden="true" />
-        </a>
+        {hasValidUrl ? (
+          <a className={styles.detailsButton} href={hackathon.url!} target="_blank" rel="noopener noreferrer" aria-label={`View details for ${hackathon.title}`}>
+            <span>View Details</span><ArrowUpRight aria-hidden="true" />
+          </a>
+        ) : (
+          <button type="button" className={styles.detailsButton} disabled aria-label={`Details unavailable for ${hackathon.title}`}>
+            <span>Details Unavailable</span><ArrowUpRight aria-hidden="true" />
+          </button>
+        )}
       </div>
     </motion.article>
   )

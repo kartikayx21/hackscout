@@ -6,6 +6,7 @@ import html
 import re
 from datetime import date, datetime
 from typing import Any
+from urllib.parse import urlparse
 
 import requests
 
@@ -14,6 +15,12 @@ from scraper.schema import Hackathon
 API_URL = "https://api.devfolio.co/api/search/hackathons"
 PAGE_SIZE = 12
 HEADERS = {"Accept": "application/json", "User-Agent": "Mozilla/5.0"}
+DEBUG_FALLBACK_TITLES = {
+    "Hack Nexus 2027",
+    "Lean In Hacks 8.0",
+    "THE BIG HACK 2.0",
+    "haxfinity",
+}
 
 
 def fetch() -> list[dict[str, Any]]:
@@ -115,6 +122,40 @@ def _organizer(raw: dict[str, Any]) -> str | None:
     return None
 
 
+def _http_url(value: Any) -> str | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    candidate = value.strip()
+    parsed = urlparse(candidate)
+    if parsed.scheme in {"http", "https"} and parsed.netloc:
+        return candidate
+    if not parsed.scheme and "." in candidate and " " not in candidate:
+        candidate = f"https://{candidate}"
+        parsed = urlparse(candidate)
+        if parsed.netloc:
+            return candidate
+    return None
+
+
+def _website(raw: dict[str, Any], setting: dict[str, Any]) -> str | None:
+    title = raw.get("name")
+    candidate = _http_url(setting.get("site")) or _http_url(setting.get("external_apply_url"))
+    if candidate is not None:
+        return candidate
+
+    slug = raw.get("slug")
+    if not isinstance(slug, str) or not slug.strip():
+        return None
+    fallback = f"https://{slug.strip()}.devfolio.co"
+    if title in DEBUG_FALLBACK_TITLES:
+        try:
+            response = requests.get(fallback, headers=HEADERS, timeout=15)
+            print(f"Devfolio fallback: slug={slug.strip()} url={fallback} status={response.status_code}")
+        except requests.RequestException as exc:
+            print(f"Devfolio fallback: slug={slug.strip()} url={fallback} status=error ({exc})")
+    return fallback
+
+
 def normalize(raw: dict[str, Any]) -> Hackathon:
     """Convert one Devfolio search result into the shared schema."""
     setting = raw.get("hackathon_setting")
@@ -130,14 +171,14 @@ def normalize(raw: dict[str, Any]) -> Hackathon:
     if mode is None and isinstance(is_online, bool):
         mode = "Online" if is_online else "Offline"
     prize_text, prize_amount = _prize(raw)
-    url = setting.get("site") or setting.get("external_apply_url")
+    url = _website(raw, setting)
 
     return Hackathon(
         id=str(raw["uuid"]),
         title=raw.get("name") if isinstance(raw.get("name"), str) else "",
         organizer=_organizer(raw),
         source="Devfolio",
-        url=url if isinstance(url, str) else None,
+        url=url,
         mode=mode,
         location=location,
         city=raw.get("city") if isinstance(raw.get("city"), str) else None,
