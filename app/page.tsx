@@ -117,7 +117,7 @@ export default function Page() {
         if (deadlineRank(a) === 2) return a.registrationDeadline!.localeCompare(b.registrationDeadline!)
         return (a.startDate ?? '9999-12-31').localeCompare(b.startDate ?? '9999-12-31')
       })
-  }, [activeFilter, locationFilter, prizeFilter, query, selectedStacks, sortOption])
+  }, [activeFilter, hackathons, locationFilter, prizeFilter, query, selectedStacks, sortOption])
 
   function clearFilters() {
     setQuery('')
