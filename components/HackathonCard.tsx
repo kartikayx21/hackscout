@@ -13,8 +13,14 @@ function formatDate(value: string | null) {
 }
 
 function formatDateRange(start: string | null, end: string | null) {
+  if (!start && end) return `Ends ${formatDate(end)}`
   if (!start || !end) return 'TBA'
   return `${formatDate(start)} — ${formatDate(end)}`
+}
+
+function isDeadlineClosed(deadline: string | null) {
+  if (!deadline) return false
+  return new Date(`${deadline}T00:00:00`).getTime() < Date.now()
 }
 
 function getDaysUntil(deadline: string | null) {
@@ -54,8 +60,12 @@ function formatPrize(hackathon: Hackathon) {
 export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; index?: number }) {
   const prefersReducedMotion = useReducedMotion()
   const daysRemaining = getDaysUntil(hackathon.registrationDeadline)
-  const visibleStack = hackathon.techStack.slice(0, 4)
-  const remainingStack = hackathon.techStack.length - visibleStack.length
+  const isRegistrationClosed = isDeadlineClosed(hackathon.registrationDeadline)
+  const uniqueTechStack = hackathon.techStack.filter((tag, index, techStack) => (
+    techStack.findIndex((candidate) => candidate.toLowerCase() === tag.toLowerCase()) === index
+  ))
+  const visibleStack = uniqueTechStack.slice(0, 4)
+  const remainingStack = uniqueTechStack.length - visibleStack.length
   const progressPercent = getElapsedPercent(hackathon.registrationDeadline, hackathon.startDate)
   const hasValidUrl = /^https?:\/\//.test(hackathon.url ?? '')
 
@@ -94,14 +104,14 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
 
       <div className={styles.cardDivider} />
       <div className={styles.stackTags} aria-label="Technology stack">
-        {visibleStack.map((tag) => <span className={`${styles.stackTag} ${getTagClass(tag)}`} key={tag}>{tag}</span>)}
+        {visibleStack.map((tag, index) => <span className={`${styles.stackTag} ${getTagClass(tag)}`} key={`${tag}-${index}`}>{tag}</span>)}
         {remainingStack > 0 && <span className={`${styles.stackTag} ${styles.tagDefault}`}>+{remainingStack}</span>}
       </div>
 
       <div className={styles.cardFooter}>
         <div className={styles.deadlineGroup}>
           <span className={styles.deadlineText}>
-            {daysRemaining === null ? 'REGISTRATION DEADLINE TBA' : daysRemaining === 0 ? 'REGISTRATION CLOSED' : `REGISTRATION CLOSES IN ${daysRemaining} ${daysRemaining === 1 ? 'DAY' : 'DAYS'}`}
+            {daysRemaining === null ? 'REGISTRATION DEADLINE TBA' : isRegistrationClosed ? 'REGISTRATION CLOSED' : `REGISTRATION CLOSES IN ${daysRemaining} ${daysRemaining === 1 ? 'DAY' : 'DAYS'}`}
           </span>
           <div className={styles.progressTrack} aria-label={`${progressPercent}% of registration window elapsed`}>
             <span style={{ width: `${progressPercent}%` }} />

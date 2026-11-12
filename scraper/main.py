@@ -66,7 +66,9 @@ def run(limit: int | None = None) -> tuple[list[Hackathon], EnrichmentReport]:
             LOGGER.warning("Skipping %s: fetch() or normalize() is missing", source.__name__)
             continue
         try:
-            records.extend(normalize(raw) for raw in fetch())
+            source_records = [normalize(raw) for raw in fetch()]
+            records.extend(source_records)
+            LOGGER.info("%s: %d records", source.__name__.rsplit(".", 1)[-1], len(source_records))
         except Exception:
             LOGGER.exception("Source failed: %s", source.__name__)
 
@@ -126,6 +128,10 @@ if __name__ == "__main__":
     results, enrichment = run(limit=args.limit)
     print(json.dumps([record.model_dump(mode="json") for record in results[:3]], indent=2, ensure_ascii=True))
     print(f"Total count: {len(results)}")
+    print(f"Total after dedupe: {len(results)}")
+    print(f"Records with null dates: {sum(record.startDate is None or record.endDate is None for record in results)}")
+    for source_name in sorted({record.source for record in results}):
+        print(f"Source {source_name}: {sum(record.source == source_name for record in results)}")
     print(f"Enriched: {enrichment.enriched}")
     print(f"Failed: {enrichment.failed}")
     print(f"Elapsed seconds: {time.monotonic() - started_at:.1f}")
