@@ -116,6 +116,10 @@
 .filterChip svg { width: 12px; height: 12px; }
 .filterChipActive { border-color: var(--accent); background: var(--accent); color: #15190a; }
 .filterChipActive:hover { border-color: var(--accent); background: #d1ff42; color: #15190a; }
+.dateFilters { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.dateField { display: inline-flex; align-items: center; gap: 7px; color: #858992; font-size: 11px; }
+.dateInput { min-height: 31px; padding: 0 9px; border: 1px solid rgba(255,255,255,.08); border-radius: 999px; background: transparent; color: var(--text); color-scheme: dark; font: inherit; }
+.dateInput:focus { border-color: var(--accent); outline: none; }
 .resultCount { flex: 0 0 auto; color: #737780; font-size: 9px; }
 .resultCount span { margin-right: 5px; color: var(--text); }
 .eventGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 20px; align-items: stretch; }

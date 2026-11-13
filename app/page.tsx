@@ -21,6 +21,19 @@ const prizeMinimums: Record<Exclude<PrizeFilter, 'Any'>, number> = { '10k+': 10_
 type SortOption = 'Soonest deadline' | 'Highest prize' | 'Newest'
 const sortOptions: SortOption[] = ['Soonest deadline', 'Highest prize', 'Newest']
 
+function formatInputDate(date: Date) {
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+  return `${year}-${month}-${day}`
+}
+
+function addDays(date: Date, days: number) {
+  const result = new Date(date)
+  result.setDate(result.getDate() + days)
+  return result
+}
+
 export default function Page() {
   const [query, setQuery] = useState('')
   const [hackathons, setHackathons] = useState<Hackathon[]>([])
@@ -31,6 +44,8 @@ export default function Page() {
   const [prizeFilter, setPrizeFilter] = useState<PrizeFilter>('Any')
   const [sortOption, setSortOption] = useState<SortOption>('Soonest deadline')
   const [selectedStacks, setSelectedStacks] = useState<string[]>([])
+  const [fromDate, setFromDate] = useState('')
+  const [toDate, setToDate] = useState('')
   const [menuOpen, setMenuOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
   const prefersReducedMotion = useReducedMotion()
@@ -95,6 +110,10 @@ export default function Page() {
         || (activeFilter === 'This Week' && eventDate !== null && new Date(`${eventDate}T00:00:00`) <= weekLimit && new Date(`${eventDate}T00:00:00`) >= today)
         || (activeFilter === 'Free Entry' && hackathon.isFree === true)
         || (activeFilter === 'Internship / Jobs' && hackathon.hasInternship === true)
+      const eventStart = hackathon.startDate ?? hackathon.endDate
+      const eventEndDate = hackathon.endDate ?? hackathon.startDate
+      const matchesDateRange = (!fromDate && !toDate)
+        || (eventStart !== null && eventEndDate !== null && (!fromDate || eventEndDate >= fromDate) && (!toDate || eventStart <= toDate))
       const matchesStacks = selectedStacks.length === 0 || selectedStacks.some((stack) => hackathon.techStack.some((item) => item.toLowerCase() === stack.toLowerCase()))
       const matchesLocation = locationFilter === 'Anywhere'
         || (locationFilter === 'Online' && hackathon.mode === 'Online')
@@ -103,7 +122,7 @@ export default function Page() {
         || (locationFilter === 'Jaipur' && [hackathon.city, hackathon.state, hackathon.location].filter(Boolean).join(' ').toLowerCase().includes('jaipur'))
       const minimumPrize = prizeFilter === 'Any' ? null : prizeMinimums[prizeFilter]
       const matchesPrize = minimumPrize === null || (hackathon.prizeAmountINR !== null && hackathon.prizeAmountINR >= minimumPrize)
-      return matchesQuery && matchesFilter && matchesStacks && matchesLocation && matchesPrize
+      return matchesQuery && matchesFilter && matchesStacks && matchesLocation && matchesPrize && matchesDateRange
     })
       .sort((a, b) => {
         if (sortOption === 'Highest prize') return (b.prizeAmountINR ?? -1) - (a.prizeAmountINR ?? -1)
@@ -118,7 +137,7 @@ export default function Page() {
         if (deadlineRank(a) === 2) return a.registrationDeadline!.localeCompare(b.registrationDeadline!)
         return (a.startDate ?? a.endDate ?? '9999-12-31').localeCompare(b.startDate ?? b.endDate ?? '9999-12-31')
       })
-  }, [activeFilter, hackathons, locationFilter, prizeFilter, query, selectedStacks, sortOption])
+  }, [activeFilter, fromDate, hackathons, locationFilter, prizeFilter, query, selectedStacks, sortOption, toDate])
 
   function clearFilters() {
     setQuery('')
@@ -127,6 +146,13 @@ export default function Page() {
     setPrizeFilter('Any')
     setSortOption('Soonest deadline')
     setSelectedStacks([])
+    setFromDate('')
+    setToDate('')
+  }
+
+  function setDateRange(start: Date, end: Date) {
+    setFromDate(formatInputDate(start))
+    setToDate(formatInputDate(end))
   }
 
   return (
@@ -209,6 +235,32 @@ export default function Page() {
                   {filter}
                 </button>
               ))}
+            </div>
+          </div>
+          <div className={styles.filterRow}>
+            <div className={styles.dateFilters}>
+              <label className={styles.dateField}>From <input className={styles.dateInput} type="date" value={fromDate} onChange={(event) => setFromDate(event.target.value)} /></label>
+              <label className={styles.dateField}>To <input className={styles.dateInput} type="date" value={toDate} onChange={(event) => setToDate(event.target.value)} /></label>
+              <button className={styles.filterChip} type="button" onClick={() => {
+                const today = new Date()
+                const daysUntilSaturday = (6 - today.getDay() + 7) % 7
+                const weekendStart = today.getDay() === 0 ? today : addDays(today, daysUntilSaturday)
+                setDateRange(weekendStart, addDays(weekendStart, 1))
+              }}>This weekend</button>
+              <button className={styles.filterChip} type="button" onClick={() => {
+                const today = new Date()
+                const monthStart = new Date(today.getFullYear(), today.getMonth(), 1)
+                setDateRange(monthStart, new Date(today.getFullYear(), today.getMonth() + 1, 0))
+              }}>This month</button>
+              <button className={styles.filterChip} type="button" onClick={() => {
+                const today = new Date()
+                const nextMonthStart = new Date(today.getFullYear(), today.getMonth() + 1, 1)
+                setDateRange(nextMonthStart, new Date(today.getFullYear(), today.getMonth() + 2, 0))
+              }}>Next month</button>
+              <button className={styles.filterChip} type="button" onClick={() => {
+                setFromDate('')
+                setToDate('')
+              }}>Clear dates</button>
             </div>
           </div>
           <div className={styles.filterRow}>
