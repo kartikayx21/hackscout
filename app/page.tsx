@@ -12,7 +12,6 @@ import { normalizeSkill, skillKey } from '@/lib/skills'
 import styles from './page.module.css'
 
 type Filter = 'All' | 'Online' | 'Offline' | 'This Week' | 'Free Entry' | 'Internship / Jobs'
-const filters: Filter[] = ['All', 'Online', 'Offline', 'This Week', 'Free Entry']
 type LocationFilter = 'Anywhere' | 'Online' | 'India' | 'Rajasthan' | 'Jaipur'
 const locationFilters: LocationFilter[] = ['Anywhere', 'Online', 'India', 'Rajasthan', 'Jaipur']
 const indiaLocations = ['Jaipur', 'Delhi', 'Mumbai', 'Bengaluru', 'Bangalore', 'Hyderabad', 'Pune', 'Chennai', 'Kolkata', 'Ludhiana', 'Noida', 'Gurgaon', 'Gurugram', 'Lucknow', 'Indore', 'Ahmedabad']
@@ -49,7 +48,9 @@ export default function Page() {
   const [fromDate, setFromDate] = useState('')
   const [toDate, setToDate] = useState('')
   const [menuOpen, setMenuOpen] = useState(false)
+  const [filtersOpen, setFiltersOpen] = useState(false)
   const searchRef = useRef<HTMLInputElement>(null)
+  const filterPanelRef = useRef<HTMLDivElement>(null)
   const prefersReducedMotion = useReducedMotion()
 
   useEffect(() => {
@@ -71,6 +72,22 @@ export default function Page() {
       .finally(() => setIsLoading(false))
     return () => controller.abort()
   }, [])
+
+  useEffect(() => {
+    if (!filtersOpen) return
+    function handlePointerDown(event: PointerEvent) {
+      if (filterPanelRef.current && !filterPanelRef.current.contains(event.target as Node)) setFiltersOpen(false)
+    }
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === 'Escape') setFiltersOpen(false)
+    }
+    document.addEventListener('pointerdown', handlePointerDown)
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown)
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [filtersOpen])
 
   const stackOptions = useMemo<TechStackOption[]>(() => {
     const counts = new Map<string, { count: number; variants: Map<string, number> }>()
@@ -181,6 +198,12 @@ export default function Page() {
     setToDate(formatInputDate(end))
   }
 
+  const activeFilterCount = selectedStacks.length
+    + (activeFilter !== 'All' ? 1 : 0)
+    + (locationFilter !== 'Anywhere' ? 1 : 0)
+    + (fromDate || toDate ? 1 : 0)
+    + (prizeFilter !== 'Any' ? 1 : 0)
+
   return (
     <div className={styles.appShell}>
       <header className={styles.siteHeader}>
@@ -216,15 +239,6 @@ export default function Page() {
             <div className={styles.eyebrow}><span className={styles.eyebrowRule} />AUTONOMOUS HACKATHON INTELLIGENCE</div>
             <h1 id="hero-heading">Discover Your<br /><span className={styles.headlineAccent}>Next Build.</span></h1>
             <p className={styles.heroDescription}>One agent scans the platforms, sorts the signal, and brings your next good problem into view.</p>
-            <div className={styles.searchControls}>
-              <div className={styles.searchBar}>
-                <Search aria-hidden="true" />
-                <input ref={searchRef} aria-label="Search hackathons" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search hackathons, e.g. ‘AI’, ‘Jaipur’, ‘Next.js’" />
-                {query && <button className={styles.clearSearch} type="button" onClick={() => setQuery('')} aria-label="Clear search"><X aria-hidden="true" /></button>}
-                <kbd>/</kbd>
-              </div>
-              <TechStackDropdown options={stackOptions} selected={selectedStacks} onChange={setSelectedStacks} />
-            </div>
             <div className={styles.sourceLine} id="sources">
               <span>SCANNING</span>{sourceNames.map((source, index) => <span key={source}>{index > 0 && <i />} {source.toUpperCase()}</span>)}
             </div>
@@ -241,70 +255,101 @@ export default function Page() {
             <p className={styles.indexedNote}><span className={styles.tinyLiveDot} />{hackathons.length} EVENTS INDEXED ACROSS {sourceCount} SOURCES{hackathons[0]?.scrapedAt ? ` · LAST UPDATED ${new Date(hackathons[0].scrapedAt).toLocaleString()}` : ''}</p>
           </div>
 
-          <div className={styles.filterRow}>
-            <div className={styles.filterChips} role="group" aria-label="Filter events">
-              {filters.map((filter) => (
-                <button className={`${styles.filterChip} ${activeFilter === filter ? styles.filterChipActive : ''}`} key={filter} type="button" aria-pressed={activeFilter === filter} onClick={() => setActiveFilter(filter)}>
-                  {filter === 'This Week' && <SlidersHorizontal aria-hidden="true" />}{filter}
-                </button>
-              ))}
-              <button className={`${styles.filterChip} ${activeFilter === 'Internship / Jobs' ? styles.filterChipActive : ''}`} type="button" aria-pressed={activeFilter === 'Internship / Jobs'} onClick={() => setActiveFilter('Internship / Jobs')}>
-                Internship / Jobs
+          <div className={styles.toolbarShell} ref={filterPanelRef}>
+            <div className={styles.toolbar}>
+              <div className={styles.searchBar}>
+                <Search aria-hidden="true" />
+                <input ref={searchRef} aria-label="Search hackathons" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search hackathons, e.g. ‘AI’, ‘Jaipur’, ‘Next.js’" />
+                {query && <button className={styles.clearSearch} type="button" onClick={() => setQuery('')} aria-label="Clear search"><X aria-hidden="true" /></button>}
+                <kbd>/</kbd>
+              </div>
+              <TechStackDropdown options={stackOptions} selected={selectedStacks} onChange={setSelectedStacks} />
+              <div className={styles.modeSegment} role="group" aria-label="Filter by mode">
+                {(['All', 'Online', 'Offline'] as const).map((mode) => (
+                  <button className={activeFilter === mode ? styles.modeSegmentActive : ''} key={mode} type="button" aria-pressed={activeFilter === mode} onClick={() => setActiveFilter(mode)}>{mode}</button>
+                ))}
+              </div>
+              <button className={styles.filtersButton} type="button" aria-expanded={filtersOpen} aria-controls="filters-panel" onClick={() => setFiltersOpen((open) => !open)}>
+                <SlidersHorizontal aria-hidden="true" /> Filters
+                {activeFilterCount > 0 && <span className={styles.filterBadge}>{activeFilterCount}</span>}
               </button>
+              <label className={styles.sortControl}>
+                <span className={styles.srOnly}>Sort hackathons</span>
+                <select value={sortOption} onChange={(event) => setSortOption(event.target.value as SortOption)} aria-label="Sort hackathons">
+                  {sortOptions.map((option) => <option key={option}>{option}</option>)}
+                </select>
+              </label>
+              <div className={styles.resultCount} aria-live="polite"><span>{String(filteredHackathons.length).padStart(2, '0')}</span> RESULTS</div>
             </div>
-            <div className={styles.resultCount} aria-live="polite"><span>{String(filteredHackathons.length).padStart(2, '0')}</span> RESULTS</div>
+            {filtersOpen && (
+              <div className={styles.filterPanel} id="filters-panel" role="dialog" aria-label="Hackathon filters">
+                <div className={styles.filterPanelHeader}>
+                  <span className={styles.filterPanelTitle}>FILTERS</span>
+                  <button className={styles.panelClose} type="button" onClick={() => setFiltersOpen(false)} aria-label="Close filters"><X aria-hidden="true" /></button>
+                </div>
+                <div className={styles.filterPanelGrid}>
+                  <fieldset className={styles.filterGroup}>
+                    <legend>Location</legend>
+                    <div className={styles.filterChips}>
+                      {locationFilters.map((filter) => <button className={`${styles.filterChip} ${locationFilter === filter ? styles.filterChipActive : ''}`} key={filter} type="button" aria-pressed={locationFilter === filter} onClick={() => setLocationFilter(filter)}>{filter}</button>)}
+                    </div>
+                  </fieldset>
+                  <fieldset className={styles.filterGroup}>
+                    <legend>Dates</legend>
+                    <div className={styles.dateFilters}>
+                      <label className={styles.dateField}>From <input className={styles.dateInput} type="date" value={fromDate} onChange={(event) => setFromDate(event.target.value)} /></label>
+                      <label className={styles.dateField}>To <input className={styles.dateInput} type="date" value={toDate} onChange={(event) => setToDate(event.target.value)} /></label>
+                    </div>
+                    <div className={styles.filterChips}>
+                      <button className={`${styles.filterChip} ${activeFilter === 'This Week' ? styles.filterChipActive : ''}`} type="button" aria-pressed={activeFilter === 'This Week'} onClick={() => setActiveFilter('This Week')}>This Week</button>
+                      <button className={styles.filterChip} type="button" onClick={() => {
+                        const today = new Date()
+                        const daysUntilSaturday = (6 - today.getDay() + 7) % 7
+                        const weekendStart = today.getDay() === 0 ? today : addDays(today, daysUntilSaturday)
+                        setDateRange(weekendStart, addDays(weekendStart, 1))
+                      }}>This weekend</button>
+                      <button className={styles.filterChip} type="button" onClick={() => {
+                        const today = new Date()
+                        const monthStart = new Date(today.getFullYear(), today.getMonth(), 1)
+                        setDateRange(monthStart, new Date(today.getFullYear(), today.getMonth() + 1, 0))
+                      }}>This month</button>
+                      <button className={styles.filterChip} type="button" onClick={() => {
+                        const today = new Date()
+                        const nextMonthStart = new Date(today.getFullYear(), today.getMonth() + 1, 1)
+                        setDateRange(nextMonthStart, new Date(today.getFullYear(), today.getMonth() + 2, 0))
+                      }}>Next month</button>
+                    </div>
+                  </fieldset>
+                  <fieldset className={styles.filterGroup}>
+                    <legend>Prize</legend>
+                    <div className={styles.filterChips}>
+                      {prizeFilters.map((filter) => <button className={`${styles.filterChip} ${prizeFilter === filter ? styles.filterChipActive : ''}`} key={filter} type="button" aria-pressed={prizeFilter === filter} onClick={() => setPrizeFilter(filter)}>{filter}</button>)}
+                    </div>
+                  </fieldset>
+                  <fieldset className={styles.filterGroup}>
+                    <legend>More</legend>
+                    <div className={styles.filterChips}>
+                      <button className={`${styles.filterChip} ${activeFilter === 'Free Entry' ? styles.filterChipActive : ''}`} type="button" aria-pressed={activeFilter === 'Free Entry'} onClick={() => setActiveFilter('Free Entry')}>Free entry</button>
+                      <button className={`${styles.filterChip} ${activeFilter === 'Internship / Jobs' ? styles.filterChipActive : ''}`} type="button" aria-pressed={activeFilter === 'Internship / Jobs'} onClick={() => setActiveFilter('Internship / Jobs')}>Internship / Jobs</button>
+                    </div>
+                  </fieldset>
+                </div>
+                <div className={styles.filterPanelFooter}>
+                  <button className={styles.clearPanelButton} type="button" onClick={clearFilters}>Clear all</button>
+                  <button className={styles.applyButton} type="button" onClick={() => setFiltersOpen(false)}>Apply / close</button>
+                </div>
+              </div>
+            )}
           </div>
-          <div className={styles.filterRow}>
-            <div className={styles.filterChips} role="group" aria-label="Filter by location">
-              {locationFilters.map((filter) => (
-                <button className={`${styles.filterChip} ${locationFilter === filter ? styles.filterChipActive : ''}`} key={filter} type="button" aria-pressed={locationFilter === filter} onClick={() => setLocationFilter(filter)}>
-                  {filter}
-                </button>
-              ))}
+          {activeFilterCount > 0 && (
+            <div className={styles.activeFilters} aria-label="Active filters">
+              {selectedStacks.map((stack) => <button className={styles.activeChip} key={stack} type="button" onClick={() => setSelectedStacks(selectedStacks.filter((item) => item !== stack))}>{stack}<X aria-hidden="true" /></button>)}
+              {activeFilter !== 'All' && <button className={styles.activeChip} type="button" onClick={() => setActiveFilter('All')}>{activeFilter}<X aria-hidden="true" /></button>}
+              {locationFilter !== 'Anywhere' && <button className={styles.activeChip} type="button" onClick={() => setLocationFilter('Anywhere')}>{locationFilter}<X aria-hidden="true" /></button>}
+              {(fromDate || toDate) && <button className={styles.activeChip} type="button" onClick={() => { setFromDate(''); setToDate('') }}>Dates<X aria-hidden="true" /></button>}
+              {prizeFilter !== 'Any' && <button className={styles.activeChip} type="button" onClick={() => setPrizeFilter('Any')}>{prizeFilter}<X aria-hidden="true" /></button>}
             </div>
-          </div>
-          <div className={styles.filterRow}>
-            <div className={styles.dateFilters}>
-              <label className={styles.dateField}>From <input className={styles.dateInput} type="date" value={fromDate} onChange={(event) => setFromDate(event.target.value)} /></label>
-              <label className={styles.dateField}>To <input className={styles.dateInput} type="date" value={toDate} onChange={(event) => setToDate(event.target.value)} /></label>
-              <button className={styles.filterChip} type="button" onClick={() => {
-                const today = new Date()
-                const daysUntilSaturday = (6 - today.getDay() + 7) % 7
-                const weekendStart = today.getDay() === 0 ? today : addDays(today, daysUntilSaturday)
-                setDateRange(weekendStart, addDays(weekendStart, 1))
-              }}>This weekend</button>
-              <button className={styles.filterChip} type="button" onClick={() => {
-                const today = new Date()
-                const monthStart = new Date(today.getFullYear(), today.getMonth(), 1)
-                setDateRange(monthStart, new Date(today.getFullYear(), today.getMonth() + 1, 0))
-              }}>This month</button>
-              <button className={styles.filterChip} type="button" onClick={() => {
-                const today = new Date()
-                const nextMonthStart = new Date(today.getFullYear(), today.getMonth() + 1, 1)
-                setDateRange(nextMonthStart, new Date(today.getFullYear(), today.getMonth() + 2, 0))
-              }}>Next month</button>
-              <button className={styles.filterChip} type="button" onClick={() => {
-                setFromDate('')
-                setToDate('')
-              }}>Clear dates</button>
-            </div>
-          </div>
-          <div className={styles.filterRow}>
-            <div className={styles.filterChips} role="group" aria-label="Filter by minimum prize">
-              {prizeFilters.map((filter) => (
-                <button className={`${styles.filterChip} ${prizeFilter === filter ? styles.filterChipActive : ''}`} key={filter} type="button" aria-pressed={prizeFilter === filter} onClick={() => setPrizeFilter(filter)}>
-                  {filter}
-                </button>
-              ))}
-            </div>
-            <div className={styles.filterChips} role="group" aria-label="Sort hackathons">
-              {sortOptions.map((option) => (
-                <button className={`${styles.filterChip} ${sortOption === option ? styles.filterChipActive : ''}`} key={option} type="button" aria-pressed={sortOption === option} onClick={() => setSortOption(option)}>
-                  {option}
-                </button>
-              ))}
-            </div>
-          </div>
+          )}
 
           {isLoading && <div className={styles.emptyState}>Loading hackathons…</div>}
           {loadError && <div className={styles.emptyState}>{loadError}</div>}
