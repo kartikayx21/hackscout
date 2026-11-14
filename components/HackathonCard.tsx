@@ -110,7 +110,7 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10, scale: 0.98 }}
       transition={prefersReducedMotion ? { duration: 0.01 } : { type: 'spring', stiffness: 300, damping: 24, delay: index * 0.06 }}
-      whileHover={prefersReducedMotion ? undefined : { y: -6 }}
+      whileHover={prefersReducedMotion ? undefined : { y: -3 }}
       onMouseMove={(event) => {
         const bounds = event.currentTarget.getBoundingClientRect()
         event.currentTarget.style.setProperty('--mx', `${event.clientX - bounds.left}px`)

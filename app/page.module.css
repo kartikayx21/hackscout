@@ -312,7 +312,7 @@
 .activeChip svg { width: 11px; height: 11px; }
 .eventGrid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-5); }
 .cardSlot { display: flex; min-height: 0; }
-.eventCard { width: 100%; min-height: 360px; height: 100%; padding: var(--space-5); border-radius: var(--radius-lg); }
+.eventCard { width: 100%; min-height: 435px; height: 435px; padding: var(--space-5); border-radius: var(--radius-lg); }
 .cardTitle { min-height: 54px; margin: var(--space-4) 0 var(--space-1); font-size: var(--font-lg); line-height: 1.35; }
 .organizer { min-height: 17px; font-size: var(--font-sm); }
 .metaList { gap: var(--space-2); margin-top: var(--space-4); }
@@ -331,10 +331,27 @@
 .detailsButton { padding: 0 var(--space-3); }
 .detailsButton svg { width: 13px; height: 13px; }
 .siteFooter { width: min(var(--content-max), calc(100% - var(--space-7) * 2)); }
+.siteHeader { z-index: 40; background: rgba(7,8,10,.94); }
+.hero { min-height: 286px; gap: var(--space-6); padding: var(--space-6) 0 var(--space-5); }
+.hero h1 { font-size: clamp(2.9rem, 5vw, 4.8rem); }
+.heroDescription { line-height: 1.5; }
+.heroTerminal { align-items: center; }
+.terminalPanel { min-height: 190px; }
+.toolbarShell { z-index: 15; }
+.stackPopover, .filterPanel { z-index: 30; }
+.sectionKicker, .indexedNote, .resultCount, .sourceLabel, .modeBadge, .deadlineText, .terminalHeader, .terminalFooter, .popoverCaption, .popoverFooter, .filterPanelTitle {
+  font-size: var(--font-xs);
+  font-weight: 450;
+  letter-spacing: .045em;
+}
+.sectionHeading h2 { font-size: var(--font-lg); font-weight: 500; }
+.metaRow { font-size: var(--font-sm); font-weight: 450; }
+.filtersButton, .sortControl select, .modeSegment button, .filterChip, .detailsButton, .calendarButton { font-weight: 500; }
+.cardActions { min-height: 34px; align-items: center; }
 
 @media (max-width: 1024px) {
   .mainContent { width: min(var(--content-max), calc(100% - var(--space-6) * 2)); }
-  .hero { grid-template-columns: minmax(0, 1.05fr) minmax(280px, .75fr); gap: var(--space-5); padding: var(--space-6) 0 var(--space-5); }
+  .hero { grid-template-columns: minmax(0, 1.05fr) minmax(280px, .75fr); gap: var(--space-5); padding: var(--space-5) 0 var(--space-4); }
   .heroTerminal { display: flex; }
   .hero h1 { font-size: clamp(2.8rem, 6vw, 4.5rem); }
   .toolbar { flex-wrap: wrap; }
@@ -343,7 +360,7 @@
 }
 @media (max-width: 768px) {
   .mainContent { width: calc(100% - var(--space-5) * 2); }
-  .hero { grid-template-columns: 1fr; min-height: 0; padding: var(--space-6) 0 var(--space-5); }
+  .hero { grid-template-columns: 1fr; min-height: 0; padding: var(--space-5) 0 var(--space-4); }
   .heroTerminal { justify-content: stretch; }
   .terminalPanel { width: 100%; min-height: 180px; }
   .toolbar { padding: var(--space-2); }
@@ -359,15 +376,23 @@
 }
 @media (max-width: 480px) {
   .mainContent { width: calc(100% - var(--space-5) * 2); }
-  .hero { padding: var(--space-5) 0 var(--space-4); }
+  .hero { padding: var(--space-4) 0 var(--space-4); }
   .hero h1 { font-size: clamp(2.8rem, 13vw, 4rem); }
   .toolbar .stackTrigger { padding: 0 var(--space-3); }
   .toolbar .stackTrigger > span { display: inline; }
   .modeSegment button { padding: 0 var(--space-2); }
   .filtersButton { padding: 0 var(--space-2); }
-  .sortControl select { max-width: 132px; padding-left: var(--space-2); }
+  .sortControl select { padding-left: var(--space-2); }
   .resultCount { width: 100%; margin-left: 0; padding: var(--space-1) 0 0; text-align: right; }
-  .eventCard { min-height: 350px; padding: var(--space-4); }
+  .eventCard { min-height: 420px; height: 420px; padding: var(--space-4); }
   .cardTitle { font-size: 18px; }
   .cardActions { justify-content: flex-end; }
+}
+@media (max-width: 639px) {
+  .toolbar { gap: var(--space-2); }
+  .toolbar .stackTrigger, .modeSegment, .filtersButton, .sortControl select { min-height: 42px; }
+  .toolbar .stackTrigger { height: 42px; }
+  .modeSegment button { min-height: 32px; }
+  .sortControl { width: 100%; flex: 0 0 100%; order: 5; }
+  .sortControl select { width: 100%; max-width: none; }
 }
