@@ -153,9 +153,9 @@
 .tagData { border-color: rgba(114,190,176,.22); background: rgba(114,190,176,.09); color: #9dcfc4; }
 .tagBlockchain { border-color: rgba(216,137,151,.23); background: rgba(216,137,151,.09); color: #daa8b1; }
 .tagDefault { border-color: rgba(255,255,255,.1); background: rgba(255,255,255,.035); color: #a0a4ad; }
-.cardFooter { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 14px; }
-.deadlineGroup { min-width: 100px; flex: 1; }
-.cardActions { display: flex; flex: 0 1 auto; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
+.cardFooter { display: flex; align-items: stretch; flex-direction: column; gap: 12px; margin-top: auto; padding-top: 14px; }
+.deadlineGroup { width: 100%; min-width: 0; }
+.cardActions { display: flex; width: 100%; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
 .deadlineText { display: block; overflow: hidden; margin-bottom: 7px; color: #747982; font-size: 8px; letter-spacing: .055em; text-overflow: ellipsis; white-space: nowrap; }
 .progressTrack { width: 100%; height: 2px; overflow: hidden; border-radius: 2px; background: rgba(255,255,255,.09); }
 .progressTrack span { display: block; height: 100%; border-radius: inherit; background: rgba(198,244,50,.67); }
