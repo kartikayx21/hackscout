@@ -6,7 +6,9 @@ import { ArrowDownRight, ArrowUpRight, Menu, Search, SlidersHorizontal, X } from
 import { AgentTerminal } from '@/components/AgentTerminal'
 import { HackathonCard } from '@/components/HackathonCard'
 import { TechStackDropdown } from '@/components/TechStackDropdown'
+import type { TechStackOption } from '@/components/TechStackDropdown'
 import type { Hackathon } from '@/data/hackathons'
+import { normalizeSkill, skillKey } from '@/lib/skills'
 import styles from './page.module.css'
 
 type Filter = 'All' | 'Online' | 'Offline' | 'This Week' | 'Free Entry' | 'Internship / Jobs'
@@ -70,7 +72,31 @@ export default function Page() {
     return () => controller.abort()
   }, [])
 
-  const stackOptions = useMemo(() => Array.from(new Set(hackathons.flatMap((hackathon) => hackathon.techStack))).sort(), [hackathons])
+  const stackOptions = useMemo<TechStackOption[]>(() => {
+    const counts = new Map<string, { count: number; variants: Map<string, number> }>()
+    for (const hackathon of hackathons) {
+      const eventSkills = new Map<string, string>()
+      for (const rawSkill of hackathon.techStack) {
+        const skill = normalizeSkill(rawSkill)
+        const key = skillKey(skill)
+        if (!eventSkills.has(key)) eventSkills.set(key, skill)
+      }
+      for (const skill of eventSkills.values()) {
+        const key = skillKey(skill)
+        const current = counts.get(key)
+        if (current) {
+          current.count += 1
+          current.variants.set(skill, (current.variants.get(skill) ?? 0) + 1)
+        } else {
+          counts.set(key, { count: 1, variants: new Map([[skill, 1]]) })
+        }
+      }
+    }
+    return Array.from(counts.values()).map(({ count, variants }) => {
+      const label = Array.from(variants.entries()).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0][0]
+      return { label, count }
+    }).sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
+  }, [hackathons])
   const sourceCount = useMemo(() => new Set(hackathons.map((hackathon) => hackathon.source)).size, [hackathons])
   const sourceNames = useMemo(() => Array.from(new Set(hackathons.map((hackathon) => hackathon.source))), [hackathons])
 
@@ -102,7 +128,7 @@ export default function Page() {
       const eventDate = hackathon.startDate ?? hackathon.endDate
       const locationText = [hackathon.location, hackathon.city, hackathon.state, hackathon.country].filter(Boolean).join(' ').toLowerCase()
       const country = hackathon.country?.trim().toLowerCase()
-      const searchable = [hackathon.title, hackathon.organizer, hackathon.source, locationText, ...hackathon.techStack].filter(Boolean).join(' ').toLowerCase()
+      const searchable = [hackathon.title, hackathon.organizer, hackathon.source, locationText, ...hackathon.techStack.map(normalizeSkill)].filter(Boolean).join(' ').toLowerCase()
       const matchesQuery = !normalizedQuery || searchable.includes(normalizedQuery)
       const matchesFilter = activeFilter === 'All'
         || (activeFilter === 'Online' && hackathon.mode === 'Online')
@@ -114,7 +140,7 @@ export default function Page() {
       const eventEndDate = hackathon.endDate ?? hackathon.startDate
       const matchesDateRange = (!fromDate && !toDate)
         || (eventStart !== null && eventEndDate !== null && (!fromDate || eventEndDate >= fromDate) && (!toDate || eventStart <= toDate))
-      const matchesStacks = selectedStacks.length === 0 || selectedStacks.some((stack) => hackathon.techStack.some((item) => item.toLowerCase() === stack.toLowerCase()))
+      const matchesStacks = selectedStacks.length === 0 || selectedStacks.some((stack) => hackathon.techStack.some((item) => skillKey(item) === skillKey(stack)))
       const matchesLocation = locationFilter === 'Anywhere'
         || (locationFilter === 'Online' && hackathon.mode === 'Online')
         || (locationFilter === 'India' && (country === 'india' || locationText.includes('india') || indiaLocations.some((location) => locationText.includes(location.toLowerCase()))))

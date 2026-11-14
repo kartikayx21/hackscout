@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowUpRight, CalendarDays, CalendarPlus, MapPin, Trophy, Users } from 'lucide-react'
 import type { Hackathon } from '@/data/hackathons'
+import { normalizeSkill } from '@/lib/skills'
 import styles from '@/app/page.module.css'
 
 function formatDate(value: string | null) {
@@ -92,7 +93,7 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
   const prefersReducedMotion = useReducedMotion()
   const daysRemaining = getDaysUntil(hackathon.registrationDeadline)
   const isRegistrationClosed = isDeadlineClosed(hackathon.registrationDeadline)
-  const uniqueTechStack = hackathon.techStack.filter((tag, index, techStack) => (
+  const uniqueTechStack = hackathon.techStack.map(normalizeSkill).filter((tag, index, techStack) => (
     techStack.findIndex((candidate) => candidate.toLowerCase() === tag.toLowerCase()) === index
   ))
   const visibleStack = uniqueTechStack.slice(0, 4)

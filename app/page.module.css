@@ -97,11 +97,17 @@
 .stackTrigger > svg:first-child { width: 15px; height: 15px; color: #8d929a; }
 .stackTrigger .chevron { width: 13px; height: 13px; color: #777c85; transition: transform .18s ease; }
 .stackTriggerOpen .chevron { transform: rotate(180deg); }
-.stackPopover { position: absolute; z-index: 15; top: calc(100% + 9px); right: 0; width: 238px; padding: 11px; border-radius: 12px; background: rgba(17,19,23,.97); box-shadow: 0 18px 46px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06); transform-origin: top right; }
+.stackPopover { position: absolute; z-index: 15; top: calc(100% + 9px); right: 0; display: flex; max-height: min(320px, calc(100vh - 24px)); width: 238px; flex-direction: column; padding: 11px; border-radius: 12px; background: rgba(17,19,23,.97); box-shadow: 0 18px 46px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06); transform-origin: top right; }
 .popoverCaption { padding: 3px 8px 9px; color: var(--text-faint); font-size: 8px; }
+.stackSearch { width: 100%; min-height: 30px; margin-bottom: 7px; padding: 0 9px; border: 1px solid rgba(255,255,255,.1); border-radius: 7px; outline: 0; background: rgba(255,255,255,.035); color: var(--text); font: inherit; font-size: 11px; }
+.stackSearch:focus { border-color: var(--accent); }
+.stackSearch::placeholder { color: #777c85; }
+.stackOptions { min-height: 0; overflow-y: auto; }
 .stackOption { width: 100%; display: flex; align-items: center; gap: 10px; padding: 8px; border: 0; border-radius: 7px; background: transparent; color: #a9adb4; text-align: left; font-size: 12px; cursor: pointer; transition: background-color .16s ease, color .16s ease; }
 .stackOption:hover { background: rgba(255,255,255,.055); color: var(--text); }
 .stackOptionSelected { color: var(--text); }
+.stackOptionCount { margin-left: auto; color: var(--text-faint); font-size: 10px; }
+.stackMore { width: 100%; padding: 8px; border: 0; background: transparent; color: var(--accent); text-align: left; font: inherit; font-size: 9px; cursor: pointer; }
 .checkbox { width: 14px; height: 14px; display: grid; flex: 0 0 auto; place-items: center; border: 1px solid rgba(255,255,255,.19); border-radius: 4px; color: #11130c; }
 .checkboxChecked { border-color: var(--accent); background: var(--accent); }
 .checkbox svg { width: 10px; height: 10px; stroke-width: 2.5; }
