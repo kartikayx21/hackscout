@@ -1,288 +1,5 @@
 [
   {
-    "id": "d957bc2099f945e99edfae0c2972bed9",
-    "title": "DevNexus 2.0",
-    "organizer": null,
-    "source": "Devfolio",
-    "url": "https://devnexushackathon.in/",
-    "mode": "Offline",
-    "location": "Government College of Engineering and Leather Technology, Eastern Metropolitan Bypass, LB Block, Sector 3, Bidhannagar, Kolkata, West Bengal, India",
-    "city": "Kolkata",
-    "state": "West Bengal",
-    "country": "India",
-    "startDate": "2026-11-27",
-    "endDate": "2026-11-28",
-    "registrationDeadline": "2026-11-13",
-    "prizeText": null,
-    "prizeAmountINR": null,
-    "teamSize": "2-4",
-    "techStack": [],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1789431",
-    "title": "AI Vibeathon 2026: 24-Hour AI Hackathon",
-    "organizer": "DotRepo",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/ai-vibeathon-2026-24-hour-ai-hackathon-dotrepo-1789431",
-    "mode": "Online",
-    "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": null,
-    "endDate": "2026-12-20",
-    "registrationDeadline": "2026-11-13",
-    "prizeText": "50000 INR; Opus AI Credits: $1,000 worth.; 25000 INR; 10000 INR; 15000 INR; $15,000 in AI credits to build, innovate, and scale your AI solutions!",
-    "prizeAmountINR": 100000.0,
-    "teamSize": "1-4",
-    "techStack": [
-      "Artificial Intelligence",
-      "Python"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1790269",
-    "title": "Cognition- AI Hackathon",
-    "organizer": "Sri Guru Gobind Singh College of Commerce (SGGSCC), New Delhi",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/cognition-ai-hackathon-techtonics-sri-guru-gobind-singh-college-of-commerce-sggscc-new-delhi-1790269",
-    "mode": "Offline",
-    "location": "Sri Guru Gobind Singh College of Commerce, New Delhi, Delhi, India",
-    "city": "New Delhi",
-    "state": "Delhi",
-    "country": "India",
-    "startDate": null,
-    "endDate": "2026-12-17",
-    "registrationDeadline": "2026-11-13",
-    "prizeText": "5000 INR; 3000 INR; 2000 INR",
-    "prizeAmountINR": 10000.0,
-    "teamSize": "2-4",
-    "techStack": [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "UI/UX Design",
-      "Artificial Intelligence (AI)"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1784666",
-    "title": "Hackday",
-    "organizer": "TrishulX",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/hackday-trishulx-1784666",
-    "mode": "Online",
-    "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": null,
-    "endDate": "2026-11-15",
-    "registrationDeadline": "2026-11-13",
-    "prizeText": null,
-    "prizeAmountINR": null,
-    "teamSize": "1-4",
-    "techStack": [
-      "Software Development Life Cycle (SDLC)"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1774877",
-    "title": "NASA Space Apps Challenge 2026",
-    "organizer": "Rishihood University",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/nasa-space-apps-challenge-2026-rishihood-university-1774877",
-    "mode": "Hybrid",
-    "location": "Rishihood University, Sonipat, Haryana, India",
-    "city": "Sonipat",
-    "state": "Haryana",
-    "country": null,
-    "startDate": null,
-    "endDate": "2026-11-13",
-    "registrationDeadline": "2026-11-13",
-    "prizeText": null,
-    "prizeAmountINR": null,
-    "teamSize": "1-6",
-    "techStack": [
-      "Research Skills"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1772846",
-    "title": "FirstCommit '26 — National Online Hackathon ",
-    "organizer": "Campus Code",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/firstcommit-26-national-online-hackathon-by-campuscode-campus-code-1772846",
-    "mode": "Online",
-    "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": null,
-    "endDate": "2026-11-17",
-    "registrationDeadline": "2026-11-13",
-    "prizeText": "1500 INR; 1,500 cash prize + CampusCode Winner Certificate (verifiable online); 1000 INR; 1,000 cash prize + CampusCode Runner-up Certificate (verifiable online); 500 INR; 500 cash prize + CampusCode Runner-up Certificate (verifiable online); Participation certificate who joined the hackthon",
-    "prizeAmountINR": 3000.0,
-    "teamSize": "1-4",
-    "techStack": [],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1770621",
-    "title": "Build Your Bharat Hackathon (BYB)",
-    "organizer": "Next Bharat Ventures",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/build-your-bharat-hackathon-byb-build-your-bharatbyb-hackathon-next-bharat-ventures-1770621",
-    "mode": "Offline",
-    "location": "IIT Hyderabad, Hyderabad, Telangana, India",
-    "city": "Hyderabad",
-    "state": "Telangana",
-    "country": "India",
-    "startDate": null,
-    "endDate": "2026-11-21",
-    "registrationDeadline": "2026-11-13",
-    "prizeText": null,
-    "prizeAmountINR": null,
-    "teamSize": "3-5",
-    "techStack": [
-      "Entrepreneurship",
-      "Ideation",
-      "Problem Solving"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1770284",
-    "title": "InnovaThon - Faculty of Engineering and Technology Agra College X Nimblux",
-    "organizer": "NIMBLUX",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/innovathon-faculty-of-engineering-and-technology-agra-college-x-nimblux-nimblux-1770284",
-    "mode": "Hybrid",
-    "location": "Faculty of Engineering & Technology Agra College, Agra, Agra, Uttar Pradesh, India",
-    "city": "Agra",
-    "state": "Uttar Pradesh",
-    "country": "India",
-    "startDate": null,
-    "endDate": "2026-11-21",
-    "registrationDeadline": "2026-11-13",
-    "prizeText": "25000 INR; 15000 INR; 10000 INR",
-    "prizeAmountINR": 50000.0,
-    "teamSize": "2-4",
-    "techStack": [
-      "Creative Thinking",
-      "Problem Solving",
-      "Technical Skills",
-      "Teamwork and Collaboration",
-      "Public Speaking"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1746976",
-    "title": "AgentX | Agentic AI Showcase",
-    "organizer": "Sahyadri College of Engineering & Management (SCEM), Mangaluru",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/agentic-ai-hackathon-aerophilia-sahyadri-college-of-engineering-management-scem-mangaluru-1746976",
-    "mode": "Offline",
-    "location": "Sahyadri College of Engineering and Management,Adyar, Mangaluru, Karnataka 575007, India., Mangaluru, Karnataka, India",
-    "city": "Mangaluru",
-    "state": "Karnataka",
-    "country": "India",
-    "startDate": null,
-    "endDate": "2026-11-13",
-    "registrationDeadline": "2026-11-13",
-    "prizeText": "10000 INR; 5000 INR",
-    "prizeAmountINR": 15000.0,
-    "teamSize": "2-4",
-    "techStack": [
-      "Artificial Intelligence (AI)",
-      "API Integration",
-      "Autonomous Systems"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1798658",
-    "title": "Change For Build",
-    "organizer": "Shri Vishwakarma Skill University",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/change-for-build-shri-vishwakarma-skill-university-1798658",
-    "mode": "Offline",
-    "location": "102 E1, Shri Vishwakarma Skill University (SVSU), Palwal, Haryana, India",
-    "city": "Palwal",
-    "state": "Haryana",
-    "country": "India",
-    "startDate": null,
-    "endDate": "2026-11-14",
-    "registrationDeadline": "2026-11-14",
-    "prizeText": null,
-    "prizeAmountINR": null,
-    "teamSize": "1-4",
-    "techStack": [],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1791573",
-    "title": "MassX CTF 2026",
-    "organizer": "Panipat Institute of Engineering & Technology (PIET), Panipat",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/massx-ctf-2026-panipat-institute-of-engineering-technology-piet-panipat-1791573",
-    "mode": "Online",
-    "location": "online",
-    "city": "Panipat",
-    "state": null,
-    "country": null,
-    "startDate": null,
-    "endDate": "2026-11-14",
-    "registrationDeadline": "2026-11-14",
-    "prizeText": null,
-    "prizeAmountINR": null,
-    "teamSize": "1",
-    "techStack": [
-      "Cybersecurity",
-      "Ethical Hacking"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
     "id": "1783135",
     "title": "WebClone Mania",
     "organizer": "National Institute of Technology (NIT), Rourkela",
@@ -305,12 +22,12 @@
       "HTML",
       "React.js",
       "Node.js",
-      "MongoDB"
+      "Express.js"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1780735",
@@ -329,45 +46,11 @@
     "prizeText": "5500 INR; Additional in-kind prizes; 4000 INR; Additional in-kind prizes; 2500 INR; Additional in-kind prizes",
     "prizeAmountINR": 12000.0,
     "teamSize": "2-4",
-    "techStack": [
-      "Problem Solving",
-      "Creativity",
-      "Teamwork and Collaboration",
-      "Brainstorming",
-      "Public Speaking"
-    ],
+    "techStack": [],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1771798",
-    "title": "Catalyst - Solo AI Hackathon",
-    "organizer": "Makers Need More (MnM)",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/catalyst-solo-ai-hackathon-makers-need-more-mnm-1771798",
-    "mode": "Online",
-    "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": null,
-    "endDate": "2026-11-15",
-    "registrationDeadline": "2026-11-14",
-    "prizeText": "15000 INR; Get an opportunity to work with the core team behind MnM.",
-    "prizeAmountINR": 15000.0,
-    "teamSize": "1",
-    "techStack": [
-      "Artificial Intelligence",
-      "Creative Thinking",
-      "Problem Solving",
-      "Technical Skills"
-    ],
-    "hasInternship": true,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1765493",
@@ -387,44 +70,15 @@
     "prizeAmountINR": 20000.0,
     "teamSize": "3",
     "techStack": [
-      "Data Structures and Algorithms",
-      "Problem Solving",
+      "Data Structures",
+      "Algorithms",
       "C++",
-      "Python",
-      "Teamwork and Collaboration"
+      "Python"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1763117",
-    "title": "InIt CTF",
-    "organizer": "HIII (Hackers In India)",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/init-ctf-init-ctf-hiii-hackers-in-india-1763117",
-    "mode": "Online",
-    "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": null,
-    "endDate": "2026-11-14",
-    "registrationDeadline": "2026-11-14",
-    "prizeText": "6 Months Try Hack Me Subscription; 3 Months Try Hack Me Subscription; 1 Month Try Hack Me Subscription; Free .xyz domains for a year",
-    "prizeAmountINR": null,
-    "teamSize": "1-4",
-    "techStack": [
-      "Web Security",
-      "OSINT",
-      "Digital Forensics",
-      "Ethical Hacking"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1756262",
@@ -444,14 +98,12 @@
     "prizeAmountINR": 50000.0,
     "teamSize": "1-4",
     "techStack": [
-      "Agile",
-      "Zoom",
       "Git"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "40f5203a0b9842038b51dd3f73236690",
@@ -473,10 +125,10 @@
     "techStack": [
       "Design"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1801814",
@@ -498,13 +150,12 @@
     "techStack": [
       "Java",
       "Python",
-      "Data Structures and Algorithms",
-      "Problem Solving"
+      "Data Structures and Algorithms"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1794884",
@@ -524,16 +175,15 @@
     "prizeAmountINR": 35000.0,
     "teamSize": "1",
     "techStack": [
-      "Problem Solving",
       "Data Structures and Algorithms",
-      "API Development (REST)",
+      "API Development",
       "Database Management Systems (DBMS)",
       "System Architecture"
     ],
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1778710",
@@ -545,7 +195,7 @@
     "location": "Hall 406 - MSIT, Janakpuri, New Delhi, Delhi, India",
     "city": "New Delhi",
     "state": "Delhi",
-    "country": "India",
+    "country": null,
     "startDate": null,
     "endDate": "2026-11-18",
     "registrationDeadline": "2026-11-15",
@@ -553,17 +203,45 @@
     "prizeAmountINR": null,
     "teamSize": "1-4",
     "techStack": [
-      "Robotics",
-      "Embedded Systems",
-      "Artificial Intelligence (AI)",
-      "Digital Twin",
+      "Robotics Control Systems",
+      "Embedded Systems Design",
+      "Artificial Intelligence",
+      "Digital Twin Technology",
       "Machine Learning",
-      "SaaS"
+      "Embedded Programming"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1771951",
+    "title": "Competitive Programming",
+    "organizer": "Acharya Institute of Technology",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/competitive-programming-acharya-institute-of-technology-1771951",
+    "mode": "Offline",
+    "location": "Acharya Institute of Technology, Bangalore, Karnataka, India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India",
+    "startDate": null,
+    "endDate": "2026-11-20",
+    "registrationDeadline": "2026-11-15",
+    "prizeText": "2000 INR",
+    "prizeAmountINR": 2000.0,
+    "teamSize": "1",
+    "techStack": [
+      "Data Structures and Algorithms",
+      "C++",
+      "Python",
+      "Problem Solving"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": true,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799543",
@@ -584,41 +262,12 @@
     "teamSize": "1-2",
     "techStack": [
       "Data Analysis",
-      "Dashboard Development",
-      "Statistics",
-      "Data Storytelling"
+      "Statistics"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1771951",
-    "title": "Competitive Programming",
-    "organizer": "Acharya Institute of Technology",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/competitive-programming-acharya-institute-of-technology-1771951",
-    "mode": "Offline",
-    "location": "Acharya Institute of Technology, Bangalore, Karnataka, India",
-    "city": "Bangalore",
-    "state": "Karnataka",
-    "country": "India",
-    "startDate": null,
-    "endDate": "2026-11-20",
-    "registrationDeadline": "2026-11-15",
-    "prizeText": "2000",
-    "prizeAmountINR": null,
-    "teamSize": "1",
-    "techStack": [
-      "C++",
-      "Python",
-      "Data Structures and Algorithms"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1772221",
@@ -644,7 +293,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1786997",
@@ -663,11 +312,13 @@
     "prizeText": null,
     "prizeAmountINR": null,
     "teamSize": "3-5",
-    "techStack": [],
+    "techStack": [
+      "Software Development Life Cycle (SDLC)"
+    ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1786809",
@@ -695,7 +346,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1784554",
@@ -717,13 +368,13 @@
     "techStack": [
       "UI/UX Design",
       "Visual Design",
-      "Web Accessibility (WCAG)",
+      "Web Accessibility",
       "Website Performance Optimization"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1775217",
@@ -743,13 +394,12 @@
     "prizeAmountINR": null,
     "teamSize": "1-4",
     "techStack": [
-      "Artificial Intelligence",
-      "Data-Driven Decision Making"
+      "Artificial Intelligence"
     ],
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1768041",
@@ -777,7 +427,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1770690",
@@ -797,14 +447,13 @@
     "prizeAmountINR": 30000.0,
     "teamSize": "1-5",
     "techStack": [
-      "Ideation",
-      "Project Management",
-      "Software Development"
+      "Software Development",
+      "Project Management"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1769121",
@@ -827,13 +476,12 @@
       "Artificial Intelligence",
       "GitHub",
       "Conversational AI",
-      "Automation Tools",
-      "Video Production"
+      "Automation"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1751032",
@@ -853,13 +501,61 @@
     "prizeAmountINR": null,
     "teamSize": "1-4",
     "techStack": [
-      "Sustainability",
-      "Research"
+      "Project Management"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1745979",
+    "title": "NASA Space Apps Challenge 2026",
+    "organizer": "National Institute of Technology (NIT), Raipur",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/nasa-space-apps-challenge-2026-national-institute-of-technology-nit-raipur-1745979",
+    "mode": "Online",
+    "location": "online",
+    "city": null,
+    "state": null,
+    "country": null,
+    "startDate": null,
+    "endDate": "2026-11-15",
+    "registrationDeadline": "2026-11-15",
+    "prizeText": null,
+    "prizeAmountINR": null,
+    "teamSize": "1-6",
+    "techStack": [
+      "Artificial Intelligence (AI)",
+      "Data Science"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": true,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "d957bc2099f945e99edfae0c2972bed9",
+    "title": "DevNexus 2.0",
+    "organizer": null,
+    "source": "Devfolio",
+    "url": "https://devnexushackathon.in/",
+    "mode": "Offline",
+    "location": "Government College of Engineering and Leather Technology, Eastern Metropolitan Bypass, LB Block, Sector 3, Bidhannagar, Kolkata, West Bengal, India",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "country": "India",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-28",
+    "registrationDeadline": "2026-11-16",
+    "prizeText": null,
+    "prizeAmountINR": null,
+    "teamSize": "2-4",
+    "techStack": [],
+    "hasInternship": null,
+    "perks": [],
+    "isFree": null,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1802400",
@@ -882,7 +578,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1790097",
@@ -892,7 +588,7 @@
     "url": "https://unstop.com/hackathons/wie-hackearth-20-galgotias-university-gu-greater-noida-1790097",
     "mode": "Offline",
     "location": "Galgotias University Knowledge Center (GUKC), Gautam Buddha Nagar, Uttar Pradesh, India",
-    "city": "Greater Noida",
+    "city": "Gautam Buddha Nagar",
     "state": "Uttar Pradesh",
     "country": "India",
     "startDate": null,
@@ -902,12 +598,12 @@
     "prizeAmountINR": null,
     "teamSize": "2-4",
     "techStack": [
-      "Artificial Intelligence"
+      "Artificial Intelligence (AI)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1773211",
@@ -928,14 +624,14 @@
     "teamSize": "1",
     "techStack": [
       "Conversational AI",
-      "Artificial Intelligence",
-      "API",
+      "Artificial Intelligence (AI)",
+      "API Integration",
       "Speech Recognition"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1771961",
@@ -955,15 +651,16 @@
     "prizeAmountINR": 6000.0,
     "teamSize": "2-3",
     "techStack": [
-      "Artificial Intelligence",
+      "Artificial Intelligence (AI)",
+      "Software Development Life Cycle (SDLC)",
       "UI/UX Design",
       "GitHub",
-      "Software Quality Assurance"
+      "Software Quality Assurance (QA)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1771958",
@@ -984,14 +681,42 @@
     "teamSize": "2-3",
     "techStack": [
       "Ethical Hacking",
-      "Web Security",
+      "Web Application Security Testing",
       "Digital Forensics",
+      "Open Source Intelligence (OSINT)",
       "Reverse Engineering"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1792758",
+    "title": "SupeRR Selector Season 2: Help Shape Rajasthan Royals' IPL 2027 Auction Strategy",
+    "organizer": "Rajasthan Royals",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/crp-superr-selector-season-2-help-shape-rajasthan-royals-ipl-2027-auction-strategy-rajasthan-royals-1792758",
+    "mode": "Hybrid",
+    "location": "103-104, B-Wing, Fulcrum, Hiranandani Business Park, Chhatrapati Shivaji Maharaj Int'l Airport Rd, Andheri East, Mumbai, Maharashtra 400099, Mumbai, Maharashtra, India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "country": "India",
+    "startDate": null,
+    "endDate": "2026-12-07",
+    "registrationDeadline": "2026-11-16",
+    "prizeText": "A fully sponsored trip to Goa to be present at the IPL 2027 auction with Rajasthan Royals, and the chance to present your strategy to Kumar Sangakkara and Giles Lindsay. Certificate included.; An all-expenses-paid trip to Mumbai, including travel and stay, plus an exclusive Rajasthan Royals merch kit, along with mentorship from RR team. Opportunity to work with Rajasthan Royals on a live project or internship basis(*subject to eligibility). Certificate included.; An additional 25 participants, beyond the top 16, will receive an exclusive Rajasthan Royals merch kit.",
+    "prizeAmountINR": null,
+    "teamSize": "1",
+    "techStack": [
+      "Data Analysis",
+      "Predictive Analytics",
+      "Dashboard Development"
+    ],
+    "hasInternship": true,
+    "perks": [],
+    "isFree": true,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1798470",
@@ -1015,10 +740,10 @@
       "C++",
       "Python"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799179",
@@ -1038,12 +763,12 @@
     "prizeAmountINR": null,
     "teamSize": "1-6",
     "techStack": [
-      "Artificial Intelligence"
+      "Artificial Intelligence (AI)"
     ],
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1779479",
@@ -1063,15 +788,16 @@
     "prizeAmountINR": null,
     "teamSize": "1-4",
     "techStack": [
-      "Artificial Intelligence",
-      "Robotics",
-      "Embedded Systems",
-      "Internet of Things"
+      "Artificial Intelligence (AI)",
+      "Autonomous Systems",
+      "Robotics Control Systems",
+      "Embedded Systems Design",
+      "Internet of Things (IoT)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1793030",
@@ -1091,12 +817,15 @@
     "prizeAmountINR": 400000.0,
     "teamSize": "3-4",
     "techStack": [
-      ".xyz"
+      "ElevenLabs",
+      "Fueler",
+      "CleanShot X",
+      "n8n"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "8b69c2039a8d4b4085c3869b9b25d9c9",
@@ -1119,10 +848,10 @@
       "Sustainability",
       "Emerging Technologies"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1800358",
@@ -1134,7 +863,7 @@
     "location": "MIT-ADT University, Pune, Pune, Maharashtra, India",
     "city": "Pune",
     "state": "Maharashtra",
-    "country": "India",
+    "country": null,
     "startDate": null,
     "endDate": "2026-11-18",
     "registrationDeadline": "2026-11-18",
@@ -1144,12 +873,13 @@
     "techStack": [
       "Ethical Hacking",
       "Vulnerability Assessment",
+      "Problem Solving",
       "Threat Analysis"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1794890",
@@ -1174,7 +904,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1781078",
@@ -1193,17 +923,11 @@
     "prizeText": "65000 INR; 45000 INR; 30000 INR; 5000 INR; Originality, creativity, uniqueness of the solution, and innovative use of technology.; 5000 INR; Code quality, technical complexity, system architecture, integration, and working prototype; 5000 INR; Potential to solve a real-world problem, societal benefit, inclusivity, and measurable impact.; 5000 INR; Usability, interface design, accessibility, user journey, and overall experience.; 5000 INR; Scalability, sustainability, commercial or adoption potential, and a realistic roadmap for future development.",
     "prizeAmountINR": 165000.0,
     "teamSize": "2-5",
-    "techStack": [
-      "Creativity",
-      "Problem Solving",
-      "Technical Skills",
-      "Teamwork and Collaboration",
-      "Public Speaking"
-    ],
+    "techStack": [],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1763060",
@@ -1223,15 +947,15 @@
     "prizeAmountINR": null,
     "teamSize": "1-5",
     "techStack": [
-      "Healthcare",
-      "UX Design",
       "Artificial Intelligence (AI)",
-      "HIPAA"
+      "UX Design",
+      "HIPAA Compliance",
+      "GDPR"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1769646",
@@ -1251,13 +975,15 @@
     "prizeAmountINR": null,
     "teamSize": "1-5",
     "techStack": [
-      "Data Analysis",
-      "Data Science"
+      "Data Analysis Tools",
+      "Data Science Tools",
+      "Problem Solving",
+      "Critical Thinking"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1771537",
@@ -1278,17 +1004,16 @@
     "teamSize": "2-4",
     "techStack": [
       "Machine Learning",
-      "Data Analysis",
-      "Problem Solving"
+      "Data Analysis"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1807596",
-    "title": "PromptWars X AITH ",
+    "title": "PromptWars X AITH Kanpur ",
     "organizer": "Dr. Ambedkar Institute of Technology for Divyangjan",
     "source": "Unstop",
     "url": "https://unstop.com/hackathons/promptwars-x-aith-dr-ambedkar-institute-of-technology-for-divyangjan-1807596",
@@ -1298,21 +1023,18 @@
     "state": "Uttar Pradesh",
     "country": "India",
     "startDate": null,
-    "endDate": "2026-11-20",
+    "endDate": "2026-11-23",
     "registrationDeadline": "2026-11-20",
     "prizeText": null,
     "prizeAmountINR": null,
     "teamSize": "1",
     "techStack": [
-      "Artificial Intelligence (AI)",
-      "Creative Thinking",
-      "Problem Solving",
-      "Innovation Management"
+      "Artificial Intelligence (AI)"
     ],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1800629",
@@ -1332,15 +1054,14 @@
     "prizeAmountINR": 225000.0,
     "teamSize": "2-5",
     "techStack": [
-      "Problem Solving",
       "Artificial Intelligence (AI)",
       "Internet of Things (IoT)",
-      "Data Analytics Tools"
+      "Data Analytics"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1794529",
@@ -1363,13 +1084,13 @@
       "Digital Signal Processing",
       "Machine Learning",
       "Digital Forensics",
-      "Cybersecurity",
-      "Digital Electronics"
+      "Digital Electronics",
+      "Cybersecurity"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1780048",
@@ -1389,13 +1110,12 @@
     "prizeAmountINR": 1246000.0,
     "teamSize": "1-4",
     "techStack": [
-      "Artificial Intelligence",
-      "Innovation Management"
+      "Artificial Intelligence (AI)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1775867",
@@ -1416,13 +1136,12 @@
     "teamSize": "1",
     "techStack": [
       "Web Application Security",
-      "Vulnerability Assessment",
       "API Security"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1773675",
@@ -1434,20 +1153,18 @@
     "location": "BMS Institute of Technology and Management, Bangalore, Karnataka, India",
     "city": "Bangalore",
     "state": "Karnataka",
-    "country": null,
+    "country": "India",
     "startDate": null,
     "endDate": "2026-12-13",
     "registrationDeadline": "2026-11-20",
     "prizeText": "25000 INR; 15000 INR; 15000 INR; 10000 INR",
     "prizeAmountINR": 65000.0,
     "teamSize": "3-4",
-    "techStack": [
-      "PowerPoint"
-    ],
+    "techStack": [],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1773229",
@@ -1463,8 +1180,8 @@
     "startDate": null,
     "endDate": "2026-11-29",
     "registrationDeadline": "2026-11-20",
-    "prizeText": "10000; Winner Certificate; 1000; 1st Runner Up certificate; 500; 2nd-Runner Up Certificate; Top 10 Achievement Certificate; Top 50 Achievers Certificate",
-    "prizeAmountINR": null,
+    "prizeText": "10000 INR; Winner Certificate; 1000 INR; 1st Runner Up certificate; 500 INR; 2nd-Runner Up Certificate; Top 10 Achievement Certificate; Top 50 Achievers Certificate",
+    "prizeAmountINR": 11500.0,
     "teamSize": "1-4",
     "techStack": [
       "JavaScript",
@@ -1477,7 +1194,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1772235",
@@ -1493,16 +1210,18 @@
     "startDate": null,
     "endDate": "2027-02-07",
     "registrationDeadline": "2026-11-20",
-    "prizeText": "75000; Access to mentorship, networking, and incubation for top projects (condition applicable based on collaboration criteria); 50000; Access to mentorship, networking, and incubation for top projects (condition applicable based on collaboration criteria); 10000; Networking with industry experts, alumni, and peers Opportunity to get incubation, and start-up mentorship National-level exposure & recognition; 10000; Opportunity to get incubation, and start-up mentorship National-level exposure & recognition",
-    "prizeAmountINR": null,
+    "prizeText": "75000 INR; Access to mentorship, networking, and incubation for top projects (condition applicable based on collaboration criteria); 50000 INR; Access to mentorship, networking, and incubation for top projects (condition applicable based on collaboration criteria); 10000 INR; Networking with industry experts, alumni, and peers Opportunity to get incubation, and start-up mentorship National-level exposure & recognition; 10000 INR; Opportunity to get incubation, and start-up mentorship National-level exposure & recognition",
+    "prizeAmountINR": 145000.0,
     "teamSize": "2-4",
     "techStack": [
-      "Artificial Intelligence"
+      "Creative Thinking",
+      "Problem Solving",
+      "Artificial Intelligence (AI)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1762305",
@@ -1523,16 +1242,73 @@
     "teamSize": "1",
     "techStack": [
       "Performance Testing",
-      "User Acceptance Testing",
       "Manual Testing",
       "Software Quality Assurance",
       "Debugging",
-      "DevOps Tools"
+      "DevOps",
+      "Artificial Intelligence"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1800891",
+    "title": "NextGen AI Hackathon",
+    "organizer": "Product Space",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/nextgen-ai-hackathon-product-space-1800891",
+    "mode": "Online",
+    "location": "online",
+    "city": null,
+    "state": null,
+    "country": null,
+    "startDate": null,
+    "endDate": "2026-11-21",
+    "registrationDeadline": "2026-11-21",
+    "prizeText": "30000 INR; 15000 INR; 5000 INR; 150000 INR",
+    "prizeAmountINR": 200000.0,
+    "teamSize": "1-2",
+    "techStack": [
+      "Artificial Intelligence",
+      "System Architecture",
+      "API Integration",
+      "Software Development",
+      "Git"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": true,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1800924",
+    "title": "ELUCode - 8",
+    "organizer": "EduLinkUp",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/elucode-8-edulinkup-1800924",
+    "mode": "Online",
+    "location": "online",
+    "city": null,
+    "state": null,
+    "country": null,
+    "startDate": null,
+    "endDate": "2026-11-21",
+    "registrationDeadline": "2026-11-21",
+    "prizeText": "ELUCode Participation Certificate - Awarded to all registered participants who attempt the contest.; ELUCode Grand Champion Badge - Awarded to the participant with the highest score and best time performance. He/She receives a free .xyz domain of his/her choice fully sponsored for 1 year (only subject to availability).; ELUCode Elite Solver Badge - Awarded to the Top 5 participants on the leaderboard.; ELUCode Advanced Coder Badge - Awarded to participants ranked within the Top 10% of the leaderboard.; ELUCode Proficient Coder Badge - Awarded to participants ranked within the Top 25% of the leaderboard.; ELUCode Completion Certificate - Awarded to participants who successfully solve at least one problem during the contest.",
+    "prizeAmountINR": null,
+    "teamSize": "1",
+    "techStack": [
+      "Data Structures and Algorithms",
+      "Logical Reasoning",
+      "Problem Solving",
+      "Critical Thinking"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": true,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799791",
@@ -1560,7 +1336,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799790",
@@ -1589,59 +1365,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1800891",
-    "title": "NextGen AI Hackathon",
-    "organizer": "Product Space",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/nextgen-ai-hackathon-product-space-1800891",
-    "mode": "Online",
-    "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": null,
-    "endDate": "2026-11-21",
-    "registrationDeadline": "2026-11-21",
-    "prizeText": "30000 INR; 15000 INR; 5000 INR; 150000 INR",
-    "prizeAmountINR": 200000.0,
-    "teamSize": "1-2",
-    "techStack": [
-      "Artificial Intelligence",
-      "API Integration",
-      "Git"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "1800924",
-    "title": "ELUCode - 8",
-    "organizer": "EduLinkUp",
-    "source": "Unstop",
-    "url": "https://unstop.com/hackathons/elucode-8-edulinkup-1800924",
-    "mode": "Online",
-    "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": null,
-    "endDate": "2026-11-21",
-    "registrationDeadline": "2026-11-21",
-    "prizeText": "ELUCode Participation Certificate - Awarded to all registered participants who attempt the contest.; ELUCode Grand Champion Badge - Awarded to the participant with the highest score and best time performance. He/She receives a free .xyz domain of his/her choice fully sponsored for 1 year (only subject to availability).; ELUCode Elite Solver Badge - Awarded to the Top 5 participants on the leaderboard.; ELUCode Advanced Coder Badge - Awarded to participants ranked within the Top 10% of the leaderboard.; ELUCode Proficient Coder Badge - Awarded to participants ranked within the Top 25% of the leaderboard.; ELUCode Completion Certificate - Awarded to participants who successfully solve at least one problem during the contest.",
-    "prizeAmountINR": null,
-    "teamSize": "1",
-    "techStack": [
-      "Data Structures and Algorithms"
-    ],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799782",
@@ -1664,13 +1388,12 @@
       "Civil Engineering",
       "Soil Mechanics",
       "Structural Design",
-      "Fluid Mechanics",
-      "Building Materials"
+      "Fluid Mechanics"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799780",
@@ -1690,15 +1413,14 @@
     "prizeAmountINR": null,
     "teamSize": "1",
     "techStack": [
-      "Electronics",
+      "Electronics Engineering",
       "Circuit Design",
-      "Critical Thinking",
       "Process Control Systems"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799778",
@@ -1723,10 +1445,10 @@
       "Digital Signal Processing",
       "Wireless Communication"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799776",
@@ -1751,10 +1473,10 @@
       "Digital Signal Processing",
       "Wireless Communication"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799788",
@@ -1783,7 +1505,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799767",
@@ -1804,15 +1526,12 @@
     "teamSize": "1",
     "techStack": [
       "Data Structures and Algorithms",
-      "Problem Solving",
-      "Logical Reasoning",
-      "Time Management",
       "C++"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799510",
@@ -1833,14 +1552,13 @@
     "teamSize": "1-2",
     "techStack": [
       "Artificial Intelligence",
-      "System Architecture",
       "API Integration",
       "GitHub"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799509",
@@ -1862,14 +1580,12 @@
     "techStack": [
       "Git",
       "Artificial Intelligence",
-      "Solution Architecture",
-      "API Integration",
-      "System Integration"
+      "API Integration"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799475",
@@ -1890,14 +1606,13 @@
     "teamSize": "1-2",
     "techStack": [
       "Artificial Intelligence",
-      "System Architecture",
       "API Integration",
       "GitHub"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1792269",
@@ -1917,13 +1632,15 @@
     "prizeAmountINR": 100000.0,
     "teamSize": "1-2",
     "techStack": [
-      "Artificial Intelligence",
+      "Artificial Intelligence (AI)",
+      "Solution Architecture",
+      "API Integration",
       "GitHub"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1807080",
@@ -1944,13 +1661,38 @@
     "teamSize": "1-4",
     "techStack": [
       "Artificial Intelligence (AI)",
-      "Machine Learning Concepts",
-      "Problem Solving"
+      "Machine Learning"
     ],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1789431",
+    "title": "AI Vibeathon 2026: 24-Hour AI Hackathon",
+    "organizer": "DotRepo",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/ai-vibeathon-2026-24-hour-ai-hackathon-dotrepo-1789431",
+    "mode": "Online",
+    "location": "online",
+    "city": null,
+    "state": null,
+    "country": null,
+    "startDate": null,
+    "endDate": "2026-12-20",
+    "registrationDeadline": "2026-11-22",
+    "prizeText": "50000 INR; Opus AI Credits: $1,000 worth.; 25000 INR; 10000 INR; 15000 INR; $15,000 in AI credits to build, innovate, and scale your AI solutions!",
+    "prizeAmountINR": 100000.0,
+    "teamSize": "1-4",
+    "techStack": [
+      "Artificial Intelligence (AI)",
+      "Python"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": true,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799143",
@@ -1970,12 +1712,12 @@
     "prizeAmountINR": null,
     "teamSize": "2-4",
     "techStack": [
-      "User Experience Design"
+      "User Experience (UX) Design"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1798287",
@@ -1995,12 +1737,12 @@
     "prizeAmountINR": 100000.0,
     "teamSize": "2-3",
     "techStack": [
-      "Artificial Intelligence"
+      "Artificial Intelligence (AI)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1775207",
@@ -2020,7 +1762,8 @@
     "prizeAmountINR": 12000.0,
     "teamSize": "1",
     "techStack": [
-      "Data Structures and Algorithms",
+      "Data Structures",
+      "Algorithms",
       "Database Management Systems",
       "Operating Systems",
       "Computer Networking"
@@ -2028,7 +1771,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1735451",
@@ -2048,13 +1791,12 @@
     "prizeAmountINR": null,
     "teamSize": "2-4",
     "techStack": [
-      "Problem Solving",
-      "Programming"
+      "Problem Solving"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "c5731def845a4782ac461b66ceddced0",
@@ -2074,10 +1816,10 @@
     "prizeAmountINR": null,
     "teamSize": "1-6",
     "techStack": [],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1803912",
@@ -2098,14 +1840,14 @@
     "teamSize": "1-4",
     "techStack": [
       "Artificial Intelligence (AI)",
-      "E-commerce Management",
-      "Machine Learning Concepts",
+      "E-commerce",
+      "Machine Learning",
       "UI/UX Design"
     ],
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1760462",
@@ -2126,14 +1868,12 @@
     "teamSize": "1-4",
     "techStack": [
       "Artificial Intelligence (AI)",
-      "Cloud Architecture",
-      "System Scalability",
-      "Software Development"
+      "Cloud Architecture"
     ],
     "hasInternship": true,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "cdf2af90c090403a9db2f0162a99b687",
@@ -2153,10 +1893,10 @@
     "prizeAmountINR": null,
     "teamSize": "3-5",
     "techStack": [],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1805107",
@@ -2172,19 +1912,14 @@
     "startDate": null,
     "endDate": "2026-11-30",
     "registrationDeadline": "2026-11-25",
-    "prizeText": "Participation Certificate",
+    "prizeText": ".xyz domain & Mobbin Subscription; .xyz domain and Mobbin Subscription; Mobbin Subscription; Participation Certificate",
     "prizeAmountINR": null,
     "teamSize": "1-4",
-    "techStack": [
-      "Creative Thinking",
-      "Presentation Design",
-      "Brainstorming",
-      "Storytelling"
-    ],
-    "hasInternship": null,
+    "techStack": [],
+    "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1800857",
@@ -2196,7 +1931,7 @@
     "location": "IIT Bombay, Powai, Maharashtra, India",
     "city": "Powai",
     "state": "Maharashtra",
-    "country": "India",
+    "country": null,
     "startDate": null,
     "endDate": "2026-11-25",
     "registrationDeadline": "2026-11-25",
@@ -2204,7 +1939,8 @@
     "prizeAmountINR": 100000.0,
     "teamSize": "1-4",
     "techStack": [
-      "Artificial Intelligence (AI)",
+      "Artificial Intelligence",
+      "Fraud Detection",
       "Machine Learning",
       "Speech Recognition",
       "Solution Architecture"
@@ -2212,7 +1948,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1786652",
@@ -2235,7 +1971,7 @@
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1782514",
@@ -2256,12 +1992,12 @@
     "teamSize": "3-6",
     "techStack": [
       "Artificial Intelligence (AI)",
-      "Internet ofThings (IoT)"
+      "Internet of Things (IoT)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1806984",
@@ -2288,10 +2024,10 @@
       "React.js",
       ".NET Framework"
     ],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1772496",
@@ -2312,15 +2048,12 @@
     "teamSize": "2-4",
     "techStack": [
       "Problem Solving",
-      "Creativity",
-      "Technical Skills",
-      "Teamwork and Collaboration",
-      "Public Speaking"
+      "Technical Skills"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1800324",
@@ -2340,16 +2073,15 @@
     "prizeAmountINR": 160000.0,
     "teamSize": "1-4",
     "techStack": [
-      "Artificial Intelligence (AI)",
+      "Artificial Intelligence",
       "Workflow Automation",
       "API Integration",
-      "System Monitoring",
-      "Access Control"
+      "Access Control Management"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1793392",
@@ -2372,7 +2104,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1798702",
@@ -2392,14 +2124,12 @@
     "prizeAmountINR": 10000.0,
     "teamSize": "1",
     "techStack": [
-      "Artificial Intelligence",
-      "Product Strategy",
-      "Project Management"
+      "Artificial Intelligence (AI)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1781358",
@@ -2419,16 +2149,13 @@
     "prizeAmountINR": 35000.0,
     "teamSize": "1-3",
     "techStack": [
-      "Image Segmentation",
-      "Medical Imaging",
       "Neural Networks",
-      "PyTorch",
-      "Image Analysis"
+      "PyTorch"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1777504",
@@ -2455,7 +2182,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1782685",
@@ -2475,16 +2202,13 @@
     "prizeAmountINR": null,
     "teamSize": "1",
     "techStack": [
-      "Data Structures and Algorithms",
-      "Problem Solving",
-      "Critical Thinking",
       "C++",
       "Python"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "e800e7f7535945b59b3516a08424db39",
@@ -2504,12 +2228,12 @@
     "prizeAmountINR": null,
     "teamSize": "1-6",
     "techStack": [
-      "Healthcare"
+      "HealthTech"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "2689d878c21e4cf1a61a50f5104587f0",
@@ -2529,10 +2253,63 @@
     "prizeAmountINR": null,
     "teamSize": "3-5",
     "techStack": [],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1791410",
+    "title": "Code Rush – 24 Hours Hackathon",
+    "organizer": "GM University Davanagere",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/code-rush-24-hours-hackathon-ignitron-2k26-gm-university-davanagere-1791410",
+    "mode": "Offline",
+    "location": "GM University, Davanagere, Karnataka, India",
+    "city": "Davanagere",
+    "state": "Karnataka",
+    "country": "India",
+    "startDate": null,
+    "endDate": "2026-11-30",
+    "registrationDeadline": "2026-11-30",
+    "prizeText": null,
+    "prizeAmountINR": null,
+    "teamSize": "2-4",
+    "techStack": [
+      "Artificial Intelligence"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": false,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1791574",
+    "title": "Capture The Flag (CTF)",
+    "organizer": "GM University Davanagere",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/capture-the-flag-ctf-ignitron-2k26-gm-university-davanagere-1791574",
+    "mode": "Offline",
+    "location": "GM University, Davanagere, Karnataka, India",
+    "city": "Davanagere",
+    "state": "Karnataka",
+    "country": "India",
+    "startDate": null,
+    "endDate": "2026-12-03",
+    "registrationDeadline": "2026-11-30",
+    "prizeText": null,
+    "prizeAmountINR": null,
+    "teamSize": "2",
+    "techStack": [
+      "Linux",
+      "Digital Forensics",
+      "Web Application Security",
+      "Reverse Engineering"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": false,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1807297",
@@ -2557,10 +2334,10 @@
       "C++",
       "Python"
     ],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1781454",
@@ -2581,13 +2358,14 @@
     "teamSize": "1-6",
     "techStack": [
       "Artificial Intelligence",
+      "Health Informatics",
       "Predictive Analytics",
-      "Health Informatics"
+      "Public Health"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1746232",
@@ -2606,11 +2384,13 @@
     "prizeText": "50000",
     "prizeAmountINR": null,
     "teamSize": "2-4",
-    "techStack": [],
+    "techStack": [
+      "Problem Solving"
+    ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1746142",
@@ -2629,11 +2409,13 @@
     "prizeText": "50000",
     "prizeAmountINR": null,
     "teamSize": "2-4",
-    "techStack": [],
+    "techStack": [
+      "Problem Solving"
+    ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1746233",
@@ -2652,11 +2434,13 @@
     "prizeText": "50000",
     "prizeAmountINR": null,
     "teamSize": "2-4",
-    "techStack": [],
+    "techStack": [
+      "Problem Solving"
+    ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1746234",
@@ -2675,11 +2459,13 @@
     "prizeText": "50000",
     "prizeAmountINR": null,
     "teamSize": "2-4",
-    "techStack": [],
+    "techStack": [
+      "Problem Solving"
+    ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1797543",
@@ -2699,14 +2485,12 @@
     "prizeAmountINR": null,
     "teamSize": "1",
     "techStack": [
-      "Software Development Life Cycle",
-      "Claude Code",
-      "Mobbin"
+      "Software Development"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1788753",
@@ -2731,7 +2515,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1784631",
@@ -2759,7 +2543,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1762519",
@@ -2771,7 +2555,7 @@
     "location": "online",
     "city": null,
     "state": null,
-    "country": "Hong Kong",
+    "country": null,
     "startDate": null,
     "endDate": "2026-11-30",
     "registrationDeadline": "2026-11-30",
@@ -2788,7 +2572,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1746846",
@@ -2808,12 +2592,12 @@
     "prizeAmountINR": null,
     "teamSize": "1-2",
     "techStack": [
-      "Artificial Intelligence"
+      "Artificial Intelligence (AI)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1743206",
@@ -2839,7 +2623,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1652247",
@@ -2860,12 +2644,13 @@
     "teamSize": "1-3",
     "techStack": [
       "Microsoft Azure",
-      "Cloud"
+      "Cloud Innovation",
+      "Problem Solving"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1771952",
@@ -2888,10 +2673,10 @@
       "System Architecture",
       "Software Testing"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1793796",
@@ -2914,7 +2699,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1790680",
@@ -2934,16 +2719,17 @@
     "prizeAmountINR": null,
     "teamSize": "1-4",
     "techStack": [
-      "Artificial Intelligence",
+      "Artificial Intelligence (AI)",
       "GitHub",
       "Ethical Hacking",
-      "Internet of Things",
-      "Backend Development"
+      "Internet of Things (IoT)",
+      "Data Analytics Tools",
+      "Backend development"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1782683",
@@ -2972,7 +2758,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1771785",
@@ -2994,13 +2780,14 @@
     "techStack": [
       "Artificial Intelligence",
       "Blockchain",
+      "Ethereum",
       "Mobile Application Development",
       "Git"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1763561",
@@ -3020,13 +2807,13 @@
     "prizeAmountINR": 5000.0,
     "teamSize": "2-4",
     "techStack": [
-      "Software Development",
-      "Problem Solving"
+      "Problem Solving",
+      "Software Development Life Cycle (SDLC)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1792826",
@@ -3045,13 +2832,11 @@
     "prizeText": "2000$ prize pool | Paid internship and Incubation opportunities; 2000$ prize pool | Paid internship and Incubation opportunities; 2000$ prize pool | Paid internship and Incubation opportunities; .xyz domain | Verified Certificate | 600$ credits",
     "prizeAmountINR": null,
     "teamSize": "1-6",
-    "techStack": [
-      ".xyz"
-    ],
+    "techStack": [],
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1791313",
@@ -3080,7 +2865,7 @@
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1794522",
@@ -3103,7 +2888,7 @@
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1790028",
@@ -3123,15 +2908,15 @@
     "prizeAmountINR": 250000.0,
     "teamSize": "3-4",
     "techStack": [
-      "Artificial Intelligence",
+      "Artificial Intelligence (AI)",
       "Machine Learning",
-      "AWS",
+      "AWS (Amazon Web Services)",
       "Cloud Computing"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1781449",
@@ -3153,15 +2938,64 @@
     "techStack": [
       "Python",
       "Machine Learning",
-      "Digital Signal Processing",
-      "Feature Extraction",
-      "Pattern Recognition",
+      "Digital Signal Processing (DSP)",
       "Bioinformatics"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "0c74c99ebe4d4bc8b1b9972451f350ca",
+    "title": "Hack For Tomorrow 2026",
+    "organizer": null,
+    "source": "Devfolio",
+    "url": "https://hft.excelmec.org/",
+    "mode": "Offline",
+    "location": null,
+    "city": null,
+    "state": null,
+    "country": null,
+    "startDate": "2027-01-02",
+    "endDate": "2027-01-03",
+    "registrationDeadline": "2026-12-05",
+    "prizeText": "Prize Pool - A total prize pool of ₹30,000 awaits the winning teams! Showcase your creativity, build innovative solutions, and compete for exciting rewards. Give your best, turn your ideas into reality, and stand a chance to win.",
+    "prizeAmountINR": null,
+    "teamSize": "2-4",
+    "techStack": [],
+    "hasInternship": null,
+    "perks": [],
+    "isFree": null,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1776729",
+    "title": "HackZ'26",
+    "organizer": "College of Engineering (CEG), Guindy,  Anna University",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/hackz26-computer-science-and-engineering-association-csea-ceg-anna-university-1776729",
+    "mode": "Online",
+    "location": "online",
+    "city": null,
+    "state": null,
+    "country": null,
+    "startDate": null,
+    "endDate": "2027-01-30",
+    "registrationDeadline": "2026-12-05",
+    "prizeText": "75000 INR; 50000 INR; 25000 INR; 15000 INR; 18000 INR; Rs.3000 per track",
+    "prizeAmountINR": 183000.0,
+    "teamSize": "2-4",
+    "techStack": [
+      "Software Development",
+      "Artificial Intelligence",
+      "Cybersecurity",
+      "Network Security"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": true,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1770730",
@@ -3181,15 +3015,15 @@
     "prizeAmountINR": null,
     "teamSize": "1",
     "techStack": [
-      "Web Security",
+      "Web Application Security",
       "Digital Forensics",
       "Reverse Engineering",
-      "Problem Solving"
+      "Open Source Intelligence"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1805946",
@@ -3207,18 +3041,17 @@
     "registrationDeadline": "2026-12-06",
     "prizeText": null,
     "prizeAmountINR": null,
-    "teamSize": "2-4",
+    "teamSize": "1-4",
     "techStack": [
-      "Android Studio",
-      "Mobile Application Development",
+      "Android",
       "UI/UX Design",
       "Kotlin",
       "Cyber Threat Intelligence"
     ],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799281",
@@ -3238,12 +3071,16 @@
     "prizeAmountINR": 10000.0,
     "teamSize": "1-4",
     "techStack": [
-      "Machine Learning"
+      "Machine Learning",
+      "Data Quality Management",
+      "Data Cleaning",
+      "Data Validation",
+      "Experimental Design"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1792025",
@@ -3268,7 +3105,7 @@
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1793341",
@@ -3293,7 +3130,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1774876",
@@ -3305,7 +3142,7 @@
     "location": "JSPM Rajarshi Shahu College of Engineering, Tathawade, Pimpri-Chinchwad, Maharashtra, Pimpri-Chinchwad, Maharashtra, India",
     "city": "Pimpri-Chinchwad",
     "state": "Maharashtra",
-    "country": null,
+    "country": "India",
     "startDate": null,
     "endDate": "2026-12-06",
     "registrationDeadline": "2026-12-06",
@@ -3316,7 +3153,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1765597",
@@ -3336,13 +3173,15 @@
     "prizeAmountINR": null,
     "teamSize": "1",
     "techStack": [
-      "Artificial Intelligence",
-      "Prompt Engineering"
+      "Artificial Intelligence (AI)",
+      "Creative Thinking",
+      "Problem Solving",
+      "Critical Thinking"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1774417",
@@ -3368,7 +3207,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "cf5fb5645ec44de88ee455be936825da",
@@ -3390,13 +3229,12 @@
     "techStack": [
       "AI",
       "Blockchain",
-      "HealthTech",
-      "Ethereum"
+      "HealthTech"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1777639",
@@ -3416,39 +3254,15 @@
     "prizeAmountINR": null,
     "teamSize": "1-4",
     "techStack": [
-      "Cloud Computing",
+      "Cloud computing",
       "Git",
       "CI/CD",
-      "Teamwork",
-      "Artificial Intelligence"
+      "Artificial Intelligence (AI)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
-  },
-  {
-    "id": "0c74c99ebe4d4bc8b1b9972451f350ca",
-    "title": "Hack For Tomorrow 2026",
-    "organizer": null,
-    "source": "Devfolio",
-    "url": "https://hft.excelmec.org/",
-    "mode": "Offline",
-    "location": null,
-    "city": null,
-    "state": null,
-    "country": null,
-    "startDate": "2027-01-02",
-    "endDate": "2027-01-03",
-    "registrationDeadline": "2026-12-10",
-    "prizeText": "Prize Pool - A total prize pool of ₹30,000 awaits the winning teams! Showcase your creativity, build innovative solutions, and compete for exciting rewards. Give your best, turn your ideas into reality, and stand a chance to win.",
-    "prizeAmountINR": null,
-    "teamSize": "2-4",
-    "techStack": [],
-    "hasInternship": false,
-    "perks": [],
-    "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "50e23a48e3964f43878279a3bf81339d",
@@ -3470,10 +3284,10 @@
     "techStack": [
       "FinTech"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "c84b90d65eff4ae083366fc1cc549e81",
@@ -3496,7 +3310,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1783515",
@@ -3519,7 +3333,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1771511",
@@ -3538,14 +3352,11 @@
     "prizeText": "15000; Trophy + Certificate of Appreciation; 11000; Trophy + Certificate of Appreciation; 7000; Trophy + Certificate of Appreciation; 15000; Trophy + Certificate of Appreciation; 11000; Trophy + Certificate of Appreciation; 7000; Trophy + Certificate of Appreciation; 15000; Trophy + Certificate of Appreciation; 11000; Trophy + Certificate of Appreciation; 7000; Trophy + Certificate of Appreciation; 15000; Trophy + Certificate of Appreciation; 11000; Trophy + Certificate of Appreciation; 7000; Trophy + Certificate of Appreciation; 15000; Trophy + Certificate of Appreciation; 11000; Trophy + Certificate of Appreciation; 7000; Trophy + Certificate of Appreciation; 15000; Trophy + Certificate of Appreciation; 11000; Trophy + Certificate of Appreciation; 7000; Trophy + Certificate of Appreciation",
     "prizeAmountINR": null,
     "teamSize": "1-4",
-    "techStack": [
-      "Problem Solving",
-      "Innovation Management"
-    ],
+    "techStack": [],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1745778",
@@ -3565,7 +3376,7 @@
     "prizeAmountINR": 200000.0,
     "teamSize": "2-4",
     "techStack": [
-      "Artificial Intelligence",
+      "Artificial Intelligence (AI)",
       "IoT",
       "Blockchain",
       "DevOps",
@@ -3574,7 +3385,7 @@
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1782949",
@@ -3593,17 +3404,11 @@
     "prizeText": null,
     "prizeAmountINR": null,
     "teamSize": "1",
-    "techStack": [
-      "Logical Reasoning",
-      "Problem Solving",
-      "Computational Skills",
-      "Pattern Recognition",
-      "Critical Thinking"
-    ],
+    "techStack": [],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1773120",
@@ -3631,7 +3436,7 @@
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1806122",
@@ -3653,14 +3458,12 @@
     "techStack": [
       "Blockchain Technology",
       "Decentralized Finance (DeFi)",
-      "Smart Contract Development",
-      "Entrepreneurship",
-      "Problem Solving"
+      "Smart Contract Development"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "409173af22ac40d5aecb47ea06886ab3",
@@ -3683,7 +3486,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799091",
@@ -3704,15 +3507,14 @@
     "teamSize": "1-4",
     "techStack": [
       "Electric Vehicle (EV) Technology",
-      "Battery Technology",
-      "Automation Systems Design",
+      "Automation Systems",
       "Artificial Intelligence (AI)",
-      "Machine Learning Concepts"
+      "Machine Learning"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1798677",
@@ -3737,10 +3539,10 @@
       "Soldering",
       "Sensor Integration"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1795775",
@@ -3765,7 +3567,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1755564",
@@ -3785,14 +3587,14 @@
     "prizeAmountINR": 40000.0,
     "teamSize": "2-4",
     "techStack": [
-      "Artificial Intelligence",
+      "Artificial Intelligence (AI)",
       "Embedded Systems",
       "IoT"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1803074",
@@ -3811,17 +3613,11 @@
     "prizeText": "Winner Certificate + Internship Opportunity; First Top Performance Certificate + Internship Opportunity; Second Top Performance Certificate + Internship Opportunity",
     "prizeAmountINR": null,
     "teamSize": "2-4",
-    "techStack": [
-      "Creative Thinking",
-      "Problem Solving",
-      "Innovation Management",
-      "Design Thinking",
-      "Sustainability Practices"
-    ],
+    "techStack": [],
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799092",
@@ -3841,16 +3637,12 @@
     "prizeAmountINR": 50000.0,
     "teamSize": "1-4",
     "techStack": [
-      "Artificial Intelligence",
-      "Problem Solving",
-      "Creative Thinking",
-      "Teamwork",
-      "Technical Skills"
+      "Artificial Intelligence"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1768100",
@@ -3879,7 +3671,7 @@
     "hasInternship": true,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1742226",
@@ -3900,14 +3692,15 @@
     "teamSize": "2-3",
     "techStack": [
       "Ethical Hacking",
-      "Web Security",
+      "Web Application Security",
       "Reverse Engineering",
+      "OSINT",
       "Digital Forensics"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1794479",
@@ -3919,7 +3712,7 @@
     "location": "5th km, NH - 209,Jakkasandra Post, Bengaluru - Kanakapura Rd, Bengaluru, Karnataka, 562112, Bangalore, Karnataka, India",
     "city": "Bangalore",
     "state": "Karnataka",
-    "country": "India",
+    "country": null,
     "startDate": null,
     "endDate": "2027-02-20",
     "registrationDeadline": "2026-12-24",
@@ -3929,15 +3722,15 @@
     "techStack": [
       "Mobile Application Development",
       "Data Science",
+      "UI/UX Design",
       "Cloud Computing",
-      "Internet of Things (IoT)",
-      "Blockchain Technology",
-      "Artificial Intelligence (AI)"
+      "Cybersecurity",
+      "Internet of Things (IoT)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1772406",
@@ -3956,11 +3749,16 @@
     "prizeText": "30000 INR; Winner of Problem Statement 1 – Quasar 5.0; 30000 INR; Winner of Problem Statement 2 – Quasar 5.0; 30000 INR; Winner of Problem Statement 3 – Quasar 5.0; 30000 INR; Winner of Problem Statement 4 – Quasar 5.0; 30000 INR; Winner of Problem Statement 5 – Quasar 5.0",
     "prizeAmountINR": 150000.0,
     "teamSize": "2-4",
-    "techStack": [],
+    "techStack": [
+      "Creativity",
+      "Innovation Management",
+      "Project Management",
+      "Problem Solving"
+    ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1771949",
@@ -3982,12 +3780,13 @@
     "techStack": [
       "Problem Solving",
       "Ideation",
+      "Technical Communication",
       "Systems Thinking"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "6ab81312cb504b4195e46290f44e7191",
@@ -4010,7 +3809,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1778597",
@@ -4035,7 +3834,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "feaf6d51a5ba4774acf1ccaaa1d4b789",
@@ -4055,12 +3854,12 @@
     "prizeAmountINR": null,
     "teamSize": "2-4",
     "techStack": [
-      "Machine Learning"
+      "MLH"
     ],
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1c7af64a076f43d5a088b7b65ae793a3",
@@ -4083,7 +3882,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "c163f2c5e7bb4c7bb7acbdb3c572bfa3",
@@ -4106,7 +3905,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "16159aa9a84d4cddb42554fe5e48fa5a",
@@ -4133,7 +3932,34 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "1809486",
+    "title": "LightHouse - Hackathon",
+    "organizer": "Chandigarh University (CU), Ajitgarh, Punjab",
+    "source": "Unstop",
+    "url": "https://unstop.com/hackathons/lighthouse-hackathon-chandigarh-university-cu-ajitgarh-punjab-1809486",
+    "mode": "Online",
+    "location": "online",
+    "city": null,
+    "state": null,
+    "country": null,
+    "startDate": null,
+    "endDate": "2027-01-10",
+    "registrationDeadline": "2026-12-31",
+    "prizeText": "5000 INR; 3000 INR; 2000 INR; 500000 INR",
+    "prizeAmountINR": 510000.0,
+    "teamSize": "2-5",
+    "techStack": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Python"
+    ],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": true,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1761846",
@@ -4153,17 +3979,16 @@
     "prizeAmountINR": null,
     "teamSize": "1-4",
     "techStack": [
-      "Ideation",
-      "Software Development Life Cycle (SDLC)",
       "Artificial Intelligence (AI)",
+      "Robotics Control Systems",
       "UI/UX Design",
       "Internet of Things (IoT)",
-      "Problem Solving"
+      "Software Development"
     ],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1787722",
@@ -4183,16 +4008,14 @@
     "prizeAmountINR": 5000.0,
     "teamSize": "1-5",
     "techStack": [
-      "Cybersecurity Frameworks",
+      "Cybersecurity",
       "Ethical Hacking",
-      "Threat Detection",
-      "Network Security Implementation",
-      "Problem Solving"
+      "Network Security"
     ],
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764465",
@@ -4213,6 +4036,7 @@
     "teamSize": "2-6",
     "techStack": [
       "Automotive Engineering",
+      "Mechanical Design",
       "Electronics Engineering",
       "Embedded Systems",
       "Robotics"
@@ -4220,7 +4044,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764468",
@@ -4240,14 +4064,16 @@
     "prizeAmountINR": null,
     "teamSize": "2-6",
     "techStack": [
-      "Robotics",
+      "Robotics Control Systems",
+      "Sensor Integration",
       "Embedded Systems",
+      "Robotics Kinematics",
       "CAD"
     ],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1794889",
@@ -4272,7 +4098,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1789849",
@@ -4292,14 +4118,15 @@
     "prizeAmountINR": 1000000.0,
     "teamSize": "2-4",
     "techStack": [
-      "Artificial Intelligence",
+      "Artificial Intelligence (AI)",
       "Python",
-      "JavaScript"
+      "JavaScript",
+      "Automation Tools"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764188",
@@ -4320,15 +4147,13 @@
     "teamSize": "2-5",
     "techStack": [
       "Corporate Strategy",
-      "M&A Analysis",
       "Financial Modeling",
-      "Risk Analysis",
-      "Sustainability Assessment"
+      "Risk Analysis"
     ],
-    "hasInternship": false,
+    "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764167",
@@ -4349,15 +4174,13 @@
     "teamSize": "2-5",
     "techStack": [
       "Product Strategy",
-      "User Experience Design",
-      "Wireframing",
-      "Market Research Methods",
-      "Technical and feasibility studies"
+      "UX Design",
+      "Market Research"
     ],
-    "hasInternship": false,
+    "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764445",
@@ -4378,15 +4201,13 @@
     "teamSize": "2-6",
     "techStack": [
       "Robotics Control Systems",
-      "Robotics Kinematics",
-      "Embedded Systems Design",
-      "Sensors and Actuators",
-      "Safety Engineering"
+      "Embedded Systems",
+      "Sensors and Actuators"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764446",
@@ -4406,16 +4227,14 @@
     "prizeAmountINR": null,
     "teamSize": "2-5",
     "techStack": [
-      "Drone Operation",
       "Drone Technology",
       "Robotics Control Systems",
-      "Kinematics",
-      "Safety and Security Management"
+      "Kinematics"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764463",
@@ -4442,7 +4261,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764450",
@@ -4464,12 +4283,13 @@
     "techStack": [
       "Predictive Modeling",
       "Time Series Analysis",
-      "Finance"
+      "Fundamental Analysis",
+      "Technical Analysis"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764469",
@@ -4489,14 +4309,14 @@
     "prizeAmountINR": null,
     "teamSize": "2-6",
     "techStack": [
-      "Robotics",
-      "Actuator Systems",
+      "Robotics Control Systems",
+      "Mechanical Design",
       "Wireless Communication"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764470",
@@ -4516,14 +4336,15 @@
     "prizeAmountINR": null,
     "teamSize": "2-6",
     "techStack": [
-      "Robotics",
-      "Electronics",
+      "Robotics Control Systems",
+      "Mechanical Design",
+      "Electronics Engineering",
       "Wireless Communication"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764471",
@@ -4543,14 +4364,13 @@
     "prizeAmountINR": null,
     "teamSize": "1",
     "techStack": [
-      "Mathematics",
       "Quantitative Analysis",
-      "Probability"
+      "Probability Theory"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764472",
@@ -4573,12 +4393,13 @@
       "Ethical Hacking",
       "Vulnerability Assessment",
       "Reverse Engineering",
-      "Web Security"
+      "Web Application Security",
+      "Network Protocol Analysis"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764474",
@@ -4598,14 +4419,15 @@
     "prizeAmountINR": null,
     "teamSize": "1-3",
     "techStack": [
-      "Data Structures",
-      "Algorithms",
-      "C++"
+      "Data Structures and Algorithms",
+      "Problem Solving",
+      "C++",
+      "Logical Reasoning"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764461",
@@ -4627,12 +4449,14 @@
     "techStack": [
       "Aircraft Design",
       "Aerodynamics",
-      "Flight Testing"
+      "Aircraft Structures",
+      "Flight Testing",
+      "Safety Engineering"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764460",
@@ -4653,14 +4477,15 @@
     "teamSize": "2-6",
     "techStack": [
       "Autonomous Systems",
-      "Robotics",
+      "Robotics Control Systems",
+      "Robotics Path Planning",
       "Mechanical Design",
       "Sensor Integration"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764454",
@@ -4682,12 +4507,13 @@
     "techStack": [
       "Entrepreneurship",
       "Business Planning",
-      "Strategic Planning"
+      "Strategic Planning",
+      "Intellectual Property Strategy"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1764452",
@@ -4708,13 +4534,14 @@
     "teamSize": "2-5",
     "techStack": [
       "Securities Trading",
+      "Technical Analysis",
       "Financial Markets",
       "Risk Analysis"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1763620",
@@ -4734,13 +4561,15 @@
     "prizeAmountINR": null,
     "teamSize": "2-4",
     "techStack": [
-      "Artificial Intelligence (AI)",
-      "Problem Solving"
+      "Problem Solving",
+      "New Product Development",
+      "Project Management",
+      "Artificial Intelligence (AI)"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1c56ad13b8b0467ca2c3772566a0fdd2",
@@ -4768,7 +4597,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1772164",
@@ -4787,11 +4616,15 @@
     "prizeText": "600000 INR; Worth Cash Prize + Swags & Goodies + Trophy + Premium Subscriptions + Domain , etc; Top 5 teams will get special CoBuild Box including exciting things; Certificates , Swags & Goodies will be provided to all offline participants",
     "prizeAmountINR": 600000.0,
     "teamSize": "2-4",
-    "techStack": [],
+    "techStack": [
+      "Technical Skills",
+      "Problem Solving",
+      "Creative Thinking"
+    ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1786992",
@@ -4818,7 +4651,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1773246",
@@ -4837,11 +4670,13 @@
     "prizeText": "50000",
     "prizeAmountINR": null,
     "teamSize": "2-4",
-    "techStack": [],
+    "techStack": [
+      "Problem Solving"
+    ],
     "hasInternship": false,
     "perks": [],
     "isFree": false,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1730263",
@@ -4861,14 +4696,15 @@
     "prizeAmountINR": null,
     "teamSize": "1-4",
     "techStack": [
-      "Artificial Intelligence",
+      "Artificial Intelligence (AI)",
+      "Design Systems",
       "Design Thinking",
       "Sustainability"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1771992",
@@ -4887,11 +4723,16 @@
     "prizeText": "342000 INR; 3 months of ElevenLabs Scale membership with 1.8 million credits per month per eligible team member, along with an internship opportunity and the possibility of a Pre-Placement Offer (PPO) based on performance and eligibility after the internship.; 113000 INR; 3 months of ElevenLabs Pro membership with 600,000 credits per month per eligible team member, along with an internship opportunity and the possibility of a Pre-Placement Offer (PPO) based on performance and eligibility after the internship.; 8400 INR; 1 month of ElevenLabs Creator membership with 131,000 credits, along with an internship opportunity and the possibility of a Pre-Placement Offer (PPO) based on performance and eligibility after the internship.; 419000 INR; All eligible participants will receive 1 month of ElevenLabs Creator membership with 131,000 credits, as specified in the sponsorship offer. Estimated total reward value: $4,400 USD for up to 200 eligible participants, based on an estimated value of $22 per membership. Final distribution is subject to sponsor confirmation.; 50000 INR; ₹50,000 worth of UTHO Cloud Credits  Exclusive  Goodies; 50000 INR; ₹50,000 worth of UTHO Cloud Credits  Exclusive  Goodies; 50000 INR; ₹50,000 worth of UTHO Cloud Credits  Exclusive  Goodies; 10000 INR; Exclusive Adaption Swag Kit for every team member.; 10000 INR; Exclusive Adaption Swag Kit for every team member.; 10000 INR; Exclusive Adaption Swag Kit for every team member.",
     "prizeAmountINR": 1062400.0,
     "teamSize": "1-4",
-    "techStack": [],
+    "techStack": [
+      "PowerPoint",
+      "Presentation Design",
+      "Ideation",
+      "Problem Solving"
+    ],
     "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1759619",
@@ -4907,7 +4748,7 @@
     "startDate": null,
     "endDate": "2027-01-31",
     "registrationDeadline": "2027-01-31",
-    "prizeText": "100000; $100,000 Total Prize Pool, Every participant will receive funding toward purchasing a domain for their project, with the total value of domain funding distributed across eligible participants. Participants can use their allocation to register a domain and take their project online.; Special Certificate + Bidaya Trebuchet Placement Priority.",
+    "prizeText": "100000 USD; $100,000 Total Prize Pool, Every participant will receive funding toward purchasing a domain for their project, with the total value of domain funding distributed across eligible participants. Participants can use their allocation to register a domain and take their project online.; Special Certificate + Bidaya Trebuchet Placement Priority.",
     "prizeAmountINR": null,
     "teamSize": "1",
     "techStack": [
@@ -4917,10 +4758,10 @@
       "GitHub",
       "Project Management"
     ],
-    "hasInternship": false,
+    "hasInternship": true,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "8cf5de84ec814a8daf7f6c4caf538045",
@@ -4943,7 +4784,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1802090",
@@ -4970,7 +4811,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1802089",
@@ -4995,7 +4836,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1801200",
@@ -5021,7 +4862,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799758",
@@ -5033,7 +4874,7 @@
     "location": "Army Institute Of Technology, Pune, Pune, Maharashtra, India",
     "city": "Pune",
     "state": "Maharashtra",
-    "country": "India",
+    "country": null,
     "startDate": null,
     "endDate": "2027-03-05",
     "registrationDeadline": "2027-03-01",
@@ -5041,12 +4882,13 @@
     "prizeAmountINR": 6000.0,
     "teamSize": "2",
     "techStack": [
-      "Presentation Design"
+      "Presentation Design",
+      "Problem Solving"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799800",
@@ -5056,9 +4898,9 @@
     "url": "https://unstop.com/hackathons/solidworks-solutions-2k27-army-institute-of-technology-pune-1799800",
     "mode": "Online",
     "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India",
     "startDate": null,
     "endDate": "2027-03-04",
     "registrationDeadline": "2027-03-01",
@@ -5067,15 +4909,14 @@
     "teamSize": "1",
     "techStack": [
       "SolidWorks",
-      "CAD",
+      "Computer-Aided Design (CAD)",
       "3D Modeling",
-      "Mechanical Design",
-      "Technical Drawing"
+      "Mechanical Design"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799762",
@@ -5085,9 +4926,9 @@
     "url": "https://unstop.com/hackathons/project-jupyter-solutions-2k27-army-institute-of-technology-pune-1799762",
     "mode": "Online",
     "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India",
     "startDate": null,
     "endDate": "2027-03-10",
     "registrationDeadline": "2027-03-01",
@@ -5096,15 +4937,12 @@
     "teamSize": "1",
     "techStack": [
       "Artificial Intelligence",
-      "Machine Learning",
-      "Problem Solving",
-      "Creative Thinking",
-      "Collaboration"
+      "Machine Learning"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799765",
@@ -5114,9 +4952,9 @@
     "url": "https://unstop.com/hackathons/crackhunt-solutions-2k27-army-institute-of-technology-pune-1799765",
     "mode": "Online",
     "location": "online",
-    "city": null,
-    "state": null,
-    "country": null,
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India",
     "startDate": null,
     "endDate": "2027-03-05",
     "registrationDeadline": "2027-03-01",
@@ -5131,7 +4969,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1799761",
@@ -5152,13 +4990,12 @@
     "teamSize": "1",
     "techStack": [
       "SQL",
-      "Database Management Systems",
-      "Database Performance Tuning"
+      "Database Management Systems"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "1800395",
@@ -5182,13 +5019,13 @@
       "Solution Architecture",
       "SaaS",
       "Machine Learning",
-      "API Development",
+      "Payment Systems",
       "Cloud Computing"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": true,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "31200",
@@ -5216,7 +5053,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0162f-b065-b062-8eb4-6a532b05ba7f",
@@ -5228,7 +5065,7 @@
     "location": "Atlanta, GA",
     "city": "Atlanta",
     "state": "GA",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-13",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5239,7 +5076,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a063b5-6f38-3b26-77aa-c9afde29ba75",
@@ -5251,7 +5088,7 @@
     "location": "Timișoara, Timiș",
     "city": "Timișoara",
     "state": "Timiș",
-    "country": "Romania",
+    "country": null,
     "startDate": "2026-11-13",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5262,7 +5099,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "019f19d0-5bc4-ae3a-8026-18ec241c0053",
@@ -5274,7 +5111,7 @@
     "location": "Espoo, Uusimaa",
     "city": "Espoo",
     "state": "Uusimaa",
-    "country": "Finland",
+    "country": null,
     "startDate": "2026-11-13",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5285,7 +5122,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0a1c6-4096-4e39-b0e6-fbb02f1dfd8a",
@@ -5297,7 +5134,7 @@
     "location": "Princeton, New Jersey",
     "city": "Princeton",
     "state": "New Jersey",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-13",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5311,7 +5148,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0f9d2-8235-468a-117b-e6e10b159f31",
@@ -5323,7 +5160,7 @@
     "location": "Brooklyn, New York",
     "city": "Brooklyn",
     "state": "New York",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-13",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5336,7 +5173,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "019eb82c-019a-7cdf-8405-6ade2fbe2684",
@@ -5348,7 +5185,7 @@
     "location": "Amherst, MA",
     "city": "Amherst",
     "state": "MA",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-13",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5359,7 +5196,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0aabc-89e5-455e-e716-fb22af55ff20",
@@ -5371,7 +5208,7 @@
     "location": "Arlington, Texas",
     "city": "Arlington",
     "state": "Texas",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-14",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5384,7 +5221,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0f9e6-f4a7-a488-8ff2-a1b83adebc0c",
@@ -5396,7 +5233,7 @@
     "location": "La Jolla, CA",
     "city": "La Jolla",
     "state": "CA",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-14",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5407,7 +5244,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0f9e8-4c6a-3385-792a-2f6d7b6fc67a",
@@ -5419,7 +5256,7 @@
     "location": "Ypsilanti, Michigan",
     "city": "Ypsilanti",
     "state": "Michigan",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-14",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5433,7 +5270,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "019e50f7-21ed-7be0-d9d3-25041a140a99",
@@ -5445,7 +5282,7 @@
     "location": "Durham, County Durham",
     "city": "Durham",
     "state": "County Durham",
-    "country": "United Kingdom",
+    "country": null,
     "startDate": "2026-11-14",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5456,7 +5293,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0d389-5cc6-4658-5390-a28cf6a7e25c",
@@ -5468,7 +5305,7 @@
     "location": "Tempe, Arizona",
     "city": "Tempe",
     "state": "Arizona",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-14",
     "endDate": "2026-11-15",
     "registrationDeadline": null,
@@ -5476,10 +5313,10 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [],
-    "hasInternship": false,
+    "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "https://www.hackerearth.com/challenges/hackathon/ibm-z-day/",
@@ -5502,35 +5339,33 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
-    "id": "31746",
-    "title": "University Blockchain Conference Hackathon 2026",
-    "organizer": "college.xyz",
+    "id": "30657",
+    "title": "Teens Hack Houston Hackathon",
+    "organizer": "HackClub  ✓⃝",
     "source": "Devpost",
-    "url": "https://ubc-hackathon-2026.devpost.com/",
-    "mode": "Offline",
-    "location": "University of Texas at Austin",
-    "city": "Austin",
+    "url": "https://tripleh.devpost.com/",
+    "mode": "Online",
+    "location": "Online",
+    "city": "Houston",
     "state": "Texas",
     "country": "United States",
-    "startDate": "2026-11-13",
-    "endDate": "2026-11-20",
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-21",
     "registrationDeadline": null,
-    "prizeText": "$22,000",
-    "prizeAmountINR": 1826000.0,
+    "prizeText": "$300",
+    "prizeAmountINR": 24900.0,
     "teamSize": null,
     "techStack": [
-      "Blockchain",
-      "Fintech",
-      "Machine Learning",
-      "AI"
+      "Low/No Code",
+      "Productivity"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "30456",
@@ -5551,13 +5386,12 @@
     "teamSize": null,
     "techStack": [
       "Machine Learning",
-      "AI",
-      "Social Good"
+      "AI"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "31620",
@@ -5583,7 +5417,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a104c6-9b18-a67b-4a70-585e177ae7c2",
@@ -5595,7 +5429,7 @@
     "location": "London, Ontario",
     "city": "London",
     "state": "Ontario",
-    "country": "Canada",
+    "country": null,
     "startDate": "2026-11-20",
     "endDate": "2026-11-22",
     "registrationDeadline": null,
@@ -5609,7 +5443,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0de7f-c886-fc35-dd21-0502312014f2",
@@ -5621,7 +5455,7 @@
     "location": "St. John's, Newfoundland and Labrador / Avalon Peninsula",
     "city": "St. John's",
     "state": "Newfoundland and Labrador",
-    "country": "Canada",
+    "country": null,
     "startDate": "2026-11-21",
     "endDate": "2026-11-22",
     "registrationDeadline": null,
@@ -5635,7 +5469,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0f38e-1449-10c7-26aa-22f959036fa7",
@@ -5647,7 +5481,7 @@
     "location": "Wellesley , Massachesetts",
     "city": "Wellesley",
     "state": "Massachusetts",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-21",
     "endDate": "2026-11-22",
     "registrationDeadline": null,
@@ -5660,7 +5494,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0f9e8-b03e-c774-05a6-1fa2df981ef1",
@@ -5672,7 +5506,7 @@
     "location": "Boston, MA",
     "city": "Boston",
     "state": "MA",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-11-21",
     "endDate": "2026-11-22",
     "registrationDeadline": null,
@@ -5683,7 +5517,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "31683",
@@ -5709,7 +5543,30 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
+  },
+  {
+    "id": "https://www.hackerearth.com/challenges/hackathon/groww-next-2026/",
+    "title": "Groww Next ‘26",
+    "organizer": null,
+    "source": "HackerEarth",
+    "url": "https://www.hackerearth.com/challenges/hackathon/groww-next-2026/",
+    "mode": null,
+    "location": null,
+    "city": null,
+    "state": null,
+    "country": null,
+    "startDate": "2026-11-13",
+    "endDate": "2026-11-27",
+    "registrationDeadline": null,
+    "prizeText": null,
+    "prizeAmountINR": null,
+    "teamSize": null,
+    "techStack": [],
+    "hasInternship": false,
+    "perks": [],
+    "isFree": null,
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "31826",
@@ -5735,7 +5592,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a1169b-c4ad-5d41-61cf-deccaa37655c",
@@ -5746,7 +5603,7 @@
     "mode": "Offline",
     "location": "Lleida, Lleida, Spain",
     "city": "Lleida",
-    "state": "Catalonia",
+    "state": "Lleida",
     "country": "Spain",
     "startDate": "2026-11-28",
     "endDate": "2026-11-29",
@@ -5758,7 +5615,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a0f9ea-d3be-e792-03f7-10f0e3db8e66",
@@ -5770,7 +5627,7 @@
     "location": "Sheffield, South Yorkshire",
     "city": "Sheffield",
     "state": "South Yorkshire",
-    "country": "United Kingdom",
+    "country": null,
     "startDate": "2026-11-28",
     "endDate": "2026-11-29",
     "registrationDeadline": null,
@@ -5783,7 +5640,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "32042",
@@ -5811,7 +5668,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "31655",
@@ -5822,8 +5679,8 @@
     "mode": "Offline",
     "location": "Brighton",
     "city": "Brighton",
-    "state": null,
-    "country": null,
+    "state": "England",
+    "country": "United Kingdom",
     "startDate": "2026-12-05",
     "endDate": "2026-12-06",
     "registrationDeadline": null,
@@ -5836,7 +5693,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a16a32-e904-56ac-4c0e-37892fa37521",
@@ -5848,7 +5705,7 @@
     "location": "Manhattan, Kansas",
     "city": "Manhattan",
     "state": "Kansas",
-    "country": "United States",
+    "country": null,
     "startDate": "2026-12-04",
     "endDate": "2026-12-06",
     "registrationDeadline": null,
@@ -5861,7 +5718,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "30819",
@@ -5887,7 +5744,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "31222",
@@ -5909,13 +5766,12 @@
     "techStack": [
       "Gaming",
       "Machine Learning",
-      "AI",
-      "Social Good"
+      "AI"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "019ec393-69be-a63b-04c3-db014796cd27",
@@ -5927,7 +5783,7 @@
     "location": "Hamilton, Ontario",
     "city": "Hamilton",
     "state": "Ontario",
-    "country": "Canada",
+    "country": null,
     "startDate": "2027-01-09",
     "endDate": "2027-01-10",
     "registrationDeadline": null,
@@ -5938,7 +5794,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "https://www.hackerearth.com/challenges/hackathon/contextcon-remember-everything/",
@@ -5961,7 +5817,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "019ebdcf-0a9f-874f-6be7-bd6b1ec311be",
@@ -5973,7 +5829,7 @@
     "location": "Toronto, Ontario",
     "city": "Toronto",
     "state": "Ontario",
-    "country": "Canada",
+    "country": null,
     "startDate": "2027-01-15",
     "endDate": "2027-01-17",
     "registrationDeadline": null,
@@ -5984,7 +5840,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "019efa0f-7a9a-554b-48cf-dfd63de84b85",
@@ -5996,7 +5852,7 @@
     "location": "Ottawa, Ontario",
     "city": "Ottawa",
     "state": "Ontario",
-    "country": "Canada",
+    "country": null,
     "startDate": "2027-01-15",
     "endDate": "2027-01-17",
     "registrationDeadline": null,
@@ -6004,10 +5860,10 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a1315e-f6a6-dd0f-237b-3ecdf0027f3c",
@@ -6027,10 +5883,10 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "019ed5df-8f65-6d9c-3d59-c1ec15fbeff8",
@@ -6050,10 +5906,10 @@
     "prizeAmountINR": null,
     "teamSize": null,
     "techStack": [],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "01a19e3c-786a-47c1-3cc5-c28a9a8c4429",
@@ -6075,10 +5931,10 @@
     "techStack": [
       "Software"
     ],
-    "hasInternship": null,
+    "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "30340",
@@ -6104,7 +5960,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "30463",
@@ -6132,7 +5988,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "28629",
@@ -6143,7 +5999,7 @@
     "mode": "Offline",
     "location": "Tully Community Branch Library",
     "city": "San Jose",
-    "state": "CA",
+    "state": "California",
     "country": "United States",
     "startDate": "2027-03-03",
     "endDate": "2027-03-10",
@@ -6152,13 +6008,12 @@
     "prizeAmountINR": 37350.0,
     "teamSize": null,
     "techStack": [
-      "Education",
-      "Social Good"
+      "Education"
     ],
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "31535",
@@ -6183,7 +6038,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "29135",
@@ -6211,7 +6066,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "30455",
@@ -6236,7 +6091,7 @@
     "hasInternship": null,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "27097",
@@ -6262,7 +6117,7 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   },
   {
     "id": "30425",
@@ -6287,6 +6142,6 @@
     "hasInternship": false,
     "perks": [],
     "isFree": null,
-    "scrapedAt": "2026-11-13T08:20:17.277187Z"
+    "scrapedAt": "2026-11-14T07:45:06.453794Z"
   }
 ]
