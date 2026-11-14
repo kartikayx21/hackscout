@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, useReducedMotion } from 'framer-motion'
-import { ArrowUpRight, CalendarDays, MapPin, Trophy, Users } from 'lucide-react'
+import { ArrowUpRight, CalendarDays, CalendarPlus, MapPin, Trophy, Users } from 'lucide-react'
 import type { Hackathon } from '@/data/hackathons'
 import styles from '@/app/page.module.css'
 
@@ -41,6 +41,37 @@ function getElapsedPercent(deadline: string | null, startDate: string | null) {
   return Math.min(92, Math.max(24, Math.round(((now - start) / (end - start)) * 100)))
 }
 
+function formatCalendarDate(value: string) {
+  return value.replaceAll('-', '')
+}
+
+function nextCalendarDate(value: string) {
+  const [year, month, day] = value.split('-').map(Number)
+  const next = new Date(year, month - 1, day + 1)
+  return [
+    next.getFullYear(),
+    String(next.getMonth() + 1).padStart(2, '0'),
+    String(next.getDate()).padStart(2, '0'),
+  ].join('')
+}
+
+function getCalendarHref(hackathon: Hackathon) {
+  const start = hackathon.startDate ?? hackathon.registrationDeadline
+  if (!start) return null
+  const end = hackathon.startDate ? (hackathon.endDate ?? hackathon.startDate) : start
+  const title = hackathon.startDate ? hackathon.title : `Registration closes: ${hackathon.title}`
+  const details = [hackathon.organizer, hackathon.url].filter(Boolean).join('\n')
+  const dates = `${formatCalendarDate(start)}/${nextCalendarDate(end)}`
+  const params = [
+    `action=TEMPLATE`,
+    `text=${encodeURIComponent(title)}`,
+    `dates=${dates}`,
+    `details=${encodeURIComponent(details)}`,
+    `location=${encodeURIComponent(hackathon.location ?? '')}`,
+  ]
+  return `https://calendar.google.com/calendar/render?${params.join('&')}`
+}
+
 function getTagClass(tag: string) {
   const normalized = tag.toLowerCase()
   if (/ai|ml|python|browseruse/.test(normalized)) return styles.tagAi
@@ -68,6 +99,7 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
   const remainingStack = uniqueTechStack.length - visibleStack.length
   const progressPercent = getElapsedPercent(hackathon.registrationDeadline, hackathon.startDate)
   const hasValidUrl = /^https?:\/\//.test(hackathon.url ?? '')
+  const calendarHref = getCalendarHref(hackathon)
 
   return (
     <motion.article
@@ -117,15 +149,22 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
             <span style={{ width: `${progressPercent}%` }} />
           </div>
         </div>
-        {hasValidUrl ? (
-          <a className={styles.detailsButton} href={hackathon.url!} target="_blank" rel="noopener noreferrer" aria-label={`View details for ${hackathon.title}`}>
-            <span>View Details</span><ArrowUpRight aria-hidden="true" />
-          </a>
-        ) : (
-          <button type="button" className={styles.detailsButton} disabled aria-label={`Details unavailable for ${hackathon.title}`}>
-            <span>Details Unavailable</span><ArrowUpRight aria-hidden="true" />
-          </button>
-        )}
+        <div className={styles.cardActions}>
+          {calendarHref && (
+            <a className={styles.detailsButton} href={calendarHref} target="_blank" rel="noopener noreferrer" aria-label={`Add ${hackathon.title} to Google Calendar`}>
+              <span>Add to Calendar</span><CalendarPlus aria-hidden="true" />
+            </a>
+          )}
+          {hasValidUrl ? (
+            <a className={styles.detailsButton} href={hackathon.url!} target="_blank" rel="noopener noreferrer" aria-label={`View details for ${hackathon.title}`}>
+              <span>View Details</span><ArrowUpRight aria-hidden="true" />
+            </a>
+          ) : (
+            <button type="button" className={styles.detailsButton} disabled aria-label={`Details unavailable for ${hackathon.title}`}>
+              <span>Details Unavailable</span><ArrowUpRight aria-hidden="true" />
+            </button>
+          )}
+        </div>
       </div>
     </motion.article>
   )
