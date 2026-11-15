@@ -15,7 +15,7 @@ export function AgentTerminal({ hackathons }: { hackathons: Hackathon[] }) {
     return counts
   }, {})
   const logLines: LogLine[] = [
-    { text: '> launching browser session...', state: 'normal' },
+    { text: '> fetching public sources...', state: 'normal' },
     ...Object.entries(sourceCounts).map(([source, count]) => ({
       text: `> ${source.toLowerCase()} .......... ${count} events`,
       state: 'normal' as const,

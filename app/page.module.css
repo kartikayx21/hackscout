@@ -263,3 +263,136 @@
 @media (prefers-reduced-motion: reduce) {
   .eventCard, .filterChip, .detailsButton, .detailsButton svg { transition-duration: .01ms; }
 }
+
+/* UI polish pass: shared layout and spacing overrides. */
+.mainContent { width: min(var(--content-max), calc(100% - var(--space-7) * 2)); }
+.hero { min-height: 320px; gap: var(--space-7); padding: var(--space-7) 0 var(--space-6); }
+.hero h1 { margin: var(--space-5) 0 var(--space-4); }
+.heroDescription { font-size: var(--font-md); }
+.exploreSection { padding-top: var(--space-5); }
+.sectionHeading { margin-bottom: var(--space-4); }
+.sectionHeading h2 { font-size: var(--font-lg); }
+.toolbarShell { position: relative; z-index: 10; }
+.toolbar { display: flex; min-width: 0; align-items: center; gap: var(--space-2); padding: var(--space-2); border: 1px solid var(--border); border-radius: var(--radius-md); background: rgba(255,255,255,.025); }
+.toolbar .searchBar { min-width: 180px; height: 42px; padding-left: var(--space-3); border: 0; background: transparent; box-shadow: none; }
+.toolbar .searchBar:focus-within { background: rgba(255,255,255,.035); box-shadow: 0 0 0 2px rgba(198,244,50,.1); }
+.toolbar .stackSelector { flex: 0 0 auto; }
+.toolbar .stackTrigger { height: 42px; border-color: transparent; border-radius: var(--radius-sm); }
+.modeSegment { display: inline-flex; flex: 0 0 auto; padding: var(--space-1); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.modeSegment button { min-height: 30px; padding: 0 var(--space-3); border: 0; border-radius: var(--radius-sm); background: transparent; color: var(--text-dim); font-size: var(--font-sm); cursor: pointer; }
+.modeSegment button:hover { color: var(--text); }
+.modeSegmentActive { background: var(--accent) !important; color: #15190a !important; }
+.filtersButton, .sortControl select { min-height: 34px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: transparent; color: var(--text-dim); font-size: var(--font-sm); }
+.filtersButton { display: inline-flex; flex: 0 0 auto; align-items: center; gap: var(--space-1); padding: 0 var(--space-3); cursor: pointer; }
+.filtersButton:hover, .sortControl select:hover { border-color: var(--border-strong); color: var(--text); }
+.filtersButton svg { width: 13px; height: 13px; }
+.filterBadge { display: inline-grid; min-width: 17px; height: 17px; place-items: center; margin-left: var(--space-1); border-radius: 999px; background: var(--accent); color: #15190a; font-size: var(--font-xs); font-weight: 700; }
+.sortControl { flex: 0 0 auto; }
+.sortControl select { padding: 0 var(--space-6) 0 var(--space-3); color-scheme: dark; }
+.resultCount { margin-left: auto; padding: 0 var(--space-2); white-space: nowrap; }
+.filterPanel { position: absolute; top: calc(100% + var(--space-2)); right: 0; width: min(660px, 100%); max-height: min(520px, calc(100vh - 120px)); overflow: auto; padding: var(--space-5); border: 1px solid var(--border-strong); border-radius: var(--radius-lg); background: rgba(17,19,23,.98); box-shadow: 0 20px 55px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.06); backdrop-filter: blur(18px); }
+.filterPanelHeader, .filterPanelFooter { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.filterPanelTitle { color: var(--text-faint); font-family: var(--mono); font-size: var(--font-xs); letter-spacing: .1em; }
+.panelClose { display: grid; width: 28px; height: 28px; place-items: center; border: 1px solid var(--border); border-radius: var(--radius-sm); background: transparent; color: var(--text-dim); cursor: pointer; }
+.panelClose:hover { color: var(--text); border-color: var(--border-strong); }
+.panelClose svg { width: 14px; height: 14px; }
+.filterPanelGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-5); margin: var(--space-5) 0; }
+.filterGroup { min-width: 0; margin: 0; padding: 0; border: 0; }
+.filterGroup legend { margin-bottom: var(--space-2); padding: 0; color: var(--text-faint); font-family: var(--mono); font-size: var(--font-xs); letter-spacing: .08em; text-transform: uppercase; }
+.filterGroup .filterChips { flex-wrap: wrap; overflow: visible; }
+.filterGroup .dateFilters { margin-bottom: var(--space-2); }
+.filterPanelFooter { padding-top: var(--space-4); border-top: 1px solid var(--border); }
+.clearPanelButton, .applyButton { min-height: 34px; padding: 0 var(--space-3); border-radius: var(--radius-sm); font-size: var(--font-sm); cursor: pointer; }
+.clearPanelButton { border: 0; background: transparent; color: var(--text-dim); }
+.clearPanelButton:hover { color: var(--text); }
+.applyButton { border: 1px solid var(--accent); background: var(--accent); color: #15190a; }
+.activeFilters { display: flex; flex-wrap: wrap; gap: var(--space-1); margin: var(--space-3) 0 var(--space-4); }
+.activeChip { display: inline-flex; align-items: center; gap: var(--space-1); min-height: 24px; padding: 0 var(--space-2); border: 1px solid rgba(198,244,50,.28); border-radius: 999px; background: rgba(198,244,50,.08); color: #cfe98c; font-size: var(--font-xs); cursor: pointer; }
+.activeChip:hover { border-color: var(--accent); background: rgba(198,244,50,.14); }
+.activeChip svg { width: 11px; height: 11px; }
+.eventGrid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-5); }
+.cardSlot { display: flex; min-height: 0; }
+.eventCard { width: 100%; min-height: 435px; height: 435px; padding: var(--space-5); border-radius: var(--radius-lg); }
+.cardTitle { min-height: 54px; margin: var(--space-4) 0 var(--space-1); font-size: var(--font-lg); line-height: 1.35; }
+.organizer { min-height: 17px; font-size: var(--font-sm); }
+.metaList { gap: var(--space-2); margin-top: var(--space-4); }
+.metaRow { min-height: 17px; font-size: var(--font-sm); }
+.metaRow span { min-width: 0; }
+.cardDivider { margin: var(--space-4) 0 var(--space-3); }
+.stackTags { min-height: 48px; align-content: flex-start; }
+.cardFooter { gap: var(--space-3); padding-top: var(--space-4); }
+.deadlineText { margin-bottom: var(--space-2); }
+.cardActions { gap: var(--space-2); }
+.detailsButton, .calendarButton { min-height: 34px; border-radius: var(--radius-sm); font-size: var(--font-xs); }
+.calendarButton { display: inline-grid; width: 34px; flex: 0 0 auto; place-items: center; border: 1px solid rgba(255,255,255,.13); color: #c5c8ce; text-decoration: none; transition: border-color .18s ease, background-color .18s ease, color .18s ease, transform .18s ease; }
+.calendarButton svg { width: 14px; height: 14px; }
+.calendarButton:hover, .eventCard:hover .calendarButton { transform: scale(1.03); border-color: var(--accent); background: var(--accent); color: #161a0a; }
+.eventCard:hover .calendarButton svg { transform: translateY(-1px); }
+.detailsButton { padding: 0 var(--space-3); }
+.detailsButton svg { width: 13px; height: 13px; }
+.siteFooter { width: min(var(--content-max), calc(100% - var(--space-7) * 2)); }
+.siteHeader { z-index: 40; background: rgba(7,8,10,.94); }
+.hero { min-height: 286px; gap: var(--space-6); padding: var(--space-6) 0 var(--space-5); }
+.hero h1 { font-size: clamp(2.9rem, 5vw, 4.8rem); }
+.heroDescription { line-height: 1.5; }
+.heroTerminal { align-items: center; }
+.terminalPanel { min-height: 190px; }
+.toolbarShell { z-index: 15; }
+.stackPopover, .filterPanel { z-index: 30; }
+.sectionKicker, .indexedNote, .resultCount, .sourceLabel, .modeBadge, .deadlineText, .terminalHeader, .terminalFooter, .popoverCaption, .popoverFooter, .filterPanelTitle {
+  font-size: var(--font-xs);
+  font-weight: 450;
+  letter-spacing: .045em;
+}
+.sectionHeading h2 { font-size: var(--font-lg); font-weight: 500; }
+.metaRow { font-size: var(--font-sm); font-weight: 450; }
+.filtersButton, .sortControl select, .modeSegment button, .filterChip, .detailsButton, .calendarButton { font-weight: 500; }
+.cardActions { min-height: 34px; align-items: center; }
+
+@media (max-width: 1024px) {
+  .mainContent { width: min(var(--content-max), calc(100% - var(--space-6) * 2)); }
+  .hero { grid-template-columns: minmax(0, 1.05fr) minmax(280px, .75fr); gap: var(--space-5); padding: var(--space-5) 0 var(--space-4); }
+  .heroTerminal { display: flex; }
+  .hero h1 { font-size: clamp(2.8rem, 6vw, 4.5rem); }
+  .toolbar { flex-wrap: wrap; }
+  .toolbar .searchBar { flex: 1 1 280px; }
+  .resultCount { margin-left: auto; }
+}
+@media (max-width: 768px) {
+  .mainContent { width: calc(100% - var(--space-5) * 2); }
+  .hero { grid-template-columns: 1fr; min-height: 0; padding: var(--space-5) 0 var(--space-4); }
+  .heroTerminal { justify-content: stretch; }
+  .terminalPanel { width: 100%; min-height: 180px; }
+  .toolbar { padding: var(--space-2); }
+  .toolbar .searchBar { flex-basis: 100%; order: 1; }
+  .toolbar .stackSelector { order: 2; }
+  .modeSegment { order: 3; }
+  .filtersButton { order: 4; }
+  .sortControl { order: 5; }
+  .resultCount { order: 6; margin-left: auto; }
+  .filterPanel { position: fixed; z-index: 30; top: auto; right: var(--space-3); bottom: var(--space-3); left: var(--space-3); width: auto; max-height: calc(100vh - 80px); border-radius: var(--radius-lg); }
+  .filterPanelGrid { grid-template-columns: 1fr; gap: var(--space-4); }
+  .eventGrid { grid-template-columns: minmax(0, 1fr); gap: var(--space-4); }
+}
+@media (max-width: 480px) {
+  .mainContent { width: calc(100% - var(--space-5) * 2); }
+  .hero { padding: var(--space-4) 0 var(--space-4); }
+  .hero h1 { font-size: clamp(2.8rem, 13vw, 4rem); }
+  .toolbar .stackTrigger { padding: 0 var(--space-3); }
+  .toolbar .stackTrigger > span { display: inline; }
+  .modeSegment button { padding: 0 var(--space-2); }
+  .filtersButton { padding: 0 var(--space-2); }
+  .sortControl select { padding-left: var(--space-2); }
+  .resultCount { width: 100%; margin-left: 0; padding: var(--space-1) 0 0; text-align: right; }
+  .eventCard { min-height: 420px; height: 420px; padding: var(--space-4); }
+  .cardTitle { font-size: 18px; }
+  .cardActions { justify-content: flex-end; }
+}
+@media (max-width: 639px) {
+  .toolbar { gap: var(--space-2); }
+  .toolbar .stackTrigger, .modeSegment, .filtersButton, .sortControl select { min-height: 42px; }
+  .toolbar .stackTrigger { height: 42px; }
+  .modeSegment button { min-height: 32px; }
+  .sortControl { width: 100%; flex: 0 0 100%; order: 5; }
+  .sortControl select { width: 100%; max-width: none; }
+}

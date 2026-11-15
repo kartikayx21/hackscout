@@ -96,7 +96,7 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
   const uniqueTechStack = hackathon.techStack.map(normalizeSkill).filter((tag, index, techStack) => (
     techStack.findIndex((candidate) => candidate.toLowerCase() === tag.toLowerCase()) === index
   ))
-  const visibleStack = uniqueTechStack.slice(0, 4)
+  const visibleStack = uniqueTechStack.slice(0, 3)
   const remainingStack = uniqueTechStack.length - visibleStack.length
   const progressPercent = getElapsedPercent(hackathon.registrationDeadline, hackathon.startDate)
   const hasValidUrl = /^https?:\/\//.test(hackathon.url ?? '')
@@ -110,7 +110,7 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10, scale: 0.98 }}
       transition={prefersReducedMotion ? { duration: 0.01 } : { type: 'spring', stiffness: 300, damping: 24, delay: index * 0.06 }}
-      whileHover={prefersReducedMotion ? undefined : { y: -6 }}
+      whileHover={prefersReducedMotion ? undefined : { y: -3 }}
       onMouseMove={(event) => {
         const bounds = event.currentTarget.getBoundingClientRect()
         event.currentTarget.style.setProperty('--mx', `${event.clientX - bounds.left}px`)
@@ -129,10 +129,10 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
       {hackathon.organizer && <p className={styles.organizer}>{hackathon.organizer}</p>}
 
       <div className={styles.metaList}>
-        <div className={styles.metaRow}><CalendarDays aria-hidden="true" /><span>{formatDateRange(hackathon.startDate, hackathon.endDate)}</span></div>
-        <div className={styles.metaRow}><MapPin aria-hidden="true" /><span>{hackathon.location ?? 'TBA'}</span></div>
-        <div className={styles.metaRow}><Trophy aria-hidden="true" /><span>Prize pool <strong>{formatPrize(hackathon)}</strong></span></div>
-        <div className={styles.metaRow}><Users aria-hidden="true" /><span>Team size <strong>{hackathon.teamSize ?? 'TBA'}</strong></span></div>
+        <div className={styles.metaRow}><CalendarDays aria-hidden="true" /><span title={formatDateRange(hackathon.startDate, hackathon.endDate)}>{formatDateRange(hackathon.startDate, hackathon.endDate)}</span></div>
+        <div className={styles.metaRow}><MapPin aria-hidden="true" /><span title={hackathon.location ?? 'TBA'}>{hackathon.location ?? 'TBA'}</span></div>
+        <div className={styles.metaRow}><Trophy aria-hidden="true" /><span title={`Prize pool ${formatPrize(hackathon)}`}>Prize pool <strong>{formatPrize(hackathon)}</strong></span></div>
+        <div className={styles.metaRow}><Users aria-hidden="true" /><span title={`Team size ${hackathon.teamSize ?? 'TBA'}`}>Team size <strong>{hackathon.teamSize ?? 'TBA'}</strong></span></div>
       </div>
 
       <div className={styles.cardDivider} />
@@ -152,8 +152,8 @@ export function HackathonCard({ hackathon, index = 0 }: { hackathon: Hackathon; 
         </div>
         <div className={styles.cardActions}>
           {calendarHref && (
-            <a className={styles.detailsButton} href={calendarHref} target="_blank" rel="noopener noreferrer" aria-label={`Add ${hackathon.title} to Google Calendar`}>
-              <span>Add to Calendar</span><CalendarPlus aria-hidden="true" />
+            <a className={styles.calendarButton} href={calendarHref} target="_blank" rel="noopener noreferrer" aria-label={`Add ${hackathon.title} to Google Calendar`} title="Add to Google Calendar">
+              <CalendarPlus aria-hidden="true" />
             </a>
           )}
           {hasValidUrl ? (
