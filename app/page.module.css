@@ -98,6 +98,8 @@
 .stackTrigger .chevron { width: 13px; height: 13px; color: #777c85; transition: transform .18s ease; }
 .stackTriggerOpen .chevron { transform: rotate(180deg); }
 .stackPopover { position: absolute; z-index: 15; top: calc(100% + 9px); right: 0; display: flex; max-height: min(320px, calc(100vh - 24px)); width: 238px; flex-direction: column; padding: 11px; border-radius: 12px; background: rgba(17,19,23,.97); box-shadow: 0 18px 46px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06); transform-origin: top right; }
+.popoverHeader { display: flex; align-items: center; justify-content: space-between; }
+.overlayBackdrop, .mobileDone { display: none; }
 .popoverCaption { padding: 3px 8px 9px; color: var(--text-faint); font-size: 8px; }
 .stackSearch { width: 100%; min-height: 30px; margin-bottom: 7px; padding: 0 9px; border: 1px solid rgba(255,255,255,.1); border-radius: 7px; outline: 0; background: rgba(255,255,255,.035); color: var(--text); font: inherit; font-size: 11px; }
 .stackSearch:focus { border-color: var(--accent); }
@@ -389,6 +391,18 @@
   .cardActions { justify-content: flex-end; }
 }
 @media (max-width: 639px) {
+  body:has(.stackPopover, .filterPanel) { overflow: hidden; }
+  .toolbarShell:has(.stackPopover, .filterPanel) { z-index: 60; }
+  .overlayBackdrop { position: fixed; z-index: 59; inset: 0; display: block; padding: 0; border: 0; background: rgba(0,0,0,.62); cursor: pointer; }
+  .stackPopover, .filterPanel { z-index: 60; }
+  .stackPopover { position: fixed; top: auto; right: 0; bottom: 0; left: 0; width: auto; max-height: 70vh; overflow: hidden auto; padding: var(--space-4) var(--space-4) calc(var(--space-4) + env(safe-area-inset-bottom)); border-radius: var(--radius-lg) var(--radius-lg) 0 0; background: #111317; transform-origin: bottom center; }
+  .popoverCaption { padding: 3px 0 9px; color: var(--text); font-size: var(--font-sm); letter-spacing: .08em; }
+  .popoverHeader .mobileDone { display: block; }
+  .mobileDone { min-height: 34px; padding: 0 var(--space-3); border: 1px solid var(--accent); border-radius: var(--radius-sm); background: var(--accent); color: #15190a; font-size: var(--font-sm); font-weight: 600; cursor: pointer; }
+  .filterPanel { right: 0; bottom: 0; left: 0; max-height: 70vh; padding-bottom: calc(var(--space-4) + env(safe-area-inset-bottom)); border-radius: var(--radius-lg) var(--radius-lg) 0 0; background: #111317; }
+  .filterPanelHeader .panelClose { display: none; }
+  .filterPanelFooter .mobileDone { display: block; }
+  .filterPanelFooter .applyButton { display: none; }
   .toolbar { gap: var(--space-2); }
   .toolbar .stackTrigger, .modeSegment, .filtersButton, .sortControl select { min-height: 42px; }
   .toolbar .stackTrigger { height: 42px; }

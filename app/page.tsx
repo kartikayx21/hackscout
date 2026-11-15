@@ -282,7 +282,9 @@ export default function Page() {
               <div className={styles.resultCount} aria-live="polite"><span>{String(filteredHackathons.length).padStart(2, '0')}</span> RESULTS</div>
             </div>
             {filtersOpen && (
-              <div className={styles.filterPanel} id="filters-panel" role="dialog" aria-label="Hackathon filters">
+              <>
+                <button className={styles.overlayBackdrop} type="button" aria-label="Close filters" onClick={() => setFiltersOpen(false)} />
+                <div className={styles.filterPanel} id="filters-panel" role="dialog" aria-label="Hackathon filters">
                 <div className={styles.filterPanelHeader}>
                   <span className={styles.filterPanelTitle}>FILTERS</span>
                   <button className={styles.panelClose} type="button" onClick={() => setFiltersOpen(false)} aria-label="Close filters"><X aria-hidden="true" /></button>
@@ -337,8 +339,10 @@ export default function Page() {
                 <div className={styles.filterPanelFooter}>
                   <button className={styles.clearPanelButton} type="button" onClick={clearFilters}>Clear all</button>
                   <button className={styles.applyButton} type="button" onClick={() => setFiltersOpen(false)}>Apply / close</button>
+                  <button className={styles.mobileDone} type="button" onClick={() => setFiltersOpen(false)}>Done</button>
                 </div>
-              </div>
+                </div>
+              </>
             )}
           </div>
           {activeFilterCount > 0 && (

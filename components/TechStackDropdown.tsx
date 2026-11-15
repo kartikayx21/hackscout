@@ -58,46 +58,52 @@ export function TechStackDropdown({ options, selected, onChange }: { options: Te
       </button>
       <AnimatePresence>
         {open && (
-          <motion.div
-            className={styles.stackPopover}
-            role="listbox"
-            aria-label="Filter by technology stack"
-            aria-multiselectable="true"
-            initial={{ opacity: 0, scale: 0.96, y: -4 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.96, y: -4 }}
-            transition={prefersReducedMotion ? { duration: 0.01 } : { duration: 0.14 }}
-          >
-            <div className={styles.popoverCaption}>SELECT TECH STACK</div>
-            <input className={styles.stackSearch} type="search" placeholder="Search skills" aria-label="Search tech stack" value={query} onChange={(event) => {
-              setQuery(event.target.value)
-              setShowAll(false)
-            }} />
-            <div className={styles.stackOptions}>
-            {visibleOptions.map((option) => {
-              const checked = selected.includes(option.label)
-              return (
-                <button
-                  className={`${styles.stackOption} ${checked ? styles.stackOptionSelected : ''}`}
-                  key={option.label}
-                  type="button"
-                  role="option"
-                  aria-selected={checked}
-                  onClick={() => toggleOption(option.label)}
-                >
-                  <span className={`${styles.checkbox} ${checked ? styles.checkboxChecked : ''}`}>{checked && <Check aria-hidden="true" />}</span>
-                  <span>{option.label}</span>
-                  <span className={styles.stackOptionCount}>{option.count}</span>
-                </button>
-              )
-            })}
-            {hasMoreOptions && <button className={styles.stackMore} type="button" onClick={() => setShowAll(true)}>SHOW MORE</button>}
-            </div>
-            <div className={styles.popoverFooter}>
-              <span>{selected.length} SELECTED</span>
-              <button type="button" onClick={() => onChange([])}>CLEAR ALL</button>
-            </div>
-          </motion.div>
+          <>
+            <button className={styles.overlayBackdrop} type="button" aria-label="Close tech stack filter" onClick={() => setOpen(false)} />
+            <motion.div
+              className={styles.stackPopover}
+              role="listbox"
+              aria-label="Filter by technology stack"
+              aria-multiselectable="true"
+              initial={{ opacity: 0, scale: 0.96, y: -4 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.96, y: -4 }}
+              transition={prefersReducedMotion ? { duration: 0.01 } : { duration: 0.14 }}
+            >
+              <div className={styles.popoverHeader}>
+                <div className={styles.popoverCaption}>TECH STACK</div>
+                <button className={styles.mobileDone} type="button" onClick={() => setOpen(false)}>Done</button>
+              </div>
+              <input className={styles.stackSearch} type="search" placeholder="Search skills" aria-label="Search tech stack" value={query} onChange={(event) => {
+                setQuery(event.target.value)
+                setShowAll(false)
+              }} />
+              <div className={styles.stackOptions}>
+              {visibleOptions.map((option) => {
+                const checked = selected.includes(option.label)
+                return (
+                  <button
+                    className={`${styles.stackOption} ${checked ? styles.stackOptionSelected : ''}`}
+                    key={option.label}
+                    type="button"
+                    role="option"
+                    aria-selected={checked}
+                    onClick={() => toggleOption(option.label)}
+                  >
+                    <span className={`${styles.checkbox} ${checked ? styles.checkboxChecked : ''}`}>{checked && <Check aria-hidden="true" />}</span>
+                    <span>{option.label}</span>
+                    <span className={styles.stackOptionCount}>{option.count}</span>
+                  </button>
+                )
+              })}
+              {hasMoreOptions && <button className={styles.stackMore} type="button" onClick={() => setShowAll(true)}>SHOW MORE</button>}
+              </div>
+              <div className={styles.popoverFooter}>
+                <span>{selected.length} SELECTED</span>
+                <button type="button" onClick={() => onChange([])}>CLEAR ALL</button>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </div>
