@@ -1,7 +1,7 @@
 # HackScout
 
-An AI-assisted hackathon aggregator. Scrapers collect events from Devpost, Devfolio and MLH,
-Gemini cleans and enriches them, and a Next.js dashboard lets students filter everything in one place.
+A hackathon aggregator. Scripts collect public events from multiple platforms, Gemini cleans and
+enriches them, and a Next.js dashboard lets students filter everything in one place.
 
 ## How it works
 1. `scraper/sources/*` fetch hackathons from each platform's public data.
@@ -9,6 +9,7 @@ Gemini cleans and enriches them, and a Next.js dashboard lets students filter ev
 3. `scraper/main.py` merges, dedupes and writes `public/hackathons.json`.
 4. The Next.js app reads that file and offers filters: mode, location (India/Rajasthan/Jaipur),
    prize, internship, tech stack, free entry, and sorting.
+5. A GitHub Action refreshes the public data daily.
 
 ## Run it
 ```

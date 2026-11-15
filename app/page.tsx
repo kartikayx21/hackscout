@@ -221,11 +221,11 @@ export default function Page() {
           <nav className={`${styles.mainNav} ${menuOpen ? styles.mainNavOpen : ''}`} aria-label="Main navigation">
             <a href="#explore" onClick={() => setMenuOpen(false)}>EXPLORE</a>
             <a href="#sources" onClick={() => setMenuOpen(false)}>SOURCES</a>
-            <a href="#agent-log" onClick={() => setMenuOpen(false)}>AGENT LOG</a>
+            <a href="#pipeline" onClick={() => setMenuOpen(false)}>PIPELINE</a>
           </nav>
 
           <div className={styles.headerRight}>
-            <span className={styles.onlinePill}><span className={styles.liveDot} />AGENT ONLINE</span>
+            <span className={styles.onlinePill}><span className={styles.liveDot} />LIVE</span>
             <button className={styles.menuToggle} type="button" aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
               {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
             </button>
@@ -236,14 +236,14 @@ export default function Page() {
       <main id="top" className={styles.mainContent}>
         <section className={styles.hero} aria-labelledby="hero-heading">
           <div className={styles.heroCopy}>
-            <div className={styles.eyebrow}><span className={styles.eyebrowRule} />AUTONOMOUS HACKATHON INTELLIGENCE</div>
+            <div className={styles.eyebrow}><span className={styles.eyebrowRule} />HACKATHONS FROM {sourceCount} PLATFORMS, ONE PLACE</div>
             <h1 id="hero-heading">Discover Your<br /><span className={styles.headlineAccent}>Next Build.</span></h1>
-            <p className={styles.heroDescription}>One agent scans the platforms, sorts the signal, and brings your next good problem into view.</p>
+            <p className={styles.heroDescription}>We collect hackathons from Devfolio, Unstop, Devpost, MLH and HackerEarth every morning, so you don't have to.</p>
             <div className={styles.sourceLine} id="sources">
               <span>SCANNING</span>{sourceNames.map((source, index) => <span key={source}>{index > 0 && <i />} {source.toUpperCase()}</span>)}
             </div>
           </div>
-          <div id="agent-log" className={styles.heroTerminal}><AgentTerminal hackathons={hackathons} /></div>
+          <div id="pipeline" className={styles.heroTerminal}><AgentTerminal hackathons={hackathons} /></div>
         </section>
 
         <section className={styles.exploreSection} id="explore" aria-label="Explore hackathons">
@@ -376,13 +376,13 @@ export default function Page() {
 
         <section className={styles.bottomNote} aria-label="Index update">
           <span className={styles.bottomLine} />
-          <p><ArrowDownRight aria-hidden="true" /> The list moves as the agent finds new signals.</p>
-          <span className={styles.bottomTimestamp}>NEXT SWEEP IN 11 MIN</span>
+          <p><ArrowDownRight aria-hidden="true" /> Listings come from each platform's public pages.</p>
+          <span className={styles.bottomTimestamp}>Refreshed daily at 7:00 AM IST</span>
         </section>
       </main>
 
       <footer className={styles.siteFooter}>
-        <span>HACKSCOUT <span className={styles.footerDot}>·</span> BUILT IN 3 HOURS <span className={styles.footerDot}>·</span> POWERED BY BROWSERUSE + GEMINI</span>
+        <span>HackScout · listings belong to their platforms and HackScout is not affiliated with them · data refreshed daily</span>
         <a href="#top" aria-label="Back to top">BACK TO TOP <ArrowUpRight aria-hidden="true" /></a>
       </footer>
     </div>

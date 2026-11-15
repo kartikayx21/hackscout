@@ -10,8 +10,8 @@ const instrumentSerif = Instrument_Serif({ subsets: ['latin'], weight: '400', va
 const jetBrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains-mono', display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'HackScout — Find your next build',
-  description: 'A quiet command center for upcoming hackathons. Search events, compare prize pools, and find the tech stack worth building with.',
+  title: 'HackScout — Hackathons in one place',
+  description: 'HackScout collects public hackathon data, Gemini cleans and enriches it, and a daily GitHub Action refreshes the listings.',
   applicationName: 'HackScout',
   generator: 'v0.app',
   icons: {

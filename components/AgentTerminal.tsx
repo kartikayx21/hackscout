@@ -37,11 +37,11 @@ export function AgentTerminal({ hackathons }: { hackathons: Hackathon[] }) {
   }, [logLines.length, prefersReducedMotion])
 
   return (
-    <aside className={styles.terminalPanel} aria-label="Agent activity log">
+    <aside className={styles.terminalPanel} aria-label="Pipeline status">
       <div className={styles.terminalHeader}>
         <div className={styles.terminalHeading}>
           <span className={styles.terminalSignal} />
-          <span>AGENT STATUS</span>
+          <span>PIPELINE STATUS</span>
         </div>
         <span className={styles.terminalRegion}>REGION: AP-SOUTH-1</span>
       </div>
